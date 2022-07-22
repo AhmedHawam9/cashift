@@ -25,8 +25,10 @@ $SecondColor: #68245d;
 @import "./sideBar.scss";
 
 .index_cards {
-  .btn:hover {
-    border: none;
+  .btn {
+    &:hover, &:focus, &:active{
+      border-color: transparent;
+    }
   }
   padding: 0;
   background-color: #fff;
@@ -295,84 +297,147 @@ $SecondColor: #68245d;
         }
       }
     }
-    .best_job {
-      h5 {
-        font-family: "semibold";
-        color: #011c1e;
-        margin-bottom: 0;
-      }
-      .card_best_job {
-        display: flex;
-        align-items: center;
-        margin-top: 2rem;
-        img {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          margin-inline-end: 1rem;
-        }
-        .details_best_job {
-          width: 60%;
-          h6 {
-            font-family: "semibold";
-            color: #102b21;
-            margin-bottom: 0.5rem;
-          }
-          span {
-            margin-bottom: 0;
-            font-family: "light";
-            color: #828282;
-          }
-        }
-        p {
-          margin-bottom: 0;
-          color: #828282;
+    .left_content {
+      background-color: #fcfcfc;
+      padding: 1rem;
+      .best_job {
+        h5 {
           font-family: "semibold";
+          color: #011c1e;
+          margin-bottom: 0;
+        }
+        .card_best_job {
+          display: flex;
+          align-items: center;
+          margin-top: 2rem;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-inline-end: 1rem;
+          }
+          .details_best_job {
+            width: 60%;
+            h6 {
+              font-family: "semibold";
+              color: #102b21;
+              margin-bottom: 0.5rem;
+            }
+            span {
+              margin-bottom: 0;
+              font-family: "light";
+              color: #828282;
+            }
+          }
+          p {
+            margin-bottom: 0;
+            color: #828282;
+            font-family: "semibold";
+          }
         }
       }
-    }
-    .best_project {
-      margin-top: 3rem;
-      h5 {
-        font-family: "semibold";
-        color: #011c1e;
-        margin-bottom: 0;
-      }
-      .card_project {
+      .best_project {
         margin-top: 3rem;
-        .percentage_bar {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          height: 35px;
-          margin-bottom: 15px;
-          position: relative;
-          transition: 0.4s linear;
-          -moz-transition: 0.4s linear;
-          -ms-transition: 0.4s linear;
-          -o-transition: 0.4s linear;
-          -webkit-transition: 0.4s linear;
-          transition-property: width, background-color;
-          -moz-transition-property: width, background-color;
-          -ms-transition-property: width, background-color;
-          -o-transition-property: width, background-color;
-          -webkit-transition-property: width, background-color;
-          width: 100%;
-          .bar {
-            // background: $PrimaryColor;
-            background-image: linear-gradient(to left, #fff , #ABD0C8);
-            border-radius: 8px;
-            padding: 1rem;
+        h5 {
+          font-family: "semibold";
+          color: #011c1e;
+          margin-bottom: 0;
+        }
+        .card_project {
+          margin-top: 3rem;
+          .percentage_bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: "regular";
-            color: #3F3F44;
+            height: 35px;
+            margin-bottom: 15px;
+            position: relative;
+            transition: 0.4s linear;
+            -moz-transition: 0.4s linear;
+            -ms-transition: 0.4s linear;
+            -o-transition: 0.4s linear;
+            -webkit-transition: 0.4s linear;
+            transition-property: width, background-color;
+            -moz-transition-property: width, background-color;
+            -ms-transition-property: width, background-color;
+            -o-transition-property: width, background-color;
+            -webkit-transition-property: width, background-color;
+            width: 100%;
+            .bar {
+              // background: $PrimaryColor;
+              background-image: linear-gradient(to left, #fff, #abd0c8);
+              border-radius: 8px;
+              padding: 1rem;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-family: "regular";
+              color: #3f3f44;
+            }
+            .percent {
+              color: #828282;
+              font-family: "regular";
+            }
           }
-          .percent {
-            color: #828282;
+        }
+      }
+      .region_project{
+        margin: 3rem 0;
+        h5 {
+          font-family: "semibold";
+          color: #011c1e;
+          margin-bottom: 0;
+        }
+        .dropdown-toggle{
+          font-family: "semibold";
+          color: #595959;
+        }
+        .dropdown-menu{
+          .dropdown-item{
+            text-align: start;
             font-family: "regular";
+            font-size: .8rem;
           }
+        }
+        img{
+          margin: 1rem auto 0;
+          width: 60%;
+          display: block;
+        }
+        table{
+          thead{
+            tr{
+              th{
+                font-family: "semibold";
+                color: #595959;
+                font-weight: 100;
+                font-size: .8rem;
+              }
+            }
+          }
+          tbody{
+            tr{
+              td{
+                font-family: "semibold";
+                color: #102B21;
+                font-weight: 100;
+                font-size: .9rem;
+                border-bottom-width: 0px;
+              }
+            }
+          }
+        }
+      }
+      .accuracy_projects{
+        margin: 3rem 0;
+        h5 {
+          font-family: "semibold";
+          color: #011c1e;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+        .card_accuracy_projects{
+
         }
       }
     }

@@ -45,4 +45,19 @@
     border-radius: 50%;
     margin: 0 0.5rem;
   }
+  .dropdown-menu.show{
+    padding: 0;
+  }
+  .dropdown-item{
+    text-align: start;
+    font-family: "regular";
+    font-size: .8rem;
+    margin: .5rem 0;
+    cursor: pointer;
+    img{
+      width: 25px;
+      height: 25px;
+      margin-inline-end: .5rem;
+    }
+  }
 }

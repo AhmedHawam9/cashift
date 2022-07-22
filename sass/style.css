@@ -64,6 +64,22 @@
   border-radius: 50%;
   margin: 0 0.5rem;
 }
+.navbar .dropdown-menu.show {
+  padding: 0;
+}
+.navbar .dropdown-item {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.navbar .dropdown-item img {
+  width: 25px;
+  height: 25px;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
 
 .sidebar.open {
   transition: 0.7s;
@@ -201,8 +217,8 @@
   width: 100%;
   position: relative;
 }
-.index_cards .btn:hover {
-  border: none;
+.index_cards .btn:hover, .index_cards .btn:focus, .index_cards .btn:active {
+  border-color: transparent;
 }
 .index_cards .content {
   padding: 1.5rem 3rem;
@@ -466,53 +482,57 @@
   font-family: "semibold";
   font-size: 0.9rem;
 }
-.index_cards .content .best_job h5 {
+.index_cards .content .left_content {
+  background-color: #fcfcfc;
+  padding: 1rem;
+}
+.index_cards .content .left_content .best_job h5 {
   font-family: "semibold";
   color: #011c1e;
   margin-bottom: 0;
 }
-.index_cards .content .best_job .card_best_job {
+.index_cards .content .left_content .best_job .card_best_job {
   display: flex;
   align-items: center;
   margin-top: 2rem;
 }
-.index_cards .content .best_job .card_best_job img {
+.index_cards .content .left_content .best_job .card_best_job img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   -webkit-margin-end: 1rem;
           margin-inline-end: 1rem;
 }
-.index_cards .content .best_job .card_best_job .details_best_job {
+.index_cards .content .left_content .best_job .card_best_job .details_best_job {
   width: 60%;
 }
-.index_cards .content .best_job .card_best_job .details_best_job h6 {
+.index_cards .content .left_content .best_job .card_best_job .details_best_job h6 {
   font-family: "semibold";
   color: #102b21;
   margin-bottom: 0.5rem;
 }
-.index_cards .content .best_job .card_best_job .details_best_job span {
+.index_cards .content .left_content .best_job .card_best_job .details_best_job span {
   margin-bottom: 0;
   font-family: "light";
   color: #828282;
 }
-.index_cards .content .best_job .card_best_job p {
+.index_cards .content .left_content .best_job .card_best_job p {
   margin-bottom: 0;
   color: #828282;
   font-family: "semibold";
 }
-.index_cards .content .best_project {
+.index_cards .content .left_content .best_project {
   margin-top: 3rem;
 }
-.index_cards .content .best_project h5 {
+.index_cards .content .left_content .best_project h5 {
   font-family: "semibold";
   color: #011c1e;
   margin-bottom: 0;
 }
-.index_cards .content .best_project .card_project {
+.index_cards .content .left_content .best_project .card_project {
   margin-top: 3rem;
 }
-.index_cards .content .best_project .card_project .percentage_bar {
+.index_cards .content .left_content .best_project .card_project .percentage_bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -531,17 +551,61 @@
   -webkit-transition-property: width, background-color;
   width: 100%;
 }
-.index_cards .content .best_project .card_project .percentage_bar .bar {
-  background-image: linear-gradient(to left, #fff, #ABD0C8);
+.index_cards .content .left_content .best_project .card_project .percentage_bar .bar {
+  background-image: linear-gradient(to left, #fff, #abd0c8);
   border-radius: 8px;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "regular";
-  color: #3F3F44;
+  color: #3f3f44;
 }
-.index_cards .content .best_project .card_project .percentage_bar .percent {
+.index_cards .content .left_content .best_project .card_project .percentage_bar .percent {
   color: #828282;
   font-family: "regular";
+}
+.index_cards .content .left_content .region_project {
+  margin: 3rem 0;
+}
+.index_cards .content .left_content .region_project h5 {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 0;
+}
+.index_cards .content .left_content .region_project .dropdown-toggle {
+  font-family: "semibold";
+  color: #595959;
+}
+.index_cards .content .left_content .region_project .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.index_cards .content .left_content .region_project img {
+  margin: 1rem auto 0;
+  width: 60%;
+  display: block;
+}
+.index_cards .content .left_content .region_project table thead tr th {
+  font-family: "semibold";
+  color: #595959;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+.index_cards .content .left_content .region_project table tbody tr td {
+  font-family: "semibold";
+  color: #102B21;
+  font-weight: 100;
+  font-size: 0.9rem;
+  border-bottom-width: 0px;
+}
+.index_cards .content .left_content .accuracy_projects {
+  margin: 3rem 0;
+}
+.index_cards .content .left_content .accuracy_projects h5 {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 2rem;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

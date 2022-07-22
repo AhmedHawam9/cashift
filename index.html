@@ -14,6 +14,7 @@
   <!-- ? Main CSS -->
 
   <!-- ? Custom CSS -->
+  <link rel="stylesheet" href="css/circle.css" />
   <!-- ? Custom CSS -->
 
   <!-- ? Main JavaScript -->
@@ -121,7 +122,18 @@
                 <!-- lang -->
                 <i class="fa-solid fa-earth-americas px-2"></i>
               </a>
-
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item">
+                    <img src="./media/image/saudi-arabia.png" alt="saudi-arabia">
+                    عربي
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="./media/image/united-kingdom.png" alt="united-kingdom">
+                    إنجليزي
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="dropdown d-inline-block">
@@ -130,7 +142,7 @@
               <img src="./media/image/7w7w.jpg" class="admin_img" alt="person" />
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
             </ul>
           </div>
         </div>
@@ -156,6 +168,8 @@
           <!-- ======= End When the content is empty ======= -->
 
           <!-- ======= Start When there is content ======= -->
+
+          <!-- Start right content -->
           <div class="col-md-8 col-12 px-4">
             <!-- Start statistics section -->
             <div class="statistics">
@@ -609,105 +623,183 @@
             </div>
             <!-- ======= End employment rates ======= -->
           </div>
-          <div class="col-md-4 col-12 px-4">
-            <!-- Start best performance job -->
-            <div class="best_job">
-              <h5>الوظائف الأفضل اداء</h5>
-              <!-- Start Card best job -->
-              <div class="card_best_job">
-                <img src="./media/image/best1.png" alt="best">
-                <div class="details_best_job">
-                  <h6>مصمم تجربة مستخدم باستخدام فيجما</h6>
-                  <span>منذ شهرين</span>
-                </div>
-                <p>2,440 متقدم</p>
-              </div>
-              <!-- End Card best job -->
+          <!-- End right content -->
 
-              <!-- Start Card best job -->
-              <div class="card_best_job">
-                <img src="./media/image/best2.png" alt="best">
-                <div class="details_best_job">
-                  <h6>مصور فوتوغرافي</h6>
-                  <span>منذ شهرين</span>
-                </div>
-                <p>2,440 متقدم</p>
-              </div>
-              <!-- End Card best job -->
-
-              <!-- Start Card best job -->
-              <div class="card_best_job">
-                <img src="./media/image/best3.png" alt="best">
-                <div class="details_best_job">
-                  <h6>مصور فوتوغرافي</h6>
-                  <span>منذ شهرين</span>
-                </div>
-                <p>2,440 متقدم</p>
-              </div>
-              <!-- End Card best job -->
-            </div>
-            <!-- End best performance job -->
-
-            <!-- Start best performance project -->
-            <div class="best_project">
-              <h5>أفضل المشاريع تنفيذا</h5>
-              <!-- Start Card project -->
-              <div class="card_project">
-                <div class="percentage_bar" data-percent="90%">
-                  <div class="bar">
-                    <div class="title">مشروع ال 1000 مصمم</div>
-                    <div class="number_person">
-                      <i class="fa-solid fa-people-group"></i>
-                      <span>900</span>
-                    </div>
+          <!-- Start left content -->
+          <div class="col-md-4 col-12">
+            <div class="left_content">
+              <!-- Start best performance job -->
+              <div class="best_job">
+                <h5>الوظائف الأفضل اداء</h5>
+                <!-- Start Card best job -->
+                <div class="card_best_job">
+                  <img src="./media/image/best1.png" alt="best">
+                  <div class="details_best_job">
+                    <h6>مصمم تجربة مستخدم باستخدام فيجما</h6>
+                    <span>منذ شهرين</span>
                   </div>
-                  <div class="percent">90%</div>
+                  <p>2,440 متقدم</p>
                 </div>
-              </div>
-              <!-- End Card project -->
+                <!-- End Card best job -->
 
-              <!-- Start Card project -->
-              <div class="card_project">
-                <div class="percentage_bar" data-percent="70%">
-                  <div class="bar">
-                    <div class="title">مشروع ال 1000 مصمم</div>
-                    <div class="number_person">
-                      <i class="fa-solid fa-people-group"></i>
-                      <span>900</span>
-                    </div>
+                <!-- Start Card best job -->
+                <div class="card_best_job">
+                  <img src="./media/image/best2.png" alt="best">
+                  <div class="details_best_job">
+                    <h6>مصور فوتوغرافي</h6>
+                    <span>منذ شهرين</span>
                   </div>
-                  <div class="percent">70%</div>
+                  <p>2,440 متقدم</p>
                 </div>
-              </div>
-              <!-- End Card project -->
+                <!-- End Card best job -->
 
-              <!-- Start Card project -->
-              <div class="card_project">
-                <div class="percentage_bar" data-percent="50%">
-                  <div class="bar">
-                    <div class="title">مشروع ال 1000 مصمم</div>
-                    <div class="number_person">
-                      <i class="fa-solid fa-people-group"></i>
-                      <span>900</span>
-                    </div>
+                <!-- Start Card best job -->
+                <div class="card_best_job">
+                  <img src="./media/image/best3.png" alt="best">
+                  <div class="details_best_job">
+                    <h6>مصور فوتوغرافي</h6>
+                    <span>منذ شهرين</span>
                   </div>
-                  <div class="percent">50%</div>
+                  <p>2,440 متقدم</p>
                 </div>
+                <!-- End Card best job -->
               </div>
-              <!-- End Card project -->
-              <script>
-                $(document).ready(function () {
-                  $('.percentage_bar').each(function () {
-                    $(this).find('.bar').animate({
-                      width: $(this).attr('data-percent')
-                    }, 3000);
+              <!-- End best performance job -->
+
+              <!-- Start best performance project -->
+              <div class="best_project">
+                <h5>أفضل المشاريع تنفيذا</h5>
+                <!-- Start Card project -->
+                <div class="card_project">
+                  <div class="percentage_bar" data-percent="90%">
+                    <div class="bar">
+                      <div class="title">مشروع ال 1000 مصمم</div>
+                      <div class="number_person">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>900</span>
+                      </div>
+                    </div>
+                    <div class="percent">90%</div>
+                  </div>
+                </div>
+                <!-- End Card project -->
+
+                <!-- Start Card project -->
+                <div class="card_project">
+                  <div class="percentage_bar" data-percent="70%">
+                    <div class="bar">
+                      <div class="title">مشروع ال 1000 مصمم</div>
+                      <div class="number_person">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>900</span>
+                      </div>
+                    </div>
+                    <div class="percent">70%</div>
+                  </div>
+                </div>
+                <!-- End Card project -->
+
+                <!-- Start Card project -->
+                <div class="card_project">
+                  <div class="percentage_bar" data-percent="50%">
+                    <div class="bar">
+                      <div class="title">مشروع ال 1000 مصمم</div>
+                      <div class="number_person">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>900</span>
+                      </div>
+                    </div>
+                    <div class="percent">50%</div>
+                  </div>
+                </div>
+                <!-- End Card project -->
+                <script>
+                  $(document).ready(function () {
+                    $('.percentage_bar').each(function () {
+                      $(this).find('.bar').animate({
+                        width: $(this).attr('data-percent')
+                      }, 3000);
+                    });
                   });
-                });
-              </script>
+                </script>
+                <!-- End best performance project -->
+              </div>
               <!-- End best performance project -->
+
+              <!-- Start Region project -->
+              <div class="region_project">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5>أماكن مشاريع العمل</h5>
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      السعودية
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">السعودية</a></li>
+                      <li><a class="dropdown-item" href="#">مصر</a></li>
+                      <li><a class="dropdown-item" href="#">الامارات</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <img src="./media/image/map.png" alt="map">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">المدينة</th>
+                      <th scope="col">عدد المشاريع</th>
+                      <th scope="col">عدد الموظفين</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>الرياض</td>
+                      <td>22</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>الدمام</td>
+                      <td>50</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>الخبر</td>
+                      <td>60</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>المدينة</td>
+                      <td>22</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>مكة</td>
+                      <td>22</td>
+                      <td>200</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- End Region project -->
+
+              <!-- Start accuracy in completing projects -->
+              <div class="accuracy_projects">
+                <h5>الدقة في انجاز المشاريع</h5>
+                <div class="card_accuracy_projects">
+                  <div class="c100 p50">
+                    <span>50%</span>
+                    <div class="slice">
+                      <div class="bar"></div>
+                      <div class="fill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End accuracy in completing projects -->
             </div>
-            <!-- ======= End When there is content ======= -->
           </div>
+          <!-- End left content -->
+          <!-- ======= End When there is content ======= -->
       </section>
       <!-- ======= End Content ======= -->
     </section>
