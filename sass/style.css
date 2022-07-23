@@ -185,6 +185,47 @@
   margin: 0 5%;
   color: #fff;
 }
+.sidebar .contact_us {
+  width: 80%;
+  margin: 5rem auto 0;
+  padding-top: 1.8rem;
+  padding-bottom: 1.2rem;
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .contact_us svg {
+  position: absolute;
+  top: -12%;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: #21765e;
+  background-color: #E8EFED;
+}
+.sidebar .contact_us p {
+  font-family: "semibold";
+  color: #171717;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.sidebar .contact_us .btn {
+  background-color: #21765e;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 15px;
+  width: 80%;
+  margin: 1rem auto 0;
+  font-family: "semibold";
+}
+.sidebar .contact_us .btn:hover {
+  border-color: transparent;
+}
 
 /* ====== small laptop style ====== */
 @media only screen and (max-width: 1200px) {
@@ -211,11 +252,76 @@
     width: 30%;
   }
 }
+table tbody tr td {
+  vertical-align: middle;
+}
+
+.swal2-title {
+  font-family: "semibold";
+  font-size: 1.5rem !important;
+  margin: 0 !important;
+}
+
+.swal2-html-container {
+  font-family: "regular";
+  font-size: 0.9rem !important;
+  margin: 0 !important;
+}
+
+.swal2-container.swal2-center > .swal2-popup {
+  padding: 2rem;
+}
+
+.show_project_swal {
+  background-color: #21765e;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "semibold";
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+}
+
+.show_project_swal:active, .show_project_swal:focus {
+  background-color: #21765e;
+  border-color: transparent;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "semibold";
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+}
+
+.show_project_swal:hover {
+  border-color: transparent;
+  background-color: #21765e;
+  color: #fff;
+}
+
 .index_cards {
   padding: 0;
   background-color: #fff;
   width: 100%;
   position: relative;
+}
+.index_cards div.dataTables_wrapper div.dataTables_filter input {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+.index_cards div.dataTables_wrapper div.dataTables_length select {
+  margin: 0 0.5rem;
+}
+.index_cards .active > .page-link,
+.index_cards .page-link.active {
+  background-color: #21765e;
+  border-color: #21765e;
+}
+.index_cards .pagination {
+  --bs-pagination-border-radius: 0;
+}
+.index_cards .title_head {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 0;
 }
 .index_cards .btn:hover, .index_cards .btn:focus, .index_cards .btn:active {
   border-color: transparent;
@@ -223,11 +329,18 @@
 .index_cards .content {
   padding: 1.5rem 3rem;
 }
+.index_cards .content .title_page {
+  font-family: "semibold";
+  border-bottom: 1px solid #ebeaed;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
 .index_cards .content .empty {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10rem;
 }
 .index_cards .content .empty h6 {
   color: #102b21;
@@ -276,6 +389,44 @@
   margin-bottom: 2rem;
   padding: 0.75rem 1.5rem;
   float: left;
+}
+.index_cards .content .welcome .modal .modal-dialog {
+  max-width: 45%;
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.index_cards .content .welcome .modal .modal-dialog .modal-header {
+  border-bottom: none;
+}
+.index_cards .content .welcome .modal .modal-dialog .modal-header .modal-title {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.index_cards .content .welcome .modal .modal-dialog .modal-header .modal-title span {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+.index_cards .content .welcome .modal .modal-dialog table {
+  margin-top: 2rem !important;
+}
+.index_cards .content .welcome .modal .modal-dialog table td {
+  font-family: "regular";
+  color: #011c1e;
+  font-size: 0.8rem;
+}
+.index_cards .content .welcome .modal .modal-dialog table .title {
+  font-family: "semibold";
+  font-size: 0.9rem;
+}
+.index_cards .content .welcome .modal .modal-dialog table .menu {
+  font-size: 1rem;
+}
+.index_cards .content .welcome .modal .modal-dialog table .menu .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .welcome .modal .modal-dialog table .menu .dropdown-item {
+  font-size: 0.8rem;
+  text-align: start;
 }
 .index_cards .content .statistics {
   display: flex;
@@ -595,7 +746,7 @@
 }
 .index_cards .content .left_content .region_project table tbody tr td {
   font-family: "semibold";
-  color: #102B21;
+  color: #102b21;
   font-weight: 100;
   font-size: 0.9rem;
   border-bottom-width: 0px;
@@ -608,4 +759,770 @@
   color: #011c1e;
   margin-bottom: 2rem;
   text-align: center;
+}
+.index_cards .content .projects {
+  margin-bottom: 3rem;
+}
+.index_cards .content .projects .statistics .card_statistics {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+.index_cards .content .projects .statistics .card_statistics p {
+  margin-bottom: 0;
+  -webkit-margin-start: 1.5rem;
+          margin-inline-start: 1.5rem;
+  color: #102b21;
+}
+.index_cards .content .projects .statistics .card_statistics .icon {
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+.index_cards .content .projects .statistics .card_statistics:nth-child(1) .icon {
+  color: #68245d;
+  background-color: rgba(104, 36, 93, 0.11);
+}
+.index_cards .content .projects .statistics .card_statistics:nth-child(2) .icon {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.11);
+}
+.index_cards .content .projects .statistics .card_statistics:nth-child(3) .icon {
+  color: #685824;
+  background-color: rgba(104, 88, 36, 0.11);
+}
+.index_cards .content .projects .statistics .card_statistics:nth-child(4) .icon {
+  color: #3139a1;
+  background-color: rgba(49, 57, 161, 0.11);
+}
+.index_cards .content .projects .statistics .card_statistics .arrow {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+}
+.index_cards .content .projects .statistics .card_statistics span {
+  text-align: center;
+  display: block;
+  margin-top: 0.5rem;
+}
+.index_cards .content .completion_projects {
+  margin: 2rem 0;
+  border: 1px solid #ebeaed;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.index_cards .content .completion_projects h5 {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 2rem;
+}
+.index_cards .content .completion_projects .progress_bar_project {
+  margin-bottom: 1rem;
+}
+.index_cards .content .completion_projects .progress_bar_project .name,
+.index_cards .content .completion_projects .progress_bar_project .percent {
+  font-family: "semibold";
+  color: #102b21;
+  margin-bottom: 0.5rem;
+}
+.index_cards .content .completion_projects .progress_bar_project .percentage_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  -webkit-transition: 0.4s linear;
+  transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  -webkit-transition-property: width, background-color;
+  width: 100%;
+}
+.index_cards .content .completion_projects .progress_bar_project .percentage_bar .bar {
+  background: #21765e;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "regular";
+  color: #3f3f44;
+}
+.index_cards .content .completion_projects .progress_bar_project .percentage_bar .percent {
+  color: #828282;
+  font-family: "regular";
+}
+.index_cards .content .completion_projects .progress_bar_project:nth-child(2) .percentage_bar .bar {
+  background-color: #3139a1;
+}
+.index_cards .content .completion_projects .progress_bar_project:nth-child(3) .percentage_bar .bar {
+  background-color: #68245d;
+}
+.index_cards .content .completion_projects .progress_bar_project:nth-child(4) .percentage_bar .bar {
+  background-color: #685824;
+}
+.index_cards .content .completion_projects .progress_bar_project:nth-child(5) .percentage_bar .bar {
+  background-color: #d25656;
+}
+.index_cards .content .available_job {
+  margin: 2rem 0;
+  border: 1px solid #ebeaed;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.index_cards .content .available_job .show_all {
+  color: #21765e;
+  text-decoration: none;
+  font-family: "semibold";
+}
+.index_cards .content .available_job .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .available_job .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.8rem;
+  color: #011c1e;
+}
+.index_cards .content .available_job h5 {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 0;
+}
+.index_cards .content .available_job .available_job_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #bebebe;
+  padding: 1rem 0;
+}
+.index_cards .content .available_job .available_job_card:last-child {
+  border-bottom: none;
+  padding: 1rem 0 0;
+}
+.index_cards .content .available_job .available_job_card .details_available_job .title {
+  font-family: "semibold";
+  color: #102b21;
+}
+.index_cards .content .available_job .available_job_card .details_available_job .name {
+  font-family: "regular";
+  color: #828282;
+  font-size: 0.8rem;
+}
+.index_cards .content .tableAllProjects {
+  font-family: "regular";
+}
+.index_cards .content .tableAllProjects table thead {
+  background-color: #fafafb;
+}
+.index_cards .content .tableAllProjects table thead tr th {
+  text-align: start;
+  padding: 1rem 26px;
+  font-family: "regular";
+  color: #828c8d;
+  font-size: 0.8rem;
+}
+.index_cards .content .tableAllProjects table tbody tr td {
+  text-align: start;
+  font-family: "regular";
+  color: #596364;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+.index_cards .content .tableAllProjects table tbody tr td .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .tableAllProjects table tbody tr td .dropdown-menu .dropdown-item {
+  line-height: 1.5;
+  text-align: start;
+  font-size: 0.8rem;
+}
+.index_cards .content .tableAllProjects table tbody tr td .status {
+  display: block;
+  width: 80px;
+  text-align: center;
+  padding: 0;
+  border-radius: 5px;
+}
+.index_cards .content .tableAllProjects table tbody tr td .new {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.08);
+}
+.index_cards .content .tableAllProjects table tbody tr td .active {
+  color: #68245d;
+  background-color: rgba(104, 36, 93, 0.08);
+}
+.index_cards .content .tableAllProjects table tbody tr td .end {
+  color: #d25656;
+  background-color: rgba(210, 86, 86, 0.08);
+}
+.index_cards .content .tableAllProjects table tbody tr .title {
+  font-family: "semibold";
+  color: #011c1e;
+  font-size: 1rem;
+}
+.index_cards .content .tableAllProjects table tbody tr .reject_modal img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+.index_cards .content .tableAllProjects table tbody tr .reject_modal h5 {
+  font-family: "semibold";
+  color: #102b21;
+  text-align: center;
+}
+.index_cards .content .tableAllProjects table tbody tr .reject_modal p {
+  font-family: "regular";
+  color: #828282;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.index_cards .content .tableAllProjects table tbody tr .reject_modal .submit {
+  font-family: "semibold";
+  border-radius: 10px;
+  background-color: #21765e;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.75rem 2rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .tableAllProjects table tbody tr .reject_modal .cancel {
+  font-family: "semibold";
+  border-radius: 10px;
+  background-color: rgba(36, 104, 79, 0.11);
+  color: #21765e;
+  font-size: 0.8rem;
+  padding: 0.75rem 2rem;
+}
+.index_cards .content .add_project .title_step {
+  font-family: "regular";
+  color: #011c1e;
+}
+.index_cards .content .add_project .text_step {
+  display: block;
+  font-family: "regular";
+  color: #828282;
+  font-size: 0.8rem;
+  width: 60%;
+}
+.index_cards .content .add_project .form-check {
+  width: 85%;
+  font-family: "regular";
+  color: #595959;
+  margin-top: 1rem;
+}
+.index_cards .content .add_project .form-check .form-check-input {
+  float: right;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+  transform: scale(1.3);
+}
+.index_cards .content .add_project .form-check .form-check-input:checked {
+  background-color: #21765e;
+  border-color: #21765e;
+}
+.index_cards .content .add_project .form-check .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(47, 118, 95, 0.15);
+}
+.index_cards .content .add_project .form-check .contract {
+  color: #21765e;
+  text-decoration: none;
+  font-family: "semibold";
+}
+.index_cards .content .add_project .work_width {
+  display: flex;
+  width: 85%;
+}
+.index_cards .content .add_project .work_width .form-group {
+  width: 50%;
+}
+.index_cards .content .add_project .work_width .form-group:first-child {
+  -webkit-margin-end: 2%;
+          margin-inline-end: 2%;
+}
+.index_cards .content .add_project .work_width .form-group .bootstrap-select .dropdown-menu {
+  width: 100%;
+}
+.index_cards .content .add_project .income {
+  display: flex;
+  width: 85%;
+}
+.index_cards .content .add_project .income .form-group:first-child {
+  width: 75%;
+  -webkit-margin-end: 2%;
+          margin-inline-end: 2%;
+}
+.index_cards .content .add_project .income .form-group:last-child {
+  width: 25%;
+}
+.index_cards .content .add_project .income .form-group .dropdown-toggle {
+  -webkit-padding-start: 0.75rem;
+          padding-inline-start: 0.75rem;
+}
+.index_cards .content .add_project .income .form-group .bootstrap-select .dropdown-menu {
+  width: 100%;
+}
+.index_cards .content .add_project .income .invisable {
+  visibility: hidden;
+}
+.index_cards .content .add_project .form-group {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 85%;
+}
+.index_cards .content .add_project .form-group label {
+  font-family: "regular";
+  color: #011c1e;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.index_cards .content .add_project .form-group input {
+  font-family: "regular";
+  font-size: 0.8rem;
+  color: #bfbfbf;
+  padding: 0.75rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+}
+.index_cards .content .add_project .form-group textarea {
+  font-family: "regular";
+  font-size: 0.8rem;
+  color: #bfbfbf;
+  padding: 0.75rem;
+  resize: none;
+}
+.index_cards .content .add_project .form-group .date {
+  -webkit-padding-start: 0.75rem;
+          padding-inline-start: 0.75rem;
+}
+.index_cards .content .add_project .form-group .dropdown-toggle {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.8rem;
+  padding: 0.75rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+  border: 1px solid #ced4da;
+  background-color: transparent;
+}
+.index_cards .content .add_project .form-group .dropdown-toggle .filter-option-inner-inner {
+  text-align: start;
+}
+.index_cards .content .add_project .form-group .dropdown-menu {
+  min-width: 85%;
+}
+.index_cards .content .add_project .form-group .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.9rem;
+}
+.index_cards .content .add_project .form-group svg {
+  position: absolute;
+  top: 60%;
+  right: 0.5rem;
+  color: #bfbfbf;
+  z-index: 99;
+}
+.index_cards .content .add_project .form-group .location {
+  display: inline-block;
+  border: 0.7px solid #cccccc;
+  border-radius: 5px;
+  padding: 1.2rem 1.5rem;
+}
+.index_cards .content .add_project .form-group .location svg {
+  stroke: #21765e;
+  stroke-width: 40px;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: unset;
+  font-size: 1rem;
+}
+.index_cards .content .add_project .form-group .lat {
+  display: inline-block;
+  font-family: "regular";
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+}
+.index_cards .content .add_project .buttons {
+  width: 85%;
+  margin-top: 2rem;
+}
+.index_cards .content .add_project .buttons .submit {
+  background-color: #21765e;
+  color: #fff;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.75rem 2rem;
+}
+.index_cards .content .add_project .buttons .cancel {
+  background-color: transparent;
+  border: 1px solid #21765e;
+  color: #21765e;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.75rem 2rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .add_project .buttons .modal .modal-body {
+  padding: 3rem;
+}
+.index_cards .content .add_project .buttons .modal img {
+  display: block;
+  margin: 0 auto;
+}
+.index_cards .content .add_project .buttons .modal h5 {
+  font-family: "semibold";
+  color: #102b21;
+  text-align: center;
+  margin: 1rem 0;
+}
+.index_cards .content .add_project .buttons .modal p {
+  font-family: "semibold";
+  color: #828282;
+  text-align: center;
+}
+.index_cards .content .add_project .cancel_project {
+  margin: 2rem auto 0;
+}
+.index_cards .content .add_project .cancel_project .cancel {
+  -webkit-margin-end: 0rem;
+          margin-inline-end: 0rem;
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+.index_cards .content .add_project .details_official {
+  margin-top: 5rem;
+}
+.index_cards .content .single_project h5 {
+  font-family: "semibold";
+  color: #102b21;
+  margin-bottom: 2rem;
+}
+.index_cards .content .single_project .work_btn {
+  background-color: #21765e;
+  color: #fff;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.65rem 2rem;
+  border-radius: 10px;
+}
+.index_cards .content .single_project .nav-tabs .nav-item .nav-link {
+  border: none;
+  font-family: "semibold";
+  color: #828c8d;
+  padding: 0.7rem 2rem;
+  font-size: 0.9rem;
+}
+.index_cards .content .single_project .nav-tabs .nav-item .nav-link.active {
+  border-bottom: 3px solid #21765e;
+  color: #011c1e;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project {
+  background-color: #fafafa;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project h6 {
+  font-family: "semibold";
+  color: #102b21;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .details_project_location {
+  display: flex;
+  border-bottom: 1px solid #ebeaed;
+  padding: 1rem 0 2rem;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .details_project_location .card_details_project {
+  width: 20%;
+  padding: 0 2%;
+  -webkit-border-end: 0.5px solid #ebeaed;
+          border-inline-end: 0.5px solid #ebeaed;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .details_project_location .card_details_project:last-child {
+  -webkit-border-end: none;
+          border-inline-end: none;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .details_project_location .card_details_project span {
+  font-family: "regular";
+  color: #828282;
+  font-size: 0.8rem;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .details_project_location .card_details_project p {
+  font-family: "semibold";
+  color: #102b21;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .sub_location_title {
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .sub_location {
+  display: flex;
+  padding: 1rem 0;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .sub_location .card_details_project {
+  width: 20%;
+  padding: 0 2%;
+  -webkit-border-end: 0.5px solid #ebeaed;
+          border-inline-end: 0.5px solid #ebeaed;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .sub_location .card_details_project:last-child {
+  -webkit-border-end: none;
+          border-inline-end: none;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .sub_location .card_details_project span {
+  font-family: "regular";
+  color: #828282;
+  font-size: 0.8rem;
+}
+.index_cards .content .single_project .tab-content .tab-pane .details_project .sub_location .card_details_project p {
+  font-family: "semibold";
+  color: #102b21;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.index_cards .content .single_project .tab-content .tab-pane .employment_resignation {
+  margin: 2rem 0;
+  border: 1px solid #ebeaed;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.index_cards .content .single_project .tab-content .tab-pane .employment_resignation h5 {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 1rem;
+}
+.index_cards .content .single_project .tab-content .chances_work {
+  font-family: "regular";
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .chances_work .dataTables_wrapper {
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .chances_work table thead tr th {
+  text-align: start;
+  font-size: 0.8rem;
+  color: #828c8d;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td {
+  font-family: "semibold";
+  color: #011c1e;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .dropdown-menu .dropdown-item {
+  font-size: 0.8rem;
+  text-align: start;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .status {
+  display: block;
+  width: 80px;
+  text-align: center;
+  padding: 0.3rem 0;
+  border-radius: 5px;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .new {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.08);
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .active {
+  color: #68245d;
+  background-color: rgba(104, 36, 93, 0.08);
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .cancel {
+  color: #685824;
+  background-color: rgba(104, 88, 36, 0.08);
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .end {
+  color: #3139a1;
+  background-color: rgba(49, 57, 161, 0.08);
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .fail {
+  color: #d25656;
+  background-color: rgba(210, 86, 86, 0.08);
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td.select-checkbox:after {
+  margin-top: -10px;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td.select-checkbox:before {
+  top: 2.2em;
+}
+.index_cards .content .single_project .tab-content .chances_work .filter {
+  width: 15%;
+  display: inline-block;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .single_project .tab-content .chances_work .filter .dropdown-toggle {
+  border: 1px solid #ced4da;
+  background-color: transparent;
+}
+.index_cards .content .single_project .tab-content .chances_work .filter .dropdown-toggle .filter-option-inner {
+  text-align: start;
+}
+.index_cards .content .single_project .tab-content .chances_work .filter .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-size: 0.8rem;
+}
+.index_cards .content .single_project .tab-content .team_work {
+  font-family: "regular";
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .team_work .dataTables_wrapper {
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .team_work table thead tr th {
+  text-align: start;
+  font-size: 0.8rem;
+  color: #828c8d;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td {
+  font-family: "semibold";
+  color: #011c1e;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .details_employee p {
+  margin-bottom: 0.2rem;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .img_employee {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td svg {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .dropdown-menu .dropdown-item {
+  font-size: 0.8rem;
+  text-align: start;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .status {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 0.3rem 0;
+  border-radius: 5px;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .full-time {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.08);
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .part-time {
+  color: #68245d;
+  background-color: rgba(104, 36, 93, 0.08);
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .hour-system {
+  color: #685824;
+  background-color: rgba(104, 88, 36, 0.08);
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td.select-checkbox:after {
+  margin-top: -10px;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td.select-checkbox:before {
+  top: 2.2em;
+}
+.index_cards .content .single_project .tab-content .team_work .filter {
+  width: 15%;
+  display: inline-block;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .single_project .tab-content .team_work .filter .dropdown-toggle {
+  border: 1px solid #ced4da;
+  background-color: transparent;
+}
+.index_cards .content .single_project .tab-content .team_work .filter .dropdown-toggle .filter-option-inner {
+  text-align: start;
+}
+.index_cards .content .single_project .tab-content .team_work .filter .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-size: 0.8rem;
+}
+.index_cards .content .single_project .tab-content .supervisors_project {
+  font-family: "regular";
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .supervisors_project .dataTables_wrapper {
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table thead tr th {
+  text-align: start;
+  font-size: 0.8rem;
+  color: #828c8d;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td {
+  font-family: "semibold";
+  color: #011c1e;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .details_employee p {
+  margin-bottom: 0.2rem;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .img_employee {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td svg {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .dropdown-menu .dropdown-item {
+  font-size: 0.8rem;
+  text-align: start;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td.select-checkbox:after {
+  margin-top: -10px;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td.select-checkbox:before {
+  top: 2.2em;
+}
+.index_cards .content .single_project .tab-content .supervisors_project .filter {
+  width: 15%;
+  display: inline-block;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .single_project .tab-content .supervisors_project .filter .dropdown-toggle {
+  border: 1px solid #ced4da;
+  background-color: transparent;
+}
+.index_cards .content .single_project .tab-content .supervisors_project .filter .dropdown-toggle .filter-option-inner {
+  text-align: start;
+}
+.index_cards .content .single_project .tab-content .supervisors_project .filter .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

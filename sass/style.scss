@@ -24,9 +24,71 @@ $SecondColor: #68245d;
 @import "./navBar.scss";
 @import "./sideBar.scss";
 
+table tbody tr td{
+  vertical-align: middle;
+}
+.swal2-title {
+  font-family: "semibold";
+  font-size: 1.5rem !important;
+  margin: 0 !important;
+}
+.swal2-html-container {
+  font-family: "regular";
+  font-size: 0.9rem !important;
+  margin: 0 !important;
+}
+.swal2-container.swal2-center > .swal2-popup {
+  padding: 2rem;
+}
+.show_project_swal {
+  background-color: $PrimaryColor;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "semibold";
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+}
+.show_project_swal {
+  &:active,
+  &:focus {
+    background-color: $PrimaryColor;
+    border-color: transparent;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "semibold";
+    padding: 0.75rem 2rem;
+    margin-top: 1rem;
+  }
+}
+.show_project_swal:hover {
+  border-color: transparent;
+  background-color: $PrimaryColor;
+  color: #fff;
+}
 .index_cards {
+  div.dataTables_wrapper div.dataTables_filter input {
+    margin-inline-start: 1rem;
+  }
+  div.dataTables_wrapper div.dataTables_length select {
+    margin: 0 0.5rem;
+  }
+  .active > .page-link,
+  .page-link.active {
+    background-color: $PrimaryColor;
+    border-color: $PrimaryColor;
+  }
+  .pagination {
+    --bs-pagination-border-radius: 0;
+  }
+  .title_head {
+    font-family: "semibold";
+    color: #011c1e;
+    margin-bottom: 0;
+  }
   .btn {
-    &:hover, &:focus, &:active{
+    &:hover,
+    &:focus,
+    &:active {
       border-color: transparent;
     }
   }
@@ -36,11 +98,18 @@ $SecondColor: #68245d;
   position: relative;
   .content {
     padding: 1.5rem 3rem;
+    .title_page {
+      font-family: "semibold";
+      border-bottom: 1px solid #ebeaed;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
     .empty {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-top: 10rem;
       h6 {
         color: #102b21;
         margin: 1rem 0;
@@ -88,6 +157,45 @@ $SecondColor: #68245d;
         margin-bottom: 2rem;
         padding: 0.75rem 1.5rem;
         float: left;
+      }
+      .modal {
+        .modal-dialog {
+          max-width: 45%;
+          font-family: "regular";
+          font-size: 0.8rem;
+          .modal-header {
+            border-bottom: none;
+            .modal-title {
+              margin-bottom: 0;
+              font-size: 1rem;
+              span {
+                margin-inline-start: 1rem;
+              }
+            }
+          }
+          table {
+            margin-top: 2rem !important;
+            td {
+              font-family: "regular";
+              color: #011c1e;
+              font-size: 0.8rem;
+            }
+            .title {
+              font-family: "semibold";
+              font-size: 0.9rem;
+            }
+            .menu {
+              font-size: 1rem;
+              .dropdown-toggle::after {
+                content: none;
+              }
+              .dropdown-item {
+                font-size: 0.8rem;
+                text-align: start;
+              }
+            }
+          }
+        }
       }
     }
     .statistics {
@@ -381,54 +489,54 @@ $SecondColor: #68245d;
           }
         }
       }
-      .region_project{
+      .region_project {
         margin: 3rem 0;
         h5 {
           font-family: "semibold";
           color: #011c1e;
           margin-bottom: 0;
         }
-        .dropdown-toggle{
+        .dropdown-toggle {
           font-family: "semibold";
           color: #595959;
         }
-        .dropdown-menu{
-          .dropdown-item{
+        .dropdown-menu {
+          .dropdown-item {
             text-align: start;
             font-family: "regular";
-            font-size: .8rem;
+            font-size: 0.8rem;
           }
         }
-        img{
+        img {
           margin: 1rem auto 0;
           width: 60%;
           display: block;
         }
-        table{
-          thead{
-            tr{
-              th{
+        table {
+          thead {
+            tr {
+              th {
                 font-family: "semibold";
                 color: #595959;
                 font-weight: 100;
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
             }
           }
-          tbody{
-            tr{
-              td{
+          tbody {
+            tr {
+              td {
                 font-family: "semibold";
-                color: #102B21;
+                color: #102b21;
                 font-weight: 100;
-                font-size: .9rem;
+                font-size: 0.9rem;
                 border-bottom-width: 0px;
               }
             }
           }
         }
       }
-      .accuracy_projects{
+      .accuracy_projects {
         margin: 3rem 0;
         h5 {
           font-family: "semibold";
@@ -436,10 +544,864 @@ $SecondColor: #68245d;
           margin-bottom: 2rem;
           text-align: center;
         }
-        .card_accuracy_projects{
-
+        .card_accuracy_projects {
         }
       }
     }
+
+    // Project page
+    .projects {
+      margin-bottom: 3rem;
+      .statistics {
+        .card_statistics {
+          cursor: pointer;
+          position: relative;
+          text-decoration: none;
+          p {
+            margin-bottom: 0;
+            margin-inline-start: 1.5rem;
+            color: #102b21;
+          }
+          .icon {
+            padding: 0.7rem;
+            border-radius: 5px;
+          }
+          &:nth-child(1) {
+            .icon {
+              color: $SecondColor;
+              background-color: rgba(104, 36, 93, 0.11);
+            }
+          }
+          &:nth-child(2) {
+            .icon {
+              color: $PrimaryColor;
+              background-color: rgba(36, 104, 79, 0.11);
+            }
+          }
+          &:nth-child(3) {
+            .icon {
+              color: #685824;
+              background-color: rgba(104, 88, 36, 0.11);
+            }
+          }
+          &:nth-child(4) {
+            .icon {
+              color: #3139a1;
+              background-color: rgba(49, 57, 161, 0.11);
+            }
+          }
+          .arrow {
+            position: absolute;
+            left: 5%;
+            top: 45%;
+          }
+          span {
+            text-align: center;
+            display: block;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+    .completion_projects {
+      margin: 2rem 0;
+      border: 1px solid #ebeaed;
+      border-radius: 5px;
+      padding: 1rem;
+      h5 {
+        font-family: "semibold";
+        color: #011c1e;
+        margin-bottom: 2rem;
+      }
+      .progress_bar_project {
+        margin-bottom: 1rem;
+        .name,
+        .percent {
+          font-family: "semibold";
+          color: #102b21;
+          margin-bottom: 0.5rem;
+        }
+        .percentage_bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #e6e6e6;
+          border-radius: 8px;
+          margin-bottom: 15px;
+          position: relative;
+          transition: 0.4s linear;
+          -moz-transition: 0.4s linear;
+          -ms-transition: 0.4s linear;
+          -o-transition: 0.4s linear;
+          -webkit-transition: 0.4s linear;
+          transition-property: width, background-color;
+          -moz-transition-property: width, background-color;
+          -ms-transition-property: width, background-color;
+          -o-transition-property: width, background-color;
+          -webkit-transition-property: width, background-color;
+          width: 100%;
+          .bar {
+            background: $PrimaryColor;
+            border-radius: 8px;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "regular";
+            color: #3f3f44;
+          }
+          .percent {
+            color: #828282;
+            font-family: "regular";
+          }
+        }
+        &:nth-child(2) {
+          .percentage_bar {
+            .bar {
+              background-color: #3139a1;
+            }
+          }
+        }
+        &:nth-child(3) {
+          .percentage_bar {
+            .bar {
+              background-color: #68245d;
+            }
+          }
+        }
+        &:nth-child(4) {
+          .percentage_bar {
+            .bar {
+              background-color: #685824;
+            }
+          }
+        }
+        &:nth-child(5) {
+          .percentage_bar {
+            .bar {
+              background-color: #d25656;
+            }
+          }
+        }
+      }
+    }
+    .available_job {
+      .show_all {
+        color: $PrimaryColor;
+        text-decoration: none;
+        font-family: "semibold";
+      }
+      .dropdown-toggle {
+        &::after {
+          content: none;
+        }
+      }
+      .dropdown-menu {
+        .dropdown-item {
+          text-align: start;
+          font-family: "regular";
+          font-size: 0.8rem;
+          color: #011c1e;
+        }
+      }
+      margin: 2rem 0;
+      border: 1px solid #ebeaed;
+      border-radius: 5px;
+      padding: 1rem;
+      h5 {
+        font-family: "semibold";
+        color: #011c1e;
+        margin-bottom: 0;
+      }
+      .available_job_card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid #bebebe;
+        padding: 1rem 0;
+        &:last-child {
+          border-bottom: none;
+          padding: 1rem 0 0;
+        }
+        .details_available_job {
+          .title {
+            font-family: "semibold";
+            color: #102b21;
+          }
+          .name {
+            font-family: "regular";
+            color: #828282;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .tableAllProjects {
+      font-family: "regular";
+      table {
+        thead {
+          background-color: #fafafb;
+          tr {
+            th {
+              text-align: start;
+              padding: 1rem 26px;
+              font-family: "regular";
+              color: #828c8d;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              text-align: start;
+              font-family: "regular";
+              color: #596364;
+              font-size: 0.8rem;
+              vertical-align: middle;
+              .dropdown-toggle::after {
+                content: none;
+              }
+              .dropdown-menu {
+                .dropdown-item {
+                  line-height: 1.5;
+                  text-align: start;
+                  font-size: 0.8rem;
+                }
+              }
+              .status {
+                display: block;
+                width: 80px;
+                text-align: center;
+                padding: 0;
+                border-radius: 5px;
+              }
+              .new {
+                color: $PrimaryColor;
+                background-color: rgba(36, 104, 79, 0.08);
+              }
+              .active {
+                color: $SecondColor;
+                background-color: rgba(104, 36, 93, 0.08);
+              }
+              .end {
+                color: #d25656;
+                background-color: rgba(210, 86, 86, 0.08);
+              }
+            }
+            .title {
+              font-family: "semibold";
+              color: #011c1e;
+              font-size: 1rem;
+            }
+            .reject_modal {
+              img {
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+              }
+              h5 {
+                font-family: "semibold";
+                color: #102b21;
+                text-align: center;
+              }
+              p {
+                font-family: "regular";
+                color: #828282;
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+                line-height: 1.5;
+              }
+              .submit {
+                font-family: "semibold";
+                border-radius: 10px;
+                background-color: $PrimaryColor;
+                color: #fff;
+                font-size: 0.8rem;
+                padding: 0.75rem 2rem;
+                margin-inline-end: 1rem;
+              }
+              .cancel {
+                font-family: "semibold";
+                border-radius: 10px;
+                background-color: rgba(36, 104, 79, 0.11);
+                color: $PrimaryColor;
+                font-size: 0.8rem;
+                padding: 0.75rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .add_project {
+      .title_step {
+        font-family: "regular";
+        color: #011c1e;
+      }
+      .text_step {
+        display: block;
+        font-family: "regular";
+        color: #828282;
+        font-size: 0.8rem;
+        width: 60%;
+      }
+      .form-check {
+        width: 85%;
+        font-family: "regular";
+        color: #595959;
+        margin-top: 1rem;
+        .form-check-input {
+          float: right;
+          margin-inline-end: 1rem;
+          transform: scale(1.3);
+          &:checked {
+            background-color: $PrimaryColor;
+            border-color: $PrimaryColor;
+          }
+          &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(47 118 95 / 15%);
+          }
+        }
+        .contract {
+          color: $PrimaryColor;
+          text-decoration: none;
+          font-family: "semibold";
+        }
+      }
+      .work_width{
+        display: flex;
+        width: 85%;
+        .form-group {
+          width: 50%;
+          &:first-child{
+            margin-inline-end: 2%;
+          }
+          .bootstrap-select{
+            .dropdown-menu{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .income {
+        display: flex ;
+        width: 85%;
+        .form-group{
+          &:first-child {
+            width: 75%;
+            margin-inline-end: 2%;
+          }
+          &:last-child {
+            width: 25%;
+          }
+          .dropdown-toggle{
+            padding-inline-start: 0.75rem;
+          }
+          .bootstrap-select{
+            .dropdown-menu{
+              width: 100%;
+            }
+          }
+        }
+        .invisable{
+          visibility: hidden;
+        }
+      }
+      .form-group {
+        position: relative;
+        margin-top: 1.5rem;
+        width: 85%;
+        label {
+          font-family: "regular";
+          color: #011c1e;
+          margin-bottom: 0.5rem;
+          display: block;
+        }
+        input {
+          font-family: "regular";
+          font-size: 0.8rem;
+          color: #bfbfbf;
+          padding: 0.75rem;
+          padding-inline-start: 2rem;
+        }
+        textarea {
+          font-family: "regular";
+          font-size: 0.8rem;
+          color: #bfbfbf;
+          padding: 0.75rem;
+          resize: none;
+        }
+        .date{
+          padding-inline-start: 0.75rem;
+        }
+        .dropdown-toggle {
+          text-align: start;
+          font-family: "regular";
+          font-size: 0.8rem;
+          padding: 0.75rem;
+          padding-inline-start: 2rem;
+          border: 1px solid #ced4da;
+          background-color: transparent;
+          .filter-option-inner-inner {
+            text-align: start;
+          }
+        }
+        .dropdown-menu {
+          min-width: 85%;
+          .dropdown-item {
+            text-align: start;
+            font-family: "regular";
+            font-size: 0.9rem;
+          }
+        }
+        svg {
+          position: absolute;
+          top: 60%;
+          right: 0.5rem;
+          color: #bfbfbf;
+          z-index: 99;
+        }
+        .location {
+          display: inline-block;
+          border: 0.7px solid #cccccc;
+          border-radius: 5px;
+          padding: 1.2rem 1.5rem;
+          svg {
+            stroke: $PrimaryColor;
+            stroke-width: 40px;
+            color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: unset;
+            font-size: 1rem;
+          }
+        }
+        .lat {
+          display: inline-block;
+          font-family: "regular";
+          margin-inline-start: 0.5rem;
+        }
+      }
+      .buttons {
+        width: 85%;
+        margin-top: 2rem;
+        .submit {
+          background-color: $PrimaryColor;
+          color: #fff;
+          font-family: "semibold";
+          font-size: 0.8rem;
+          padding: 0.75rem 2rem;
+        }
+        .cancel {
+          background-color: transparent;
+          border: 1px solid $PrimaryColor;
+          color: $PrimaryColor;
+          font-family: "semibold";
+          font-size: 0.8rem;
+          padding: 0.75rem 2rem;
+          margin-inline-end: 1rem;
+        }
+        .modal {
+          .modal-body {
+            padding: 3rem;
+          }
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+          h5 {
+            font-family: "semibold";
+            color: #102b21;
+            text-align: center;
+            margin: 1rem 0;
+          }
+          p {
+            font-family: "semibold";
+            color: #828282;
+            text-align: center;
+          }
+        }
+      }
+      .cancel_project {
+        margin: 2rem auto 0;
+        .cancel {
+          margin-inline-end: 0rem;
+          margin-inline-start: 1rem;
+        }
+      }
+      .details_official {
+        margin-top: 5rem;
+      }
+    }
+    .single_project {
+      h5 {
+        font-family: "semibold";
+        color: #102b21;
+        margin-bottom: 2rem;
+      }
+      .work_btn {
+        background-color: $PrimaryColor;
+        color: #fff;
+        font-family: "semibold";
+        font-size: 0.8rem;
+        padding: 0.65rem 2rem;
+        border-radius: 10px;
+      }
+      .nav-tabs {
+        .nav-item {
+          .nav-link {
+            border: none;
+            font-family: "semibold";
+            color: #828c8d;
+            padding: 0.7rem 2rem;
+            font-size: 0.9rem;
+          }
+          .nav-link.active {
+            border-bottom: 3px solid $PrimaryColor;
+            color: #011c1e;
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          .details_project {
+            background-color: #fafafa;
+            border-radius: 5px;
+            margin-top: 2rem;
+            padding: 1rem;
+            h6 {
+              font-family: "semibold";
+              color: #102b21;
+            }
+            .details_project_location {
+              display: flex;
+              border-bottom: 1px solid #ebeaed;
+              padding: 1rem 0 2rem;
+              .card_details_project {
+                width: 20%;
+                padding: 0 2%;
+                border-inline-end: 0.5px solid #ebeaed;
+                &:last-child {
+                  border-inline-end: none;
+                }
+                span {
+                  font-family: "regular";
+                  color: #828282;
+                  font-size: 0.8rem;
+                }
+                p {
+                  font-family: "semibold";
+                  color: #102b21;
+                  width: 100%;
+                  font-size: 0.9rem;
+                  margin-top: 1rem;
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .sub_location_title {
+              margin-top: 2rem;
+            }
+            .sub_location {
+              display: flex;
+              padding: 1rem 0;
+              .card_details_project {
+                width: 20%;
+                padding: 0 2%;
+                border-inline-end: 0.5px solid #ebeaed;
+                &:last-child {
+                  border-inline-end: none;
+                }
+                span {
+                  font-family: "regular";
+                  color: #828282;
+                  font-size: 0.8rem;
+                }
+                p {
+                  font-family: "semibold";
+                  color: #102b21;
+                  width: 100%;
+                  font-size: 0.9rem;
+                  margin-top: 1rem;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+          .employment_resignation {
+            margin: 2rem 0;
+            border: 1px solid #ebeaed;
+            border-radius: 5px;
+            padding: 1rem;
+            h5 {
+              font-family: "semibold";
+              color: #011c1e;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        .chances_work {
+          font-family: "regular";
+          margin-top: 2rem;
+          .dataTables_wrapper {
+            margin-top: 2rem;
+          }
+          table {
+            thead {
+              tr {
+                th {
+                  text-align: start;
+                  font-size: 0.8rem;
+                  color: #828c8d;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  font-family: "semibold";
+                  color: #011c1e;
+                  font-size: 0.8rem;
+                  vertical-align: middle;
+                  .dropdown-toggle::after {
+                    content: none;
+                  }
+                  .dropdown-menu {
+                    .dropdown-item {
+                      font-size: 0.8rem;
+                      text-align: start;
+                    }
+                  }
+                  .status {
+                    display: block;
+                    width: 80px;
+                    text-align: center;
+                    padding: 0.3rem 0;
+                    border-radius: 5px;
+                  }
+                  .new {
+                    color: $PrimaryColor;
+                    background-color: rgba(36, 104, 79, 0.08);
+                  }
+                  .active {
+                    color: $SecondColor;
+                    background-color: rgba(104, 36, 93, 0.08);
+                  }
+                  .cancel {
+                    color: #685824;
+                    background-color: rgba(104, 88, 36, 0.08);
+                  }
+                  .end {
+                    color: #3139a1;
+                    background-color: rgba(49, 57, 161, 0.08);
+                  }
+                  .fail {
+                    color: #d25656;
+                    background-color: rgba(210, 86, 86, 0.08);
+                  }
+                }
+                td.select-checkbox:after {
+                  margin-top: -10px;
+                }
+                td.select-checkbox:before {
+                  top: 2.2em;
+                }
+              }
+            }
+          }
+          .filter {
+            width: 15%;
+            display: inline-block;
+            margin-inline-end: 1rem;
+            .dropdown-toggle {
+              border: 1px solid #ced4da;
+              background-color: transparent;
+              .filter-option-inner {
+                text-align: start;
+              }
+            }
+            .dropdown-menu {
+              .dropdown-item {
+                text-align: start;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .team_work {
+          font-family: "regular";
+          margin-top: 2rem;
+          .dataTables_wrapper {
+            margin-top: 2rem;
+          }
+          table {
+            thead {
+              tr {
+                th {
+                  text-align: start;
+                  font-size: 0.8rem;
+                  color: #828c8d;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  font-family: "semibold";
+                  color: #011c1e;
+                  font-size: 0.8rem;
+                  vertical-align: middle;
+                  .details_employee {
+                    p {
+                      margin-bottom: 0.2rem;
+                    }
+                  }
+                  .img_employee {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-inline-end: 1rem;
+                  }
+                  svg {
+                    margin-inline-end: 0.5rem;
+                  }
+                  .dropdown-toggle::after {
+                    content: none;
+                  }
+                  .dropdown-menu {
+                    .dropdown-item {
+                      font-size: 0.8rem;
+                      text-align: start;
+                    }
+                  }
+                  .status {
+                    display: block;
+                    width: 100px;
+                    text-align: center;
+                    padding: 0.3rem 0;
+                    border-radius: 5px;
+                  }
+                  .full-time {
+                    color: $PrimaryColor;
+                    background-color: rgba(36, 104, 79, 0.08);
+                  }
+                  .part-time {
+                    color: $SecondColor;
+                    background-color: rgba(104, 36, 93, 0.08);
+                  }
+                  .hour-system {
+                    color: #685824;
+                    background-color: rgba(104, 88, 36, 0.08);
+                  }
+                }
+                td.select-checkbox:after {
+                  margin-top: -10px;
+                }
+                td.select-checkbox:before {
+                  top: 2.2em;
+                }
+              }
+            }
+          }
+          .filter {
+            width: 15%;
+            display: inline-block;
+            margin-inline-end: 1rem;
+            .dropdown-toggle {
+              border: 1px solid #ced4da;
+              background-color: transparent;
+              .filter-option-inner {
+                text-align: start;
+              }
+            }
+            .dropdown-menu {
+              .dropdown-item {
+                text-align: start;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .supervisors_project {
+          font-family: "regular";
+          margin-top: 2rem;
+          .dataTables_wrapper {
+            margin-top: 2rem;
+          }
+          table {
+            thead {
+              tr {
+                th {
+                  text-align: start;
+                  font-size: 0.8rem;
+                  color: #828c8d;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  font-family: "semibold";
+                  color: #011c1e;
+                  font-size: 0.8rem;
+                  vertical-align: middle;
+                  .details_employee {
+                    p {
+                      margin-bottom: 0.2rem;
+                    }
+                  }
+                  .img_employee {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-inline-end: 1rem;
+                  }
+                  svg {
+                    margin-inline-end: 0.5rem;
+                  }
+                  .dropdown-toggle::after {
+                    content: none;
+                  }
+                  .dropdown-menu {
+                    .dropdown-item {
+                      font-size: 0.8rem;
+                      text-align: start;
+                    }
+                  }
+                }
+                td.select-checkbox:after {
+                  margin-top: -10px;
+                }
+                td.select-checkbox:before {
+                  top: 2.2em;
+                }
+              }
+            }
+          }
+          .filter {
+            width: 15%;
+            display: inline-block;
+            margin-inline-end: 1rem;
+            .dropdown-toggle {
+              border: 1px solid #ced4da;
+              background-color: transparent;
+              .filter-option-inner {
+                text-align: start;
+              }
+            }
+            .dropdown-menu {
+              .dropdown-item {
+                text-align: start;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    // Project page
   }
 }

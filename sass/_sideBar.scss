@@ -123,6 +123,47 @@
             }
         }
     }
+    .contact_us{
+        width: 80%;
+        margin: 5rem auto 0;
+        padding-top: 1.8rem;
+        padding-bottom: 1.2rem;
+        background-color: #fff;
+        border-radius: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        svg{
+            position: absolute;
+            top: -12%;
+            font-size: 1.3rem;
+            padding: .5rem;
+            border-radius: 8px;
+            color: $PrimaryColor;
+            background-color: #E8EFED;
+        }
+        p{
+            font-family: "semibold";
+            color: #171717;
+            font-size: .8rem;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .btn{
+            background-color: $PrimaryColor;
+            color: #fff;
+            font-size: .8rem;
+            border-radius: 15px;
+            width: 80%;
+            margin: 1rem auto 0;
+            font-family: "semibold";
+            &:hover{
+                border-color: transparent;
+            }
+        }
+    }
 }
 
 /* ====== small laptop style ====== */
