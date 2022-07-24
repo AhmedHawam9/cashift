@@ -326,6 +326,9 @@ table tbody tr td {
 .index_cards .btn:hover, .index_cards .btn:focus, .index_cards .btn:active {
   border-color: transparent;
 }
+.index_cards .job_background {
+  background-color: #FAFAFA;
+}
 .index_cards .content {
   padding: 1.5rem 3rem;
 }
@@ -384,6 +387,29 @@ table tbody tr td {
   font-family: "semibold";
   background-color: #21765e;
   color: #fff;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1.5rem;
+  float: left;
+}
+.index_cards .content .welcome .edit_btn {
+  font-family: "semibold";
+  background-color: #21765e;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1.5rem;
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+  float: left;
+}
+.index_cards .content .welcome .delete_btn {
+  font-family: "semibold";
+  border-color: #21765e;
+  color: #21765e;
+  background-color: transparent;
   border-radius: 12px;
   font-size: 0.8rem;
   margin-bottom: 2rem;
@@ -1472,6 +1498,11 @@ table tbody tr td {
   color: #685824;
   background-color: rgba(104, 88, 36, 0.08);
 }
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .form-check-input:checked {
+  background-color: #21765e;
+  border-color: #21765e;
+  transform: scale(1.3);
+}
 .index_cards .content .single_project .tab-content .team_work table tbody tr td.select-checkbox:after {
   margin-top: -10px;
 }
@@ -1494,6 +1525,25 @@ table tbody tr td {
 .index_cards .content .single_project .tab-content .team_work .filter .dropdown-menu .dropdown-item {
   text-align: start;
   font-size: 0.8rem;
+}
+.index_cards .content .single_project .tab-content .team_work .accept {
+  background-color: #21765e;
+  color: #fff;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.65rem 3rem;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+  margin-top: 2rem;
+}
+.index_cards .content .single_project .tab-content .team_work .reject {
+  background-color: transparent;
+  color: #21765e;
+  border: 1px solid #21765e;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.65rem 3rem;
+  margin-top: 2rem;
 }
 .index_cards .content .single_project .tab-content .supervisors_project {
   font-family: "regular";
@@ -1574,5 +1624,35 @@ table tbody tr td {
 }
 .index_cards .content .single_project .tab-content .supervisors_project .filter .dropdown-menu .dropdown-item {
   text-align: start;
+  font-size: 0.8rem;
+}
+.index_cards .content .details_job .cards_job {
+  display: flex;
+  margin: 2rem 0;
+}
+.index_cards .content .details_job .cards_job .details_job_card {
+  width: 18%;
+  background-color: #fff;
+  padding: 1.5rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+  box-shadow: 3px 6px 12px rgba(63, 63, 68, 0.1);
+}
+.index_cards .content .details_job .cards_job .details_job_card:last-child {
+  width: 28%;
+}
+.index_cards .content .details_job .cards_job .details_job_card svg {
+  color: #21765e;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+.index_cards .content .details_job .cards_job .details_job_card .title {
+  font-family: "regular";
+  color: #595959;
+  font-size: 0.8rem;
+}
+.index_cards .content .details_job .cards_job .details_job_card .text {
+  font-family: "semibold";
+  color: #102B21;
   font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
