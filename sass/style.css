@@ -1326,6 +1326,26 @@ table tbody tr td {
   font-size: 0.8rem;
   vertical-align: middle;
 }
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .details_team {
+  display: flex;
+  align-items: center;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .details_team img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .details_team p {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 0;
+}
+.index_cards .content .single_project .tab-content .chances_work table tbody tr td .details_team span {
+  font-family: "regular";
+  color: #828c8d;
+}
 .index_cards .content .single_project .tab-content .chances_work table tbody tr td .dropdown-toggle::after {
   content: none;
 }
@@ -1400,6 +1420,17 @@ table tbody tr td {
   color: #011c1e;
   font-size: 0.8rem;
   vertical-align: middle;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .status {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+.index_cards .content .single_project .tab-content .team_work table tbody tr td .new {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.08);
 }
 .index_cards .content .single_project .tab-content .team_work table tbody tr td .details_employee p {
   margin-bottom: 0.2rem;
@@ -1481,6 +1512,25 @@ table tbody tr td {
   color: #011c1e;
   font-size: 0.8rem;
   vertical-align: middle;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .status {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .full-time {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.08);
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .part-time {
+  color: #68245d;
+  background-color: rgba(104, 36, 93, 0.08);
+}
+.index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .hour-system {
+  color: #685824;
+  background-color: rgba(104, 88, 36, 0.08);
 }
 .index_cards .content .single_project .tab-content .supervisors_project table tbody tr td .details_employee p {
   margin-bottom: 0.2rem;
