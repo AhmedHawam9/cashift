@@ -973,7 +973,7 @@ table tbody tr td {
   display: block;
   width: 80px;
   text-align: center;
-  padding: 0;
+  padding: 0.3rem;
   border-radius: 5px;
 }
 .index_cards .content .tableAllProjects table tbody tr td .new {
@@ -1654,5 +1654,201 @@ table tbody tr td {
 .index_cards .content .details_job .cards_job .details_job_card .text {
   font-family: "semibold";
   color: #102B21;
+  font-size: 0.8rem;
+}
+.index_cards .content .details_job .general_description_job {
+  margin: 2rem 0;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.index_cards .content .details_job .general_description_job h5 {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 2rem;
+}
+.index_cards .content .details_job .general_description_job p {
+  color: #595959;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+}
+.index_cards .content .details_job .general_description_job .main_details {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.index_cards .content .details_job .general_description_job .main_details .details {
+  width: 25%;
+}
+.index_cards .content .details_job .general_description_job .main_details .details .title {
+  font-family: "regular";
+  color: #828282;
+  margin-bottom: 0.5rem;
+}
+.index_cards .content .details_job .general_description_job .main_details .details .text {
+  font-family: "semibold";
+  color: #102B21;
+  width: 70%;
+  font-size: 0.8rem;
+}
+.index_cards .content .details_job .general_description_job .required_skills {
+  padding: 2rem 0;
+  border-top: 0.5px solid #C2C2C2;
+  border-bottom: 0.5px solid #C2C2C2;
+}
+.index_cards .content .details_job .general_description_job .required_skills .required_skills_card {
+  background-color: #F0F0F0;
+  color: #596364;
+  font-family: "regular";
+  border-radius: 25px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+.index_cards .content .details_job .general_description_job .conditions {
+  margin-top: 2rem;
+}
+.index_cards .content .details_job .general_description_job .conditions ul li {
+  font-family: "regular";
+  color: #596364;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.index_cards .content .details_job .similar_jobs {
+  margin: 2rem 0;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #fff;
+}
+.index_cards .content .details_job .similar_jobs .show_all {
+  color: #21765e;
+  text-decoration: none;
+  font-family: "semibold";
+}
+.index_cards .content .details_job .similar_jobs .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .details_job .similar_jobs .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.8rem;
+  color: #011c1e;
+}
+.index_cards .content .details_job .similar_jobs h5 {
+  font-family: "semibold";
+  color: #011c1e;
+  margin-bottom: 0;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card {
+  border: 0.5px solid #D6D6D6;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .title {
+  font-family: "semibold";
+  color: #011C1E;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .name {
+  font-family: "regular";
+  color: #21765e;
+  font-size: 0.9rem;
+  margin: 0.7rem 0;
+  display: block;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .date,
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .team {
+  margin-bottom: 0.5rem;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .date svg,
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .team svg {
+  color: #828C8D;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .date .title,
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .team .title {
+  font-family: "regular";
+  color: #828C8D;
+  font-size: 0.9rem;
+  margin: 0 0.2rem;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .date .name,
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .team .name {
+  font-family: "semibold";
+  color: #102B21;
+  font-size: 0.9rem;
+  display: inline;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .price {
+  font-family: "semibold";
+  color: #102B21;
+}
+.index_cards .content .details_job .similar_jobs .similar_jobs_card .price .currency {
+  font-family: "regular";
+  color: #595959;
+}
+.index_cards .content .details_job .similar_jobs .show_more {
+  border: 1px solid #21765e;
+  color: #21765e;
+  background-color: transparent;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.95rem 2.5rem;
+  margin: 1rem auto 0;
+  display: block;
+  border-radius: 12px;
+}
+.index_cards .content .details_job .tableAllProjects {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+}
+.index_cards .content .details_job .tableAllProjects thead {
+  display: none;
+}
+.index_cards .content .details_job .tableAllProjects .dataTables_length,
+.index_cards .content .details_job .tableAllProjects .dataTables_filter {
+  display: none;
+}
+.index_cards .content .details_job .tableAllProjects .details_employee p {
+  margin-bottom: 0.2rem;
+}
+.index_cards .content .details_job .tableAllProjects .img_employee {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .details_job .tableAllProjects svg {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+.index_cards .content .details_job .tableAllProjects .status {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.index_cards .content .details_job .tableAllProjects .full-time {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.08);
+}
+.index_cards .content .details_job .tableAllProjects .part-time {
+  color: #68245d;
+  background-color: rgba(104, 36, 93, 0.08);
+}
+.index_cards .content .details_job .tableAllProjects .hour-system {
+  color: #d25656;
+  background-color: rgba(210, 86, 86, 0.08);
+}
+.index_cards .content .details_job .tableAllProjects .filter .dropdown-toggle {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.index_cards .content .details_job .tableAllProjects .filter .dropdown-toggle .filter-option-inner-inner {
+  text-align: start;
+}
+.index_cards .content .details_job .tableAllProjects .filter .dropdown-menu.show .dropdown-item {
+  text-align: start;
   font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
