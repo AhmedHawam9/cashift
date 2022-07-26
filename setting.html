@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- ? Required meta tags -->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="sass/style.css" />
+    <!-- ? Main CSS -->
+
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <!-- ? Custom CSS -->
+
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <!-- ? Datapicker cdn -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- ? Datapicker cdn -->
+
+    <!-- ? Title -->
+    <title>Cashift</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="media/image/logo.ico" type="image" />
+    <!-- ? Favicon -->
+
+    <script>
+        console.log(
+            "%c <== 7w7w++ ==>  ",
+            "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+        );
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex p-0">
+        <!-- ======= Start Sidebar ======= -->
+        <section class="sidebar open">
+            <ul class="
+        nav nav-pills
+        flex-column
+        mb-sm-auto mb-0
+        align-items-center align-items-sm-start
+      " id="menu">
+                <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link align-middle">
+                        <img src="./media/image/icon/home.svg" alt="icon" />
+                        <span>الرئيسية</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link align-middle">
+                        <img src="./media/image/icon/projects.svg" alt="icon" />
+                        <span>المشاريع</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="employment_applications.html" class="nav-link align-middle">
+                        <img src="./media/image/icon/jobs.svg" alt="icon" />
+                        <span>طلبات التوظيف</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link align-middle">
+                        <img src="./media/image/icon/team.svg" alt="icon" />
+                        <span>فريق العمل</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="employment_officials.html" class="nav-link align-middle">
+                        <img src="./media/image/icon/officials.svg" alt="icon" />
+                        <span>مسئولي التوظيف</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="reports.html" class="nav-link align-middle">
+                        <img src="./media/image/icon/report.svg" alt="icon" />
+                        <span>التقارير</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="setting.html" class="nav-link align-middle">
+                        <img src="./media/image/icon/setting.svg" alt="icon" />
+                        <span>الاعدادات العامة</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="contact_us">
+                <i class="fa-solid fa-circle-question"></i>
+                <p>هل قابلتك بعض المشاكل او بعض الاستفسارات ؟ هل تريد المساعدة ؟</p>
+                <a href="#" class="btn">تواصل معنا</a>
+            </div>
+        </section>
+        <!-- ======= end Sidebar ======= -->
+
+        <!-- ======= Main ======= -->
+        <section class="index_cards">
+            <!-- ======= Start navbar ======= -->
+            <nav class="navbar">
+                <div class="d-flex w-25">
+                    <div class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="" id="" class="form-control" placeholder="بحث ...">
+                    </div>
+                </div>
+                <div>
+                    <div class="changelocal d-inline-block">
+                        <div class="dropdown lang">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- lang -->
+                                <i class="fa-solid fa-earth-americas px-2"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item">
+                                        <img src="./media/image/saudi-arabia.png" alt="saudi-arabia">
+                                        عربي
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <img src="./media/image/united-kingdom.png" alt="united-kingdom">
+                                        إنجليزي
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./media/image/7w7w.jpg" class="admin_img" alt="person" />
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- ======= End navbar ======= -->
+
+            <!-- ======= Start Content ======= -->
+            <div class="setting">
+                <h5>الاعدادات العامة</h5>
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-basic-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-basic" type="button" role="tab" aria-controls="v-pills-basic"
+                            aria-selected="true">المعلومات الأساسية</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">اعدادات الحساب</button>
+                        <button class="nav-link" id="v-pills-info-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info"
+                            aria-selected="false">معلومات المشرفين</button>
+                        <button class="nav-link" id="v-pills-notifications-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-notifications" type="button" role="tab"
+                            aria-controls="v-pills-notifications" aria-selected="false">الاشعارات</button>
+                        <button class="nav-link" id="v-pills-help-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-help" type="button" role="tab" aria-controls="v-pills-help"
+                            aria-selected="false">مركز المساعدة</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- Start Basic Info -->
+                        <div class="tab-pane fade show active" id="v-pills-basic" role="tabpanel"
+                            aria-labelledby="v-pills-basic-tab" tabindex="0">
+                            <h5>المعلومات الاساسية</h5>
+                            <form action="" class="basic_info_form">
+                                <div class="basic_info">
+                                    <div class="image">
+                                        <div class="avatar-upload">
+                                            <div class="avatar-preview">
+                                                <div id="imagePreview" class="imagePreview">
+                                                </div>
+                                            </div>
+                                            <div class="avatar-edit">
+                                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                <label for="imageUpload">تغيير الصورة الشخصية</label>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            function readURL(input) {
+                                                if (input.files && input.files[0]) {
+                                                    var reader = new FileReader();
+                                                    reader.onload = function (e) {
+                                                        $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                                                        $('#imagePreview').hide();
+                                                        $('#imagePreview').fadeIn(650);
+                                                    }
+                                                    reader.readAsDataURL(input.files[0]);
+                                                }
+                                            }
+                                            $("#imageUpload").change(function () {
+                                                readURL(this);
+                                            });
+                                        </script>
+                                    </div>
+                                    <div class="basic_info_data">
+                                        <div class="form-group">
+                                            <label for="">الاسم التجارى</label>
+                                            <i class="fa-solid fa-building"></i>
+                                            <input type="text" name="" id="" class="form-control"
+                                                placeholder="الاسم التجارى">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">العنوان *</label>
+                                            <button class="btn location" onclick="getLocation()"><i
+                                                    class="fa-solid fa-location-dot"></i></button>
+                                            <p id="lat" class="lat"></p>
+                                            <script>
+                                                var x = document.getElementById("lat");
+
+                                                function getLocation() {
+                                                    if (navigator.geolocation) {
+                                                        navigator.geolocation.getCurrentPosition(showPosition);
+                                                    } else {
+                                                        x.innerHTML = "Geolocation is not supported by this browser.";
+                                                    }
+                                                }
+
+                                                function showPosition(position) {
+                                                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                                                        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Longitude: " + position.coords.longitude;
+                                                }
+                                            </script>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">نوع القطاع</label>
+                                            <i class="fa-solid fa-briefcase"></i>
+                                            <select name="" id="" class="form-control selectpicker" title="نوع القطاع">
+                                                <option value="">قطاع خاص</option>
+                                                <option value="">قطاع عام</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">الشعار الخاص بالشركة</label>
+                                            <div class="image">
+                                                <div class="avatar-upload">
+                                                    <div class="avatar-preview">
+                                                        <div id="imagePreviewCompany" class="imagePreview">
+                                                        </div>
+                                                    </div>
+                                                    <div class="avatar-edit">
+                                                        <input type='file' id="imageUploadCompany"
+                                                            accept=".png, .jpg, .jpeg" />
+                                                        <label for="imageUpload"><i
+                                                                class="fa-solid fa-camera"></i></label>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    function readURL(input) {
+                                                        if (input.files && input.files[0]) {
+                                                            var reader = new FileReader();
+                                                            reader.onload = function (e) {
+                                                                $('#imagePreviewCompany').css('background-image', 'url(' + e.target.result + ')');
+                                                                $('#imagePreviewCompany').hide();
+                                                                $('#imagePreviewCompany').fadeIn(650);
+                                                            }
+                                                            reader.readAsDataURL(input.files[0]);
+                                                        }
+                                                    }
+                                                    $("#imageUploadCompany").change(function () {
+                                                        readURL(this);
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">الدور الوظيفي</label>
+                                            <textarea name="" id="" cols="30" rows="10" class="form-control"
+                                                placeholder="اكتب كلمات تصف بيها لدور الوظيفي لشركتك"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <a href="index.html" class="btn cancel">الغاء</a>
+                                    <button type="submit" class="btn submit">حفظ التغييرات</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- End Basic Info -->
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <h5>اعدادات الحساب</h5>
+                            <div class="profile_setting">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="password-tab" data-bs-toggle="tab"
+                                            data-bs-target="#password-tab-pane" type="button" role="tab"
+                                            aria-controls="password-tab-pane" aria-selected="true">كلمة المرور</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="email-tab" data-bs-toggle="tab"
+                                            data-bs-target="#email-tab-pane" type="button" role="tab"
+                                            aria-controls="email-tab-pane" aria-selected="false">البريد
+                                            الالكتروني</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="bank_account-tab" data-bs-toggle="tab"
+                                            data-bs-target="#bank_account-tab-pane" type="button" role="tab"
+                                            aria-controls="bank_account-tab-pane" aria-selected="false">بيانات الحساب
+                                            البنكي</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="lang-tab" data-bs-toggle="tab"
+                                            data-bs-target="#lang-tab-pane" type="button" role="tab"
+                                            aria-controls="lang-tab-pane" aria-selected="false">اللغة</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="password-tab-pane" role="tabpanel"
+                                        aria-labelledby="password-tab" tabindex="0">
+                                        <form class="password_form">
+                                            <div class="form-group">
+                                                <label for="">كلمة المرور الحالية</label>
+                                                <i class="fa-solid fa-lock"></i>
+                                                <input type="password" id="currentPassword" name="currentPassword"
+                                                    class="form-control" placeholder="***********">
+                                                <button type="button" id="btnTogglecurrentPassword"
+                                                    class="toggle btn"><i id="eyeIconcurrentPassword"
+                                                        class="fas fa-eye-slash"></i></button>
+                                                <!-- =========== show password =========== -->
+                                                <script>
+                                                    let currentPassword = document.getElementById('currentPassword'),
+                                                        togglecurrentPassword = document.getElementById('btnTogglecurrentPassword'),
+                                                        iconcurrentPassword = document.getElementById('eyeIconcurrentPassword');
+
+                                                    function togglePasswordcurrentPassword() {
+                                                        if (currentPassword.type === 'password') {
+                                                            currentPassword.type = 'text';
+                                                            iconcurrentPassword.classList.add("fa-eye-slash");
+                                                            togglecurrentPassword.innerHTML = '<i class="fa fa-eye"></i>';
+                                                        } else {
+                                                            currentPassword.type = 'password';
+                                                            iconcurrentPassword.classList.remove("fa-eye-slash");
+                                                            togglecurrentPassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                                                        }
+                                                    }
+                                                    togglecurrentPassword.addEventListener('click', togglePasswordcurrentPassword, false);
+                                                </script>
+                                                <!-- =========== show password =========== -->
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">كلمة المرور الجديدة</label>
+                                                <i class="fa-solid fa-lock"></i>
+                                                <input type="password" id="NewPassword" name="NewPassword"
+                                                    class="form-control" placeholder="***********">
+                                                <button type="button" id="btnToggleNewPassword" class="toggle btn"><i
+                                                        id="eyeIconNewPassword" class="fas fa-eye-slash"></i></button>
+                                                <!-- =========== show password =========== -->
+                                                <script>
+                                                    let NewPassword = document.getElementById('NewPassword'),
+                                                        toggleNewPassword = document.getElementById('btnToggleNewPassword'),
+                                                        iconNewPassword = document.getElementById('eyeIconNewPassword');
+
+                                                    function togglePasswordNewPassword() {
+                                                        if (NewPassword.type === 'password') {
+                                                            NewPassword.type = 'text';
+                                                            iconNewPassword.classList.add("fa-eye-slash");
+                                                            toggleNewPassword.innerHTML = '<i class="fa fa-eye"></i>';
+                                                        } else {
+                                                            NewPassword.type = 'password';
+                                                            iconNewPassword.classList.remove("fa-eye-slash");
+                                                            toggleNewPassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                                                        }
+                                                    }
+                                                    toggleNewPassword.addEventListener('click', togglePasswordNewPassword, false);
+                                                </script>
+                                                <!-- =========== show password =========== -->
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">إعادة كلمة المرور الجديدة</label>
+                                                <i class="fa-solid fa-lock"></i>
+                                                <input type="password" id="RetypePassword" name="RetypePassword"
+                                                    class="form-control" placeholder="***********">
+                                                <button type="button" id="btnToggleRetypePassword" class="toggle btn"><i
+                                                        id="eyeIconRetypePassword"
+                                                        class="fas fa-eye-slash"></i></button>
+                                                <!-- =========== show password =========== -->
+                                                <script>
+                                                    let RetypePassword = document.getElementById('RetypePassword'),
+                                                        toggleRetypePassword = document.getElementById('btnToggleRetypePassword'),
+                                                        iconRetypePassword = document.getElementById('eyeIconRetypePassword');
+
+                                                    function togglePasswordRetypePassword() {
+                                                        if (RetypePassword.type === 'password') {
+                                                            RetypePassword.type = 'text';
+                                                            iconRetypePassword.classList.add("fa-eye-slash");
+                                                            toggleRetypePassword.innerHTML = '<i class="fa fa-eye"></i>';
+                                                        } else {
+                                                            RetypePassword.type = 'password';
+                                                            iconRetypePassword.classList.remove("fa-eye-slash");
+                                                            toggleRetypePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                                                        }
+                                                    }
+                                                    toggleRetypePassword.addEventListener('click', togglePasswordRetypePassword, false);
+                                                </script>
+                                                <!-- =========== show password =========== -->
+                                            </div>
+                                            <button type="submit" class="btn submit">حفظ التغييرات</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="email-tab-pane" role="tabpanel"
+                                        aria-labelledby="email-tab" tabindex="0">
+                                        <form class="password_form">
+                                            <div class="form-group">
+                                                <label for="">كلمة المرور الحالية</label>
+                                                <i class="fa-solid fa-lock"></i>
+                                                <input type="password" id="EmailPassword" name="EmailPassword"
+                                                    class="form-control" placeholder="***********">
+                                                <button type="button" id="btnToggleEmailPassword" class="toggle btn"><i
+                                                        id="eyeIconEmailPassword" class="fas fa-eye-slash"></i></button>
+                                                <!-- =========== show password =========== -->
+                                                <script>
+                                                    let EmailPassword = document.getElementById('EmailPassword'),
+                                                        toggleEmailPassword = document.getElementById('btnToggleEmailPassword'),
+                                                        iconEmailPassword = document.getElementById('eyeIconEmailPassword');
+
+                                                    function togglePasswordEmailPassword() {
+                                                        if (EmailPassword.type === 'password') {
+                                                            EmailPassword.type = 'text';
+                                                            iconEmailPassword.classList.add("fa-eye-slash");
+                                                            toggleEmailPassword.innerHTML = '<i class="fa fa-eye"></i>';
+                                                        } else {
+                                                            EmailPassword.type = 'password';
+                                                            iconEmailPassword.classList.remove("fa-eye-slash");
+                                                            toggleEmailPassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                                                        }
+                                                    }
+                                                    toggleEmailPassword.addEventListener('click', togglePasswordEmailPassword, false);
+                                                </script>
+                                                <!-- =========== show password =========== -->
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">البريد الالكتروني الجديد</label>
+                                                <i class="fa-solid fa-envelope"></i>
+                                                <input type="text" name="" id="" class="form-control"
+                                                    placeholder="someone@gmail.com">
+                                            </div>
+                                            <button type="submit" class="btn submit">حفظ التغييرات</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="bank_account-tab-pane" role="tabpanel"
+                                        aria-labelledby="bank_account-tab" tabindex="0">
+                                        <h5>بيانات الحساب البنكي</h5>
+                                        <form class="password_form">
+                                            <div class="form-group">
+                                                <label for="">اسم البنك</label>
+                                                <i class="fa-solid fa-building-columns"></i>
+                                                <input type="text" name="" id="" class="form-control"
+                                                    placeholder="ادخل اسم البنك">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">IPAN</label>
+                                                <input type="text" name="" id="" class="form-control unicon"
+                                                    placeholder="------------">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">SWIFT CODE</label>
+                                                <input type="text" name="" id="" class="form-control unicon"
+                                                    placeholder="------------">
+                                            </div>
+                                            <button type="submit" class="btn submit">حفظ التغييرات</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="lang-tab-pane" role="tabpanel"
+                                        aria-labelledby="lang-tab" tabindex="0">
+                                        <form class="password_form">
+                                            <div class="form-group">
+                                                <label for="">أختر اللغة</label>
+                                                <select name="" id="" class="form-control selectpicker" title="اللغة">
+                                                    <option value="">العربية</option>
+                                                    <option value="">الانجليزية</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn submit">حفظ التغييرات</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab"
+                            tabindex="0">...</div>
+                        <div class="tab-pane fade" id="v-pills-notifications" role="tabpanel"
+                            aria-labelledby="v-pills-notifications-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="v-pills-help" role="tabpanel" aria-labelledby="v-pills-help-tab"
+                            tabindex="0">...</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ======= End Content ======= -->
+        </section>
+        <!-- ======= Main ======= -->
+    </div>
+    <!-- <script>
+    AOS.init({ disable: "mobile" });
+  </script> -->
+    <!-- ? ======= footer =========== -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
