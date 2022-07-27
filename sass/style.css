@@ -1963,6 +1963,327 @@ table tbody tr td {
   text-align: start;
   font-size: 0.8rem;
 }
+.index_cards .content .employment_officials {
+  font-family: "regular";
+}
+.index_cards .content .employment_officials .dataTables_wrapper {
+  margin-top: 2rem;
+}
+.index_cards .content .employment_officials h5 {
+  font-family: "semibold";
+  color: #102b21;
+}
+.index_cards .content .employment_officials .work_btn {
+  background-color: #21765e;
+  color: #fff;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.65rem 2rem;
+  border-radius: 10px;
+}
+.index_cards .content .employment_officials .filter {
+  width: 15% !important;
+  display: inline-block;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .employment_officials .filter .dropdown-toggle {
+  border: 1px solid #ced4da;
+  background-color: transparent;
+}
+.index_cards .content .employment_officials .filter .dropdown-toggle .filter-option-inner {
+  text-align: start;
+  font-family: "regular";
+}
+.index_cards .content .employment_officials .filter .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.index_cards .content .employment_officials table thead tr th {
+  text-align: start;
+  font-size: 0.8rem;
+  color: #828c8d;
+}
+.index_cards .content .employment_officials table tbody tr td {
+  font-family: "semibold";
+  color: #011c1e;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+.index_cards .content .employment_officials table tbody tr td .details_employee p {
+  margin-bottom: 0.2rem;
+}
+.index_cards .content .employment_officials table tbody tr td .img_employee {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.index_cards .content .employment_officials table tbody tr td .dropdown-toggle::after {
+  content: none;
+}
+.index_cards .content .employment_officials table tbody tr td svg {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+.index_cards .content .employment_officials table tbody tr td .dropdown-menu .dropdown-item {
+  font-size: 0.8rem;
+  text-align: start;
+}
+.index_cards .content .employment_officials table tbody tr td .status {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+.index_cards .content .employment_officials table tbody tr td .full-time {
+  color: #21765e;
+  background-color: rgba(36, 104, 79, 0.08);
+}
+.index_cards .content .employment_officials table tbody tr td .part-time {
+  color: #68245d;
+  background-color: rgba(104, 36, 93, 0.08);
+}
+.index_cards .content .employment_officials table tbody tr td .hour-system {
+  color: #685824;
+  background-color: rgba(104, 88, 36, 0.08);
+}
+.index_cards .content .employment_officials table tbody tr td.select-checkbox:after {
+  margin-top: -10px;
+}
+.index_cards .content .employment_officials table tbody tr td.select-checkbox:before {
+  top: 2.2em;
+}
+.index_cards .content .add_employment_officials {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.index_cards .content .add_employment_officials .basic_info {
+  display: flex;
+}
+.index_cards .content .add_employment_officials .basic_info .image {
+  width: 20%;
+}
+.index_cards .content .add_employment_officials .basic_info .image .avatar-upload {
+  position: relative;
+  max-width: 205px;
+}
+.index_cards .content .add_employment_officials .basic_info .image .avatar-upload .avatar-edit input {
+  display: none;
+}
+.index_cards .content .add_employment_officials .basic_info .image .avatar-upload .avatar-edit input + label {
+  display: block;
+  width: 90%;
+  padding: 0.7rem 0;
+  text-align: center;
+  margin: 1rem auto 0;
+  font-size: 0.8rem;
+  font-family: "semibold";
+  color: #21765e;
+  border: 1px solid #21765e;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.index_cards .content .add_employment_officials .basic_info .image .avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border: 1px solid #21765e;
+}
+.index_cards .content .add_employment_officials .basic_info .image .avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.index_cards .content .add_employment_officials .basic_info .image .avatar-upload .avatar-preview .imagePreview {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data {
+  width: 80%;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .work_width {
+  display: flex;
+  width: 80%;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .work_width .form-group {
+  width: 50%;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .work_width .form-group:first-child {
+  -webkit-margin-end: 2%;
+          margin-inline-end: 2%;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group label {
+  margin-bottom: 0.5rem;
+  font-family: "regular";
+  color: #011C1E;
+  display: block;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group input,
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group textarea {
+  font-size: 0.8rem;
+  font-family: "semibold";
+  color: #102B21;
+  font-size: 0.8rem;
+  padding: 0.75rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group textarea {
+  -webkit-padding-start: 0.75rem;
+          padding-inline-start: 0.75rem;
+  resize: none;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group svg {
+  position: absolute;
+  top: 60%;
+  right: 1%;
+  color: #BFBFBF;
+  z-index: 99;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .location {
+  display: inline-block;
+  border: 0.7px solid #cccccc;
+  border-radius: 5px;
+  padding: 1.2rem 1.5rem;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .location svg {
+  stroke: #21765e;
+  stroke-width: 40px;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: unset;
+  font-size: 1rem;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .lat {
+  display: inline-block;
+  font-family: "regular";
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .dropdown-toggle {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.8rem;
+  padding: 0.75rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+  border: 1px solid #ced4da;
+  background-color: transparent;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .dropdown-toggle .filter-option-inner-inner {
+  text-align: start;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .dropdown-menu {
+  min-width: 100%;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .dropdown-menu .dropdown-item {
+  text-align: start;
+  font-family: "regular";
+  font-size: 0.9rem;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload {
+  position: relative;
+  max-width: 250px;
+  width: 250px;
+  background-color: #fff;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-edit {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-edit input {
+  display: none;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-edit input + label {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  margin: 1rem auto 0;
+  font-size: 0.8rem;
+  font-family: "semibold";
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-edit input + label svg {
+  position: unset;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-edit input + label:hover {
+  background: #f0f0f0;
+  border: none;
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-preview {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  border-radius: 0;
+  border: 6px solid #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-preview .imagePreview {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.index_cards .content .add_employment_officials .buttons {
+  display: flex;
+  justify-content: end;
+  width: 84%;
+}
+.index_cards .content .add_employment_officials .buttons .submit {
+  background-color: #21765e;
+  color: #fff;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.75rem 1.5rem;
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+.index_cards .content .add_employment_officials .buttons .cancel {
+  background-color: transparent;
+  color: #21765e;
+  border: 1px solid #21765e;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.75rem 1.5rem;
+}
 .index_cards .setting {
   background-color: #FAFAFA;
   padding: 2rem;
@@ -1991,6 +2312,51 @@ table tbody tr td {
   -webkit-border-start: 3px solid #21765e;
           border-inline-start: 3px solid #21765e;
   border-radius: 0;
+}
+.index_cards .setting .nav-pills .modal .modal-content {
+  padding: 2rem;
+}
+.index_cards .setting .nav-pills .modal img {
+  display: block;
+  margin: 0 auto 2rem;
+  width: 150px;
+}
+.index_cards .setting .nav-pills .modal h5 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.index_cards .setting .nav-pills .modal p {
+  font-family: "semibold";
+  color: #828282;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.index_cards .setting .nav-pills .modal .buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.index_cards .setting .nav-pills .modal .buttons .logout {
+  background-color: rgba(33, 118, 94, 0.1);
+  color: #21765e;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 40%;
+  border-radius: 10px;
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+.index_cards .setting .nav-pills .modal .buttons .cancel {
+  background-color: #21765e;
+  color: #fff;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 40%;
+  border-radius: 10px;
 }
 .index_cards .setting .tab-content {
   padding: 0 2rem;
@@ -2313,4 +2679,46 @@ table tbody tr td {
   border: 1px solid #21765e;
   color: #21765e;
   transition: 0.7s ease-in-out;
+}
+.index_cards .setting .tab-content .delete_account {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.index_cards .setting .tab-content .delete_account h5 {
+  margin-bottom: 1rem;
+}
+.index_cards .setting .tab-content .delete_account p {
+  font-family: "regular";
+  color: #828282;
+  font-size: 0.9rem;
+  width: 40%;
+}
+.index_cards .setting .tab-content .delete_account .form-check {
+  font-family: "regular";
+  color: #595959;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+.index_cards .setting .tab-content .delete_account .form-check .form-check-input {
+  float: right;
+  margin-left: 1em;
+  transform: scale(1.3);
+}
+.index_cards .setting .tab-content .delete_account .form-check .form-check-input:checked {
+  background-color: #21765e;
+  border-color: #21765e;
+}
+.index_cards .setting .tab-content .delete_account .form-check .form-check-input:focus {
+  box-shadow: unset;
+  border-color: #21765e;
+}
+.index_cards .setting .tab-content .delete_account .delete_btn {
+  background-color: #D25656;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "regular";
+  font-size: 0.8rem;
+  padding: 0.4rem 2rem;
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
