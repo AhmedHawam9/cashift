@@ -673,7 +673,9 @@ table tbody tr td {
           text-align: center;
         }
 
-        .card_accuracy_projects {}
+        .card_accuracy_projects {
+          
+        }
       }
     }
 
@@ -2943,6 +2945,346 @@ table tbody tr td {
       }
     }
 
+
+  }
+
+  .employee_details {
+    background-color: #FAFAFA;
+    padding: 2rem;
+
+    h5 {
+      font-family: "semibold";
+      color: #011c1e;
+      margin-bottom: 0;
+    }
+
+    .reject {
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+      background-color: transparent;
+      font-family: "semibold";
+      font-size: .8rem;
+      padding: .75rem 3rem;
+      border-radius: 12px;
+    }
+
+    .accept {
+      border: 1px solid $PrimaryColor;
+      color: #fff;
+      background-color: $PrimaryColor;
+      font-family: "semibold";
+      font-size: .8rem;
+      padding: .75rem 3rem;
+      border-radius: 12px;
+      margin-inline-start: .5rem;
+    }
+
+    .side_data {
+      background-color: #fff;
+      padding: 1rem;
+
+      .status {
+        display: block;
+        border-radius: 40px;
+        font-family: "regular";
+        width: fit-content;
+        font-size: .8rem;
+        padding: .5rem 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .new_employee {
+        background-color: rgba(36, 104, 79, 0.1);
+        color: $PrimaryColor;
+      }
+
+      .end_employee {
+        background-color: rgba(210, 86, 86, 0.1);
+        color: #D25656;
+      }
+
+      .active_employee {
+        background-color: rgba(104, 36, 93, 0.1);
+        color: #68245D;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .name {
+        font-family: "semibold";
+        color: #011C1E;
+        text-align: center;
+        margin: .5rem 0;
+        font-size: 1.3rem;
+      }
+
+      .title {
+        font-family: "regular";
+        color: #596364;
+        text-align: center;
+        font-size: .8rem;
+      }
+
+      .download {
+        background-color: transparent;
+        border: 1px solid $PrimaryColor;
+        color: $PrimaryColor;
+        font-family: "semibold";
+        font-size: .8rem;
+        padding: .75rem 2rem;
+        margin: 0 auto;
+        display: block;
+        width: fit-content;
+      }
+
+      .employee_skills {
+        border-top: .7px solid #D6D6D6;
+        border-bottom: .7px solid #D6D6D6;
+        padding: 2rem 0;
+        margin: 2rem 0;
+
+        h5 {
+          margin-bottom: 1rem;
+        }
+
+        .skill {
+          display: inline-block;
+          font-family: "regular";
+          border-radius: 14px;
+          background-color: #F0F0F0;
+          color: #596364;
+          padding: .3rem 1rem;
+          margin-inline-end: .5rem;
+          margin-bottom: .8rem;
+        }
+      }
+
+      .completion_rate {
+        margin-bottom: 3rem;
+        border-radius: 5px;
+        .card_accuracy_projects{
+          .c100:hover > span{
+            color: $PrimaryColor;
+          }
+        }
+
+        h6 {
+          font-family: "semibold";
+          color: #011C1E;
+          margin-bottom: 1rem;
+        }
+
+        .c100 {
+          background-color: rgba(36, 104, 79, 0.1);
+        }
+
+        .bar,
+        .fill {
+          border: 0.14em solid #24684F;
+        }
+      }
+    }
+
+    .basic_information {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+
+      h5 {
+        margin-bottom: 2rem;
+      }
+
+      .data {
+        width: 24%;
+        display: inline-block;
+
+        .title {
+          font-family: "regular";
+          color: #828282;
+          font-size: .9rem;
+        }
+
+        .text {
+          font-family: "semibold";
+          color: #102B21;
+          margin-top: .7rem;
+          font-size: .9rem;
+          width: 80%;
+        }
+      }
+
+      .work_data {
+        padding: 2rem 0 0;
+        border-top: .7px solid #D6D6D6;
+        margin-top: 1rem;
+      }
+    }
+
+    .about_employee {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+
+      h5 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: "regular";
+        color: #828C8D;
+        font-size: .9rem;
+        width: 85%;
+      }
+    }
+
+    .reating_employee {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+
+      margin-top: 2rem;
+
+      h5 {
+        font-family: "semibold";
+        color: #011c1e;
+        margin-bottom: 3rem;
+      }
+
+      .reating_card {
+        margin-top: 1rem;
+        width: 85%;
+
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          margin-inline-end: 1rem;
+        }
+
+        .title {
+          font-family: "semibold";
+          color: #011C1E;
+          font-size: .8rem;
+          margin-bottom: .5rem;
+          display: block;
+        }
+
+        .reating {
+          svg {
+            color: rgba(228, 170, 60, .4);
+
+            &.active {
+              color: #E4AA3C;
+            }
+          }
+        }
+
+        .date {
+          font-family: "regular";
+          color: #BFBFBF;
+          font-size: .8rem;
+        }
+
+        p {
+          font-family: "regular";
+          color: #596364;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .other_candidates {
+      width: 90%;
+      margin: 3rem auto 0;
+      .dropdown {
+        .dropdown-toggle{
+          &::after{
+            content: none;
+          }
+        }
+        .dropdown-menu {
+          .dropdown-item {
+            text-align: start;
+            font-family: "semibold";
+            font-size: .8rem;
+          }
+        }
+      }
+      .card_other_candidates {
+        width: 18.7%;
+        display: inline-block;
+        margin-inline-end: 1%;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 1rem;
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+        }
+        .name {
+          font-family: "semibold";
+          color: #011C1E;
+          text-align: center;
+          margin-top: 1rem;
+        }
+        .title {
+          font-family: "regular";
+          color: $PrimaryColor;
+          font-size: .8rem;
+          text-align: center;
+          display: block;
+          margin-top: .3rem;
+        }
+        .reating {
+          display: flex;
+          justify-content: center;
+          margin-top: .5rem;
+          svg {
+            color: rgba(228, 170, 60, .4);
+            margin: 0 .3rem;
+
+            &.active {
+              color: #E4AA3C;
+            }
+          }
+        }
+        .tags {
+          margin-top: 1rem;
+          .tag {
+            background-color: #F0F0F0;
+            color: #596364;
+            font-family: "regular";
+            display: inline-block;
+            padding: .2rem .5rem;
+            margin-bottom: .5rem;
+            font-size: .8rem;
+            border-radius: 15px;
+          }
+        }
+        .show_more {
+          font-family: "semibold";
+          color: #fff;
+          background-color: $PrimaryColor;
+          padding: .5rem 1.5rem;
+          font-size: .8rem;
+          margin: .5rem auto 0;
+          border-radius: 8px;
+          display: block;
+          width: fit-content;
+        }
+      }
+    }
   }
 
   .setting {
