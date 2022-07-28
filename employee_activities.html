@@ -165,11 +165,115 @@
 
             <!-- ======= Start Content ======= -->
             <section class="content">
+                <div class="employee_activities">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>سجل نشاطات الموظف</h5>
+                        <a href="team.html" class="btn back">العودة للخلف <i class="fa-solid fa-angle-left"></i></a>
+                    </div>
+                    <!-- Start employee details -->
+                    <div class="employee_table">
+                        <input type="text" class="form-control filter" name="dates" />
+                        <script>$('input[name="dates"]').daterangepicker();</script>
+                        <table class="table table-bordered" id="chancesWork">
+                            <thead>
+                                <tr>
+                                    <th scope="col">اليوم / الحدث</th>
+                                    <th scope="col">تسجيل الحضور</th>
+                                    <th scope="col">تسجيل الانصراف</th>
+                                    <th scope="col">عدد ساعات العمل</th>
+                                    <th scope="col">موقع العمل</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- For loop this details table -->
+                                <tr>
+                                    <td>السبت 22 مايو</td>
+                                    <td><span class="status presence">إجازة عامة</span></td>
+                                    <td><span class="status presence">إجازة عامة</span></td>
+                                    <td><span class="status presence">إجازة عامة</span></td>
+                                    <td>.الدمام , شارع السيدة عائشة , عمارة الملك , الدور 11 , شقة رقم 2</td>
+                                </tr>
+                                <!-- For loop this details table -->
+
+                                <!-- For loop this details table -->
+                                <tr>
+                                    <td>السبت 22 مايو</td>
+                                    <td>09:30 صباحا</td>
+                                    <td>5:30 مساءا</td>
+                                    <td>8 ساعات</td>
+                                    <td>.الدمام , شارع السيدة عائشة , عمارة الملك , الدور 11 , شقة رقم 2</td>
+                                </tr>
+                                <!-- For loop this details table -->
+
+                                <!-- For loop this details table -->
+                                <tr>
+                                    <td>السبت 22 مايو</td>
+                                    <td>09:30 صباحا</td>
+                                    <td>5:30 مساءا</td>
+                                    <td>8 ساعات</td>
+                                    <td>.الدمام , شارع السيدة عائشة , عمارة الملك , الدور 11 , شقة رقم 2</td>
+                                </tr>
+                                <!-- For loop this details table -->
+
+                                <!-- For loop this details table -->
+                                <tr>
+                                    <td>السبت 22 مايو</td>
+                                    <td><span class="status absence">غياب</span></td>
+                                    <td><span class="status absence">غياب</span></td>
+                                    <td><span class="status absence">غياب</span></td>
+                                    <td>.الدمام , شارع السيدة عائشة , عمارة الملك , الدور 11 , شقة رقم 2</td>
+                                </tr>
+                                <!-- For loop this details table -->
+
+                                <!-- For loop this details table -->
+                                <tr>
+                                    <td>السبت 22 مايو</td>
+                                    <td>09:30 صباحا</td>
+                                    <td>5:30 مساءا</td>
+                                    <td>8 ساعات</td>
+                                    <td>.الدمام , شارع السيدة عائشة , عمارة الملك , الدور 11 , شقة رقم 2</td>
+                                </tr>
+                                <!-- For loop this details table -->
+                            </tbody>
+                        </table>
+                        <script>
+                            $(document).ready(function () {
+                                $('#chancesWork').DataTable({
+                                    language: {
+                                        search: "البحث",
+                                        lengthMenu: "عرض" + " _MENU_ " + "النشاطات",
+                                        paginate: {
+                                            first: "الأول",
+                                            last: "الأخير",
+                                            next: "التالي",
+                                            previous: "السابق",
+                                        },
+                                        info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "النشاطات",
+                                    },
+                                    columnDefs: [{
+                                        orderable: false,
+                                        className: 'select-checkbox',
+                                        targets: 0
+                                    }],
+                                    select: {
+                                        style: 'os',
+                                        selector: 'td:first-child'
+                                    },
+                                    order: [[1, 'asc']]
+                                });
+                            });
+                        </script>
+                    </div>
+                    <!-- End employee details -->
+                </div>
             </section>
             <!-- ======= End Content ======= -->
         </section>
         <!-- ======= Main ======= -->
     </div>
+    <!-- <script>
+    AOS.init({ disable: "mobile" });
+  </script> -->
     <!-- ? ======= footer =========== -->
 
     <script src="js/main.js"></script>
