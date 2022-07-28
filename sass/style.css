@@ -87,6 +87,22 @@
   margin-right: 0%;
 }
 
+.sidebar.open ~ .index_cards {
+  width: 85%;
+  transition: 1s ease-in-out;
+}
+
+.sidebar ~ .index_cards {
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+.index_cards {
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+}
+
 .sidebar {
   display: block;
   margin-right: -15%;
@@ -252,6 +268,10 @@
     width: 30%;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 table tbody tr td {
   vertical-align: middle;
 }
@@ -297,12 +317,6 @@ table tbody tr td {
   color: #fff;
 }
 
-.index_cards {
-  padding: 0;
-  background-color: #fff;
-  width: 100%;
-  position: relative;
-}
 .index_cards div.dataTables_wrapper div.dataTables_filter input {
   -webkit-margin-start: 1rem;
           margin-inline-start: 1rem;
@@ -2702,7 +2716,6 @@ table tbody tr td {
   background-color: #fff;
   padding: 2rem;
   border-radius: 5px;
-  margin-top: 2rem;
 }
 .index_cards .employee_details .basic_information h5 {
   margin-bottom: 2rem;
@@ -2743,6 +2756,115 @@ table tbody tr td {
   font-size: 0.9rem;
   width: 85%;
 }
+.index_cards .employee_details .employee_Exhibition {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.index_cards .employee_details .employee_Exhibition h5 {
+  margin-bottom: 1rem;
+}
+.index_cards .employee_details .employee_Exhibition p {
+  font-family: "regular";
+  color: #828C8D;
+  font-size: 0.9rem;
+  width: 85%;
+}
+.index_cards .employee_details .employee_Exhibition .swiper {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.index_cards .employee_details .employee_Exhibition .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index_cards .employee_details .employee_Exhibition .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 250px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.6);
+  transition: 0.7s ease-in-out;
+}
+.index_cards .employee_details .employee_Exhibition .swiper .swiper-slide img:hover {
+  filter: brightness(0.8);
+  transition: 0.7s ease-in-out;
+}
+.index_cards .employee_details .employee_Exhibition .swiper .swiper-button-prev,
+.index_cards .employee_details .employee_Exhibition .swiper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+}
+.index_cards .employee_details .employee_Exhibition .swiper .swiper-button-prev::after,
+.index_cards .employee_details .employee_Exhibition .swiper .swiper-button-next::after {
+  filter: brightness(0) invert(1);
+  font-size: 1.5rem;
+  background-color: rgba(16, 43, 33, 0.24);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.index_cards .employee_details .employee_financial {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.index_cards .employee_details .employee_financial h5 {
+  margin-bottom: 1rem;
+}
+.index_cards .employee_details .employee_financial p {
+  font-family: "regular";
+  color: #828C8D;
+  font-size: 0.9rem;
+  width: 85%;
+}
+.index_cards .employee_details .employee_financial .card_financial {
+  position: relative;
+  width: 20%;
+  display: inline-block;
+  -webkit-margin-end: 3%;
+          margin-inline-end: 3%;
+}
+.index_cards .employee_details .employee_financial .card_financial img {
+  width: 100%;
+}
+.index_cards .employee_details .employee_financial .card_financial .data_financial {
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  right: 10%;
+  left: 10%;
+}
+.index_cards .employee_details .employee_financial .card_financial .data_financial span {
+  font-family: "regular";
+  color: #E8EFED;
+}
+.index_cards .employee_details .employee_financial .card_financial .data_financial svg {
+  color: #E8EFED;
+}
+.index_cards .employee_details .employee_financial .card_financial .data_financial h4 {
+  margin-top: 60%;
+  color: #fff;
+  font-family: "semibold";
+}
+.index_cards .employee_details .employee_financial .card_financial .data_financial p {
+  font-family: "regular";
+  color: #fff;
+}
 .index_cards .employee_details .reating_employee {
   background-color: #fff;
   padding: 2rem;
@@ -2755,7 +2877,7 @@ table tbody tr td {
   margin-bottom: 3rem;
 }
 .index_cards .employee_details .reating_employee .reating_card {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 85%;
 }
 .index_cards .employee_details .reating_employee .reating_card img {
@@ -2789,7 +2911,7 @@ table tbody tr td {
   margin-top: 1rem;
 }
 .index_cards .employee_details .other_candidates {
-  width: 90%;
+  width: 100%;
   margin: 3rem auto 0;
 }
 .index_cards .employee_details .other_candidates .dropdown .dropdown-toggle::after {

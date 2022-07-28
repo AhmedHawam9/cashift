@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/circle.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -30,6 +31,7 @@
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Datapicker cdn -->
@@ -269,8 +271,110 @@
                                 مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
                                 يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...</p>
                         </div>
+                        <div class="employee_Exhibition">
+                            <h5>معرض اعمال الموظف</h5>
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./media/image/exhibition1.jpg" alt="exhibition">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./media/image/exhibition2.jpg" alt="exhibition">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./media/image/exhibition3.jpg" alt="exhibition">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./media/image/exhibition1.jpg" alt="exhibition">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./media/image/exhibition2.jpg" alt="exhibition">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./media/image/exhibition3.jpg" alt="exhibition">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiper = new Swiper(".mySwiper", {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30,
+                                    slidesPerGroup: 3,
+                                    loop: true,
+                                    loopFillGroupWithBlank: true,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next",
+                                        prevEl: ".swiper-button-prev",
+                                    },
+                                });
+                            </script>
+                        </div>
+                        <div class="employee_financial">
+                            <h5>التعاملات المالية للموظف</h5>
+                            <!-- Card financial -->
+                            <div class="card_financial">
+                                <img src="./media/image/day_work.jpg" alt="day_work">
+                                <div class="data_financial">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>أيام العمل</span>
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </div>
+                                    <h4>88</h4>
+                                    <p>اجمالى عدد الشيفتات</p>
+                                </div>
+                            </div>
+                            <!-- Card financial -->
+
+                            <!-- Card financial -->
+                            <div class="card_financial">
+                                <img src="./media/image/cost_work.jpg" alt="cost_work">
+                                <div class="data_financial">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>تكلفة العمل</span>
+                                        <i class="fa-solid fa-wallet"></i>
+                                    </div>
+                                    <h4>20,000</h4>
+                                    <p>اجمالى التكلفة</p>
+                                </div>
+                            </div>
+                            <!-- Card financial -->
+
+                            <!-- Card financial -->
+                            <div class="card_financial">
+                                <img src="./media/image/value_arrest.jpg" alt="value_arrest">
+                                <div class="data_financial">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>قيمة القبض</span>
+                                        <i class="fa-solid fa-money-bill-1-wave"></i>
+                                    </div>
+                                    <h4>10,000</h4>
+                                    <p>المبلغ الواصل له</p>
+                                </div>
+                            </div>
+                            <!-- Card financial -->
+
+                            <!-- Card financial -->
+                            <div class="card_financial">
+                                <img src="./media/image/rest_arrest.jpg" alt="rest_arrest">
+                                <div class="data_financial">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>باقي القبض</span>
+                                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                                    </div>
+                                    <h4>10,000</h4>
+                                    <p>المبلغ المتبقي</p>
+                                </div>
+                            </div>
+                            <!-- Card financial -->
+
+                        </div>
                         <div class="reating_employee">
                             <h5>التقييمات العامة للموظف</h5>
+                            <!-- For reating card -->
                             <div class="reating_card">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="d-flex align-items-center">
@@ -293,6 +397,58 @@
                                     هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                                     العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...ه</p>
                             </div>
+                            <!-- For reating card -->
+
+                            <!-- For reating card -->
+                            <div class="reating_card">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./media/image/7w7w.jpg" alt="reating_img">
+                                        <div class="d-inline-block">
+                                            <span class="title">شركة كريزي ايديا للبرمجيات</span>
+                                            <div class="reating">
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="date">منذ شهرين</div>
+                                </div>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص
+                                    هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...ه</p>
+                            </div>
+                            <!-- For reating card -->
+
+                            <!-- For reating card -->
+                            <div class="reating_card">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./media/image/7w7w.jpg" alt="reating_img">
+                                        <div class="d-inline-block">
+                                            <span class="title">شركة كريزي ايديا للبرمجيات</span>
+                                            <div class="reating">
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="date">منذ شهرين</div>
+                                </div>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص
+                                    هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...ه</p>
+                            </div>
+                            <!-- For reating card -->
+
                         </div>
                     </div>
                     <div class="col-12">
@@ -302,7 +458,7 @@
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-solid fa-ellipsis"></i>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">عرض كل المرشحين</a></li>

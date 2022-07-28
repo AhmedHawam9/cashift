@@ -24,6 +24,10 @@ $SecondColor: #68245d;
 @import "./navBar.scss";
 @import "./sideBar.scss";
 
+body {
+  overflow-x: hidden;
+}
+
 table tbody tr td {
   vertical-align: middle;
 }
@@ -74,6 +78,11 @@ table tbody tr td {
 }
 
 .index_cards {
+  // padding: 0;
+  // background-color: #fff;
+  // width: 100%;
+  // position: relative;
+
   div.dataTables_wrapper div.dataTables_filter input {
     margin-inline-start: 1rem;
   }
@@ -107,10 +116,6 @@ table tbody tr td {
     }
   }
 
-  padding: 0;
-  background-color: #fff;
-  width: 100%;
-  position: relative;
 
   .job_background {
     background-color: #FAFAFA;
@@ -673,9 +678,7 @@ table tbody tr td {
           text-align: center;
         }
 
-        .card_accuracy_projects {
-          
-        }
+        .card_accuracy_projects {}
       }
     }
 
@@ -3068,8 +3071,9 @@ table tbody tr td {
       .completion_rate {
         margin-bottom: 3rem;
         border-radius: 5px;
-        .card_accuracy_projects{
-          .c100:hover > span{
+
+        .card_accuracy_projects {
+          .c100:hover>span {
             color: $PrimaryColor;
           }
         }
@@ -3095,7 +3099,6 @@ table tbody tr td {
       background-color: #fff;
       padding: 2rem;
       border-radius: 5px;
-      margin-top: 2rem;
 
       h5 {
         margin-bottom: 2rem;
@@ -3145,6 +3148,145 @@ table tbody tr td {
       }
     }
 
+    .employee_Exhibition {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+
+      h5 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: "regular";
+        color: #828C8D;
+        font-size: .9rem;
+        width: 85%;
+      }
+
+      // .swiper {
+      //   width: 95%;
+      //   display: inline-block;
+      // }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+
+          img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            height: 250px;
+            border-radius: 5px;
+            object-fit: cover;
+            filter: brightness(.6);
+            transition: .7s ease-in-out;
+
+            &:hover {
+              filter: brightness(.8);
+              transition: .7s ease-in-out;
+            }
+          }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          width: 40px;
+          height: 40px;
+
+          &::after {
+            filter: brightness(0) invert(1);
+            font-size: 1.5rem;
+            background-color: rgba(16, 43, 33, .24);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    .employee_financial {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+
+      h5 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: "regular";
+        color: #828C8D;
+        font-size: .9rem;
+        width: 85%;
+      }
+
+      .card_financial {
+        position: relative;
+        width: 20%;
+        display: inline-block;
+        margin-inline-end: 3%;
+
+        img {
+          width: 100%;
+        }
+
+        .data_financial {
+          position: absolute;
+          top: 5%;
+          width: 80%;
+          right: 10%;
+          left: 10%;
+
+          span {
+            font-family: "regular";
+            color: #E8EFED;
+          }
+
+          svg {
+            color: #E8EFED;
+          }
+
+          h4 {
+            margin-top: 60%;
+            color: #fff;
+            font-family: "semibold";
+          }
+
+          p {
+            font-family: "regular";
+            color: #fff;
+          }
+        }
+      }
+    }
+
     .reating_employee {
       background-color: #fff;
       padding: 2rem;
@@ -3159,7 +3301,7 @@ table tbody tr td {
       }
 
       .reating_card {
-        margin-top: 1rem;
+        margin-top: 2rem;
         width: 85%;
 
         img {
@@ -3202,14 +3344,16 @@ table tbody tr td {
     }
 
     .other_candidates {
-      width: 90%;
+      width: 100%;
       margin: 3rem auto 0;
+
       .dropdown {
-        .dropdown-toggle{
-          &::after{
+        .dropdown-toggle {
+          &::after {
             content: none;
           }
         }
+
         .dropdown-menu {
           .dropdown-item {
             text-align: start;
@@ -3218,6 +3362,7 @@ table tbody tr td {
           }
         }
       }
+
       .card_other_candidates {
         width: 18.7%;
         display: inline-block;
@@ -3225,6 +3370,7 @@ table tbody tr td {
         background-color: #fff;
         border-radius: 5px;
         padding: 1rem;
+
         img {
           width: 70px;
           height: 70px;
@@ -3232,12 +3378,14 @@ table tbody tr td {
           display: block;
           margin: 0 auto;
         }
+
         .name {
           font-family: "semibold";
           color: #011C1E;
           text-align: center;
           margin-top: 1rem;
         }
+
         .title {
           font-family: "regular";
           color: $PrimaryColor;
@@ -3246,10 +3394,12 @@ table tbody tr td {
           display: block;
           margin-top: .3rem;
         }
+
         .reating {
           display: flex;
           justify-content: center;
           margin-top: .5rem;
+
           svg {
             color: rgba(228, 170, 60, .4);
             margin: 0 .3rem;
@@ -3259,8 +3409,10 @@ table tbody tr td {
             }
           }
         }
+
         .tags {
           margin-top: 1rem;
+
           .tag {
             background-color: #F0F0F0;
             color: #596364;
@@ -3272,6 +3424,7 @@ table tbody tr td {
             border-radius: 15px;
           }
         }
+
         .show_more {
           font-family: "semibold";
           color: #fff;
