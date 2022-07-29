@@ -48,7 +48,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-  <div class="d-flex p-0">
+  <div class="d-flex sidemobile p-0">
     <!-- ======= Start Sidebar ======= -->
     <section class="sidebar open">
       <ul class="
@@ -57,7 +57,9 @@
         mb-sm-auto mb-0
         align-items-center align-items-sm-start
       " id="menu">
-        <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+        <div class="image_logo">
+          <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+        </div>
         <li class="nav-item">
           <a href="index.html" class="nav-link align-middle">
             <img src="./media/image/icon/home.svg" alt="icon" />
@@ -278,7 +280,7 @@
           <!-- ======= Start When there is content ======= -->
 
           <!-- Start right content -->
-          <div class="col-md-8 col-12 px-4">
+          <div class="col-lg-8 col-md-12 col-12 px-4">
             <!-- Start statistics section -->
             <div class="statistics">
               <!-- ======== card statistics ======== -->
@@ -390,7 +392,7 @@
               <h5>الوظائف المضافة مؤخرا</h5>
               <div class="row">
                 <!-- ====== card job ====== -->
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                   <div class="card_job">
                     <h6 class="title">مصمم وجهات مستخدم باستخدام فيجما</h6>
                     <span class="name">مشروع ال 100 مصمم</span>
@@ -407,7 +409,7 @@
                 <!-- ====== card job ====== -->
 
                 <!-- ====== card job ====== -->
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                   <div class="card_job">
                     <h6 class="title">مصمم وجهات مستخدم باستخدام فيجما</h6>
                     <span class="name">مشروع ال 100 مصمم</span>
@@ -604,62 +606,64 @@
                 <a href="team.html" class="btn">عرض الكل</a>
               </div>
               <!-- ======= table team ======= -->
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">الإسم</th>
-                    <th scope="col">المستوي الوظيفي</th>
-                    <th scope="col">رقم الهاتف</th>
-                    <th scope="col">نوع العمل</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- For loop this details team -->
-                  <tr>
-                    <td>
-                      <div class="details_team">
-                        <img src="./media/image/7w7w.jpg" alt="person">
-                        <div class="contact">
-                          <p>Ahmed Hawam</p>
-                          <span>ahmed.hawam2030@gmail.com</span>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">الإسم</th>
+                      <th scope="col">المستوي الوظيفي</th>
+                      <th scope="col">رقم الهاتف</th>
+                      <th scope="col">نوع العمل</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- For loop this details team -->
+                    <tr>
+                      <td>
+                        <div class="details_team">
+                          <img src="./media/image/7w7w.jpg" alt="person">
+                          <div class="contact">
+                            <p>Ahmed Hawam</p>
+                            <span>ahmed.hawam2030@gmail.com</span>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                    <td>Junior UI/UX Designer</td>
-                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                    <td><span class="type_work total">دوام كامل</span></td>
-                  </tr>
-                  <!-- For loop this details team -->
-                  <tr>
-                    <td>
-                      <div class="details_team">
-                        <img src="./media/image/7w7w.jpg" alt="person">
-                        <div class="contact">
-                          <p>Ahmed Hawam</p>
-                          <span>ahmed.hawam2030@gmail.com</span>
+                      </td>
+                      <td>Junior UI/UX Designer</td>
+                      <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                      <td><span class="type_work total">دوام كامل</span></td>
+                    </tr>
+                    <!-- For loop this details team -->
+                    <tr>
+                      <td>
+                        <div class="details_team">
+                          <img src="./media/image/7w7w.jpg" alt="person">
+                          <div class="contact">
+                            <p>Ahmed Hawam</p>
+                            <span>ahmed.hawam2030@gmail.com</span>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                    <td>Junior UI/UX Designer</td>
-                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                    <td><span class="type_work part">دوام جزئي</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="details_team">
-                        <img src="./media/image/7w7w.jpg" alt="person">
-                        <div class="contact">
-                          <p>Ahmed Hawam</p>
-                          <span>ahmed.hawam2030@gmail.com</span>
+                      </td>
+                      <td>Junior UI/UX Designer</td>
+                      <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                      <td><span class="type_work part">دوام جزئي</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="details_team">
+                          <img src="./media/image/7w7w.jpg" alt="person">
+                          <div class="contact">
+                            <p>Ahmed Hawam</p>
+                            <span>ahmed.hawam2030@gmail.com</span>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                    <td>Junior UI/UX Designer</td>
-                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                    <td><span class="type_work hour">نظام الساعات</span></td>
-                  </tr>
-                </tbody>
-              </table>
+                      </td>
+                      <td>Junior UI/UX Designer</td>
+                      <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                      <td><span class="type_work hour">نظام الساعات</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <!-- ======= table team ======= -->
             </div>
             <!-- ======= End Team ======= -->
@@ -734,7 +738,7 @@
           <!-- End right content -->
 
           <!-- Start left content -->
-          <div class="col-md-4 col-12">
+          <div class="col-lg-4 col-md-12 col-12">
             <div class="left_content">
               <!-- Start best performance job -->
               <div class="best_job">

@@ -4115,3 +4115,139 @@ table tbody tr td {
     }
   }
 }
+
+
+@media only screen and (max-width: 1200px) {
+  .index_cards {
+    .content {
+      padding: 1rem;
+
+      .statistics {
+        .card_statistics {
+          padding: .5rem;
+        }
+      }
+
+      .percentage_projects {
+        h5 {
+          font-size: .8rem;
+        }
+
+        .nav-pills {
+          width: 100%;
+        }
+      }
+
+      .team_shift {
+        table {
+          tr {
+            td {
+              font-size: .8rem;
+
+              .details_team {
+                span {
+                  font-size: .6rem;
+                }
+              }
+            }
+
+            th {
+              font-size: .8rem;
+            }
+          }
+        }
+      }
+
+      .left_content {
+        padding: .5rem;
+
+        .best_job {
+          .card_best_job {
+            img {
+              width: 35px;
+              height: 35px;
+            }
+
+            .details_best_job {
+              width: 80%;
+            }
+          }
+        }
+
+        .best_project {
+          .card_project {
+            .percentage_bar {
+              .bar {
+                .title {
+                  font-size: .6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .index_cards {
+    .content {
+      .welcome {
+        flex-direction: column;
+      }
+
+      .statistics {
+        display: block;
+
+        .card_statistics {
+          width: 45%;
+          display: inline-block;
+          margin: 0 auto;
+          padding: 1.5rem 2rem;
+          margin-bottom: 1rem;
+          margin-inline-end: 2%;
+        }
+      }
+
+      .last_job {
+        .card_job {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .percentage_projects {
+        .d-flex {
+          flex-direction: column;
+        }
+
+        .nav-pills {
+          flex-wrap: nowrap;
+          justify-content: center;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .index_cards {
+    .content {
+      .welcome {
+        flex-direction: column;
+      }
+
+      .statistics {
+        flex-direction: column;
+
+        .card_statistics {
+          width: 90%;
+          margin: 0 auto;
+          padding: 1.5rem 2rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

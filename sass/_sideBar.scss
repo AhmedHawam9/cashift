@@ -187,10 +187,9 @@
     }
 
     .sidebar.open {
-        width: 25%;
 
         span {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
         }
 
         .nav-pills {
@@ -204,12 +203,76 @@
 }
 
 @media only screen and (max-width: 991.98px) {
+    .navbar {
+        .menu {
+            display: none;
+        }
+    }
     .sidebar {
         margin-right: -30%;
         width: 30%;
+        .contact_us{
+            display: none;
+        }
     }
-
+    .sidebar.open ~ .index_cards{
+        width: 100%;
+    }
     .sidebar.open {
-        width: 30%;
+        width: 100%;
+        min-height: fit-content;
+        height: fit-content;
+        padding: 0;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        bottom: 0;
+        z-index: 9999;
+        .nav-pills{
+            flex-direction: row !important;
+            .nav-item {
+                width: 14.28%;
+                margin: 0;
+                .nav-link {
+                    padding: .5rem 0;
+                    margin-bottom: 0;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    span {
+                        display: block;
+                        text-align: center;
+                        margin: .5rem 0 0;
+                        font-size: .6rem;
+                    }
+                    &.active {
+                        // filter: invert(68%) sepia(96%) saturate(295%) hue-rotate(112deg) brightness(91%) contrast(94%);
+                        border-inline-end: 0;
+                        background-color: $PrimaryColor;
+                    }
+                }
+            }
+            .image_logo{
+                width: 100%;
+                display: none;
+            }
+        }
+    }
+    .sidemobile {
+        flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .sidebar.open {
+        .nav-pills{
+            .nav-item {
+                .nav-link {
+                    span {
+                        font-size: .4rem;
+                    }
+                }
+            }
+        }
+    }
+} 
