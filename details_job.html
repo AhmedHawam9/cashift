@@ -66,8 +66,8 @@
         align-items-center align-items-sm-start
       " id="menu">
                 <div class="image_logo">
-        <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-      </div>
+                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+                </div>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link align-middle">
                         <img src="./media/image/icon/home.svg" alt="icon" />
@@ -237,7 +237,7 @@
                         <div class="row">
                             <h5 class="title_head">التقارير الحسابية الخاصة بالمشاريع</h5>
                             <!-- Start completion projects -->
-                            <div class="col-md-8 col-12">
+                            <div class="col-lg-8 col-12">
                                 <div class="general_description_job">
                                     <h5>الوصف العام للوظيفة</h5>
                                     <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
@@ -319,7 +319,7 @@
                             <!-- End completion projects -->
 
                             <!-- Start similar jobs Section -->
-                            <div class="col-md-4 col-12">
+                            <div class="col-lg-4 col-12">
                                 <div class="similar_jobs">
                                     <h5>وظائف مشابهة</h5>
                                     <!-- Start similar jobs card -->
@@ -409,148 +409,156 @@
                                 </div>
                             </div>
                             <script>$('input[name="dates"]').daterangepicker();</script>
-                            <table class="table" id="allProjects">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">رقم الموظف</th>
-                                        <th scope="col">الاسم</th>
-                                        <th scope="col">الوظيفة</th>
-                                        <th scope="col">رقم الهاتف</th>
-                                        <th scope="col">المستوى الوظيفي</th>
-                                        <th scope="col">نوع العمل</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- for loop this details project -->
-                                    <tr>
-                                        <td class="title">ADM221-10</td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                <div class="details_employee">
-                                                    <p>مروان ادهم</p>
-                                                    <p>rasha@gmail.com</p>
+                            <div class="table-responsive">
+                                <table class="table" id="allProjects">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">رقم الموظف</th>
+                                            <th scope="col">الاسم</th>
+                                            <th scope="col">الوظيفة</th>
+                                            <th scope="col">رقم الهاتف</th>
+                                            <th scope="col">المستوى الوظيفي</th>
+                                            <th scope="col">نوع العمل</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- for loop this details project -->
+                                        <tr>
+                                            <td class="title">ADM221-10</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                        alt="employee">
+                                                    <div class="details_employee">
+                                                        <p>مروان ادهم</p>
+                                                        <p>rasha@gmail.com</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td>UI/UX Designer</td>
-                                        <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                        <td>جونيور</td>
-                                        <td>
-                                            <span class="status full-time">
-                                                دوام كامل
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <a class="btn dropdown-toggle" href="#" role="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="employee_activities.html">عرض تفاصيل الموظف</a></li>
-                                                    <li><a class="dropdown-item" href="#">الحضور والانصراف</a></li>
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#rejectModal">حجب الموظف</a></li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <!-- for loop this details project -->
+                                            </td>
+                                            <td>UI/UX Designer</td>
+                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                            <td>جونيور</td>
+                                            <td>
+                                                <span class="status full-time">
+                                                    دوام كامل
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="employee_activities.html">عرض
+                                                                تفاصيل الموظف</a></li>
+                                                        <li><a class="dropdown-item" href="#">الحضور والانصراف</a></li>
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#rejectModal">حجب الموظف</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- for loop this details project -->
 
-                                    <!-- for loop this details project -->
-                                    <tr>
-                                        <td class="title">ADM221-10</td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                <div class="details_employee">
-                                                    <p>مروان ادهم</p>
-                                                    <p>rasha@gmail.com</p>
+                                        <!-- for loop this details project -->
+                                        <tr>
+                                            <td class="title">ADM221-10</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                        alt="employee">
+                                                    <div class="details_employee">
+                                                        <p>مروان ادهم</p>
+                                                        <p>rasha@gmail.com</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td>UI/UX Designer</td>
-                                        <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                        <td>جونيور</td>
-                                        <td>
-                                            <span class="status part-time">
-                                                دوام جزئي
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <a class="btn dropdown-toggle" href="#" role="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="employee_activities.html">عرض تفاصيل الموظف</a></li>
-                                                    <li><a class="dropdown-item" href="#">الحضور والانصراف</a></li>
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#rejectModal">حجب الموظف</a></li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <!-- for loop this details project -->
+                                            </td>
+                                            <td>UI/UX Designer</td>
+                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                            <td>جونيور</td>
+                                            <td>
+                                                <span class="status part-time">
+                                                    دوام جزئي
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="employee_activities.html">عرض
+                                                                تفاصيل الموظف</a></li>
+                                                        <li><a class="dropdown-item" href="#">الحضور والانصراف</a></li>
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#rejectModal">حجب الموظف</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- for loop this details project -->
 
-                                    <!-- for loop this details project -->
-                                    <tr>
-                                        <td class="title">ADM221-10</td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                <div class="details_employee">
-                                                    <p>مروان ادهم</p>
-                                                    <p>rasha@gmail.com</p>
+                                        <!-- for loop this details project -->
+                                        <tr>
+                                            <td class="title">ADM221-10</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                        alt="employee">
+                                                    <div class="details_employee">
+                                                        <p>مروان ادهم</p>
+                                                        <p>rasha@gmail.com</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td>UI/UX Designer</td>
-                                        <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                        <td>جونيور</td>
-                                        <td>
-                                            <span class="status hour-system">
-                                                نظام الساعات
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <a class="btn dropdown-toggle" href="#" role="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="employee_activities.html">عرض تفاصيل الموظف</a></li>
-                                                    <li><a class="dropdown-item" href="#">الحضور والانصراف</a></li>
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#rejectModal">حجب الموظف</a></li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <!-- for loop this details project -->
-                                </tbody>
-                            </table>
-                            <script>
-                                $(document).ready(function () {
-                                    $('#allProjects').DataTable({
-                                        language: {
-                                            search: "البحث",
-                                            lengthMenu: "عرض" + " _MENU_ " + "المشاريع",
-                                            paginate: {
-                                                first: "الأول",
-                                                last: "الأخير",
-                                                next: "التالي",
-                                                previous: "السابق",
+                                            </td>
+                                            <td>UI/UX Designer</td>
+                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                            <td>جونيور</td>
+                                            <td>
+                                                <span class="status hour-system">
+                                                    نظام الساعات
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="employee_activities.html">عرض
+                                                                تفاصيل الموظف</a></li>
+                                                        <li><a class="dropdown-item" href="#">الحضور والانصراف</a></li>
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#rejectModal">حجب الموظف</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- for loop this details project -->
+                                    </tbody>
+                                </table>
+                                <script>
+                                    $(document).ready(function () {
+                                        $('#allProjects').DataTable({
+                                            language: {
+                                                search: "البحث",
+                                                lengthMenu: "عرض" + " _MENU_ " + "المشاريع",
+                                                paginate: {
+                                                    first: "الأول",
+                                                    last: "الأخير",
+                                                    next: "التالي",
+                                                    previous: "السابق",
+                                                },
+                                                info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "المشاريع",
                                             },
-                                            info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "المشاريع",
-                                        },
+                                        });
                                     });
-                                });
-                            </script>
+                                </script>
+                            </div>
                         </div>
                         <!-- End All Projects -->
                     </div>

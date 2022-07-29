@@ -67,8 +67,8 @@
         align-items-center align-items-sm-start
       " id="menu">
                 <div class="image_logo">
-        <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-      </div>
+                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+                </div>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link align-middle">
                         <img src="./media/image/icon/home.svg" alt="icon" />
@@ -171,7 +171,7 @@
             <!-- ======= Start Content ======= -->
             <section class="content">
                 <div class="single_project">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center mb-3 single_project_mobile">
                         <h5>مشروع ال 100 مصمم لانشاء الموقع والتطبيقات</h5>
                         <a href="add_work.html" class="btn work_btn">+ اضافة فرصة عمل</a>
                     </div>
@@ -267,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-8 col-md-9 col-12">
+                                <div class="col-lg-8 col-12">
                                     <!-- Start percentage projects -->
                                     <div class="percentage_projects">
                                         <div class="d-flex justify-content-between">
@@ -295,157 +295,162 @@
                                         <div class="tab-content" id="pills-tabContent">
                                             <div class="tab-pane fade show active" id="pills-day" role="tabpanel"
                                                 aria-labelledby="pills-day-tab" tabindex="0">
-                                                <canvas id="percentageProjectsDay" width="400" height="125vh"></canvas>
-                                                <script>
-                                                    var barChartDataProjectsDay = {
-                                                        labels: [
-                                                            "sat",
-                                                            "sun",
-                                                            "mon",
-                                                            "tue",
-                                                            "wed",
-                                                            "thu",
-                                                            "fri",
-                                                        ],
-                                                        datasets: [
-                                                            {
-                                                                type: "line",
-                                                                label: "التقدم للوظائف",
-                                                                backgroundColor: 'rgba(36, 104, 79, .1)',
-                                                                borderColor: "#24684F",
-                                                                fill: true,
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [10, 7, 5, 6, 9, 7, 8]
-                                                            },
-                                                            {
-                                                                type: "line",
-                                                                label: "تصفح الوظائف",
-                                                                backgroundColor: "#68245D",
-                                                                borderColor: "#68245D",
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [6, 9, 7, 5, 10, 9, 8]
-                                                            },
-                                                        ]
-                                                    };
+                                                <div class="chart-containers">
+                                                    <canvas id="percentageProjectsDay"></canvas>
+                                                    <script>
+                                                        var barChartDataProjectsDay = {
+                                                            labels: [
+                                                                "sat",
+                                                                "sun",
+                                                                "mon",
+                                                                "tue",
+                                                                "wed",
+                                                                "thu",
+                                                                "fri",
+                                                            ],
+                                                            datasets: [
+                                                                {
+                                                                    type: "line",
+                                                                    label: "التقدم للوظائف",
+                                                                    backgroundColor: 'rgba(36, 104, 79, .1)',
+                                                                    borderColor: "#24684F",
+                                                                    fill: true,
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [10, 7, 5, 6, 9, 7, 8]
+                                                                },
+                                                                {
+                                                                    type: "line",
+                                                                    label: "تصفح الوظائف",
+                                                                    backgroundColor: "#68245D",
+                                                                    borderColor: "#68245D",
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [6, 9, 7, 5, 10, 9, 8]
+                                                                },
+                                                            ]
+                                                        };
 
-                                                    var chartOptionsProjectsDay = {
-                                                        responsive: true,
-                                                        legend: {
-                                                            position: "top"
-                                                        },
-                                                        title: {
-                                                            display: true,
-                                                            text: "Chart.js Bar Chart"
-                                                        },
-                                                    }
-                                                </script>
+                                                        var chartOptionsProjectsDay = {
+                                                            responsive: true,
+                                                            legend: {
+                                                                position: "top"
+                                                            },
+                                                            title: {
+                                                                display: true,
+                                                                text: "Chart.js Bar Chart"
+                                                            },
+                                                        }
+                                                    </script>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="pills-week" role="tabpanel"
                                                 aria-labelledby="pills-week-tab" tabindex="0">
-                                                <canvas id="percentageProjectsWeek" width="400" height="125vh"></canvas>
-                                                <script>
-                                                    var barChartDataProjectsWeek = {
-                                                        labels: [
-                                                            "sat",
-                                                            "sun",
-                                                            "mon",
-                                                            "tue",
-                                                            "wed",
-                                                            "thu",
-                                                            "fri",
-                                                        ],
-                                                        datasets: [
-                                                            {
-                                                                type: "line",
-                                                                label: "التقدم للوظائف",
-                                                                backgroundColor: 'rgba(36, 104, 79, .1)',
-                                                                borderColor: "#24684F",
-                                                                fill: true,
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [10, 7, 5, 6, 9, 7, 8]
-                                                            },
-                                                            {
-                                                                type: "line",
-                                                                label: "تصفح الوظائف",
-                                                                backgroundColor: "#68245D",
-                                                                borderColor: "#68245D",
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [6, 9, 7, 5, 10, 9, 8]
-                                                            },
-                                                        ]
-                                                    };
+                                                <div class="chart-containers">
+                                                    <canvas id="percentageProjectsWeek"></canvas>
+                                                    <script>
+                                                        var barChartDataProjectsWeek = {
+                                                            labels: [
+                                                                "sat",
+                                                                "sun",
+                                                                "mon",
+                                                                "tue",
+                                                                "wed",
+                                                                "thu",
+                                                                "fri",
+                                                            ],
+                                                            datasets: [
+                                                                {
+                                                                    type: "line",
+                                                                    label: "التقدم للوظائف",
+                                                                    backgroundColor: 'rgba(36, 104, 79, .1)',
+                                                                    borderColor: "#24684F",
+                                                                    fill: true,
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [10, 7, 5, 6, 9, 7, 8]
+                                                                },
+                                                                {
+                                                                    type: "line",
+                                                                    label: "تصفح الوظائف",
+                                                                    backgroundColor: "#68245D",
+                                                                    borderColor: "#68245D",
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [6, 9, 7, 5, 10, 9, 8]
+                                                                },
+                                                            ]
+                                                        };
 
-                                                    var chartOptionsProjectsWeek = {
-                                                        responsive: true,
-                                                        legend: {
-                                                            position: "top"
-                                                        },
-                                                        title: {
-                                                            display: true,
-                                                            text: "Chart.js Bar Chart"
-                                                        },
-                                                    }
-                                                </script>
+                                                        var chartOptionsProjectsWeek = {
+                                                            responsive: true,
+                                                            legend: {
+                                                                position: "top"
+                                                            },
+                                                            title: {
+                                                                display: true,
+                                                                text: "Chart.js Bar Chart"
+                                                            },
+                                                        }
+                                                    </script>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="pills-month" role="tabpanel"
                                                 aria-labelledby="pills-month-tab" tabindex="0">
-                                                <canvas id="percentageProjectsMonth" width="400"
-                                                    height="125vh"></canvas>
-                                                <script>
-                                                    var barChartDataProjectsMonth = {
-                                                        labels: [
-                                                            "sat",
-                                                            "sun",
-                                                            "mon",
-                                                            "tue",
-                                                            "wed",
-                                                            "thu",
-                                                            "fri",
-                                                        ],
-                                                        datasets: [
-                                                            {
-                                                                type: "line",
-                                                                label: "التقدم للوظائف",
-                                                                backgroundColor: 'rgba(36, 104, 79, .1)',
-                                                                borderColor: "#24684F",
-                                                                fill: true,
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [10, 7, 5, 6, 9, 7, 8]
-                                                            },
-                                                            {
-                                                                type: "line",
-                                                                label: "تصفح الوظائف",
-                                                                backgroundColor: "#68245D",
-                                                                borderColor: "#68245D",
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [6, 9, 7, 5, 10, 9, 8]
-                                                            },
-                                                        ]
-                                                    };
+                                                <div class="chart-containers">
+                                                    <canvas id="percentageProjectsMonth"></canvas>
+                                                    <script>
+                                                        var barChartDataProjectsMonth = {
+                                                            labels: [
+                                                                "sat",
+                                                                "sun",
+                                                                "mon",
+                                                                "tue",
+                                                                "wed",
+                                                                "thu",
+                                                                "fri",
+                                                            ],
+                                                            datasets: [
+                                                                {
+                                                                    type: "line",
+                                                                    label: "التقدم للوظائف",
+                                                                    backgroundColor: 'rgba(36, 104, 79, .1)',
+                                                                    borderColor: "#24684F",
+                                                                    fill: true,
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [10, 7, 5, 6, 9, 7, 8]
+                                                                },
+                                                                {
+                                                                    type: "line",
+                                                                    label: "تصفح الوظائف",
+                                                                    backgroundColor: "#68245D",
+                                                                    borderColor: "#68245D",
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [6, 9, 7, 5, 10, 9, 8]
+                                                                },
+                                                            ]
+                                                        };
 
-                                                    var chartOptionsProjectsMonth = {
-                                                        responsive: true,
-                                                        legend: {
-                                                            position: "top"
-                                                        },
-                                                        title: {
-                                                            display: true,
-                                                            text: "Chart.js Bar Chart"
-                                                        },
-                                                    }
-                                                </script>
+                                                        var chartOptionsProjectsMonth = {
+                                                            responsive: true,
+                                                            legend: {
+                                                                position: "top"
+                                                            },
+                                                            title: {
+                                                                display: true,
+                                                                text: "Chart.js Bar Chart"
+                                                            },
+                                                        }
+                                                    </script>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- End percentage projects -->
                                 </div>
-                                <div class="col-lg-4 col-md-3 col-12">
+                                <div class="col-lg-4 col-12">
                                     <div class="available_job">
                                         <div class="d-flex justify-content-between mb-3">
                                             <h5>أفضل فرص العمل إنجازا في المشروع</h5>
@@ -526,72 +531,74 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-8 col-md-9 col-12">
+                                <div class="col-lg-8 col-12">
                                     <!-- ======= Start Team ======= -->
                                     <div class="team_shift">
                                         <h5>أفضل الموظفين </h5>
                                         <!-- ======= table team ======= -->
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">الإسم</th>
-                                                    <th scope="col">المستوي الوظيفي</th>
-                                                    <th scope="col">رقم الهاتف</th>
-                                                    <th scope="col">نوع العمل</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!-- For loop this details team -->
-                                                <tr>
-                                                    <td>
-                                                        <div class="details_team">
-                                                            <img src="./media/image/7w7w.jpg" alt="person">
-                                                            <div class="contact">
-                                                                <p>Ahmed Hawam</p>
-                                                                <span>ahmed.hawam2030@gmail.com</span>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">الإسم</th>
+                                                        <th scope="col">المستوي الوظيفي</th>
+                                                        <th scope="col">رقم الهاتف</th>
+                                                        <th scope="col">نوع العمل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- For loop this details team -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="details_team">
+                                                                <img src="./media/image/7w7w.jpg" alt="person">
+                                                                <div class="contact">
+                                                                    <p>Ahmed Hawam</p>
+                                                                    <span>ahmed.hawam2030@gmail.com</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>Junior UI/UX Designer</td>
-                                                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                    <td><span class="type_work total">دوام كامل</span></td>
-                                                </tr>
-                                                <!-- For loop this details team -->
-                                                <tr>
-                                                    <td>
-                                                        <div class="details_team">
-                                                            <img src="./media/image/7w7w.jpg" alt="person">
-                                                            <div class="contact">
-                                                                <p>Ahmed Hawam</p>
-                                                                <span>ahmed.hawam2030@gmail.com</span>
+                                                        </td>
+                                                        <td>Junior UI/UX Designer</td>
+                                                        <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                        <td><span class="type_work total">دوام كامل</span></td>
+                                                    </tr>
+                                                    <!-- For loop this details team -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="details_team">
+                                                                <img src="./media/image/7w7w.jpg" alt="person">
+                                                                <div class="contact">
+                                                                    <p>Ahmed Hawam</p>
+                                                                    <span>ahmed.hawam2030@gmail.com</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>Junior UI/UX Designer</td>
-                                                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                    <td><span class="type_work part">دوام جزئي</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="details_team">
-                                                            <img src="./media/image/7w7w.jpg" alt="person">
-                                                            <div class="contact">
-                                                                <p>Ahmed Hawam</p>
-                                                                <span>ahmed.hawam2030@gmail.com</span>
+                                                        </td>
+                                                        <td>Junior UI/UX Designer</td>
+                                                        <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                        <td><span class="type_work part">دوام جزئي</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="details_team">
+                                                                <img src="./media/image/7w7w.jpg" alt="person">
+                                                                <div class="contact">
+                                                                    <p>Ahmed Hawam</p>
+                                                                    <span>ahmed.hawam2030@gmail.com</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>Junior UI/UX Designer</td>
-                                                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                    <td><span class="type_work hour">نظام الساعات</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                        </td>
+                                                        <td>Junior UI/UX Designer</td>
+                                                        <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                        <td><span class="type_work hour">نظام الساعات</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <!-- ======= table team ======= -->
                                     </div>
                                     <!-- ======= End Team ======= -->
                                 </div>
-                                <div class="col-lg-4 col-md-3 col-12">
+                                <div class="col-lg-4 col-12">
                                     <div class="employment_resignation">
                                         <h5>نسبة التوظيف الى الاستقالة</h5>
                                         <canvas id="percentageJobs" width="400" height="280vh"></canvas>
@@ -663,184 +670,186 @@
                                     <option value="">الرياض</option>
                                 </select>
                                 <script>$('input[name="dates"]').daterangepicker();</script>
-                                <table class="table" id="chancesWork">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>رقم الوظيفة</th>
-                                            <th>الاسم</th>
-                                            <th>العنوان</th>
-                                            <th>تاريخ الانشاء</th>
-                                            <th>العدد المطلوب</th>
-                                            <th>التكلفة</th>
-                                            <th>الحالة</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status new">جديد</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                <div class="table-responsive">
+                                    <table class="table" id="chancesWork">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>رقم الوظيفة</th>
+                                                <th>الاسم</th>
+                                                <th>العنوان</th>
+                                                <th>تاريخ الانشاء</th>
+                                                <th>العدد المطلوب</th>
+                                                <th>التكلفة</th>
+                                                <th>الحالة</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>Junior UI/UX Designer</td>
+                                                <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td>44</td>
+                                                <td>100 ريال سعودي</td>
+                                                <td><span class="status new">جديد</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status active">فعالة</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>Junior UI/UX Designer</td>
+                                                <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td>44</td>
+                                                <td>100 ريال سعودي</td>
+                                                <td><span class="status active">فعالة</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status cancel">لاغية</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>Junior UI/UX Designer</td>
+                                                <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td>44</td>
+                                                <td>100 ريال سعودي</td>
+                                                <td><span class="status cancel">لاغية</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status end">منتهية</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>Junior UI/UX Designer</td>
+                                                <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td>44</td>
+                                                <td>100 ريال سعودي</td>
+                                                <td><span class="status end">منتهية</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status fail">فشل</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
-                                    </tbody>
-                                </table>
-                                <script>
-                                    $(document).ready(function () {
-                                        $('#chancesWork').DataTable({
-                                            language: {
-                                                search: "البحث",
-                                                lengthMenu: "عرض" + " _MENU_ " + "الأعمال",
-                                                paginate: {
-                                                    first: "الأول",
-                                                    last: "الأخير",
-                                                    next: "التالي",
-                                                    previous: "السابق",
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>Junior UI/UX Designer</td>
+                                                <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td>44</td>
+                                                <td>100 ريال سعودي</td>
+                                                <td><span class="status fail">فشل</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
+                                        </tbody>
+                                    </table>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('#chancesWork').DataTable({
+                                                language: {
+                                                    search: "البحث",
+                                                    lengthMenu: "عرض" + " _MENU_ " + "الأعمال",
+                                                    paginate: {
+                                                        first: "الأول",
+                                                        last: "الأخير",
+                                                        next: "التالي",
+                                                        previous: "السابق",
+                                                    },
+                                                    info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الأعمال",
                                                 },
-                                                info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الأعمال",
-                                            },
-                                            columnDefs: [{
-                                                orderable: false,
-                                                className: 'select-checkbox',
-                                                targets: 0
-                                            }],
-                                            select: {
-                                                style: 'os',
-                                                selector: 'td:first-child'
-                                            },
-                                            order: [[1, 'asc']]
+                                                columnDefs: [{
+                                                    orderable: false,
+                                                    className: 'select-checkbox',
+                                                    targets: 0
+                                                }],
+                                                select: {
+                                                    style: 'os',
+                                                    selector: 'td:first-child'
+                                                },
+                                                order: [[1, 'asc']]
+                                            });
                                         });
-                                    });
-                                </script>
+                                    </script>
+                                </div>
                             </div>
                         </div>
                         <!-- End chances work details -->
@@ -853,150 +862,155 @@
                                     <option value="">junior</option>
                                     <option value="">senior</option>
                                 </select>
-                                <table class="table" id="teamWork">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>رقم الموظف</th>
-                                            <th>الاسم</th>
-                                            <th>المستوي الوظيفي</th>
-                                            <th>رقم الجوال</th>
-                                            <th>الوظيفة</th>
-                                            <th>الحالة</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                    <div class="details_employee">
-                                                        <p>مروان ادهم</p>
-                                                        <p>rasha@gmail.com</p>
+                                <div class="table-responsive">
+                                    <table class="table" id="teamWork">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>رقم الموظف</th>
+                                                <th>الاسم</th>
+                                                <th>المستوي الوظيفي</th>
+                                                <th>رقم الجوال</th>
+                                                <th>الوظيفة</th>
+                                                <th>الحالة</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                            alt="employee">
+                                                        <div class="details_employee">
+                                                            <p>مروان ادهم</p>
+                                                            <p>rasha@gmail.com</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>جونيور مصمم وجهات مستخدم</td>
-                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                            <td>تصميم وجهات مستخدم</td>
-                                            <td><span class="status full-time">دوام كامل</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                                </td>
+                                                <td>جونيور مصمم وجهات مستخدم</td>
+                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                <td>تصميم وجهات مستخدم</td>
+                                                <td><span class="status full-time">دوام كامل</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                    <div class="details_employee">
-                                                        <p>مروان ادهم</p>
-                                                        <p>rasha@gmail.com</p>
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                            alt="employee">
+                                                        <div class="details_employee">
+                                                            <p>مروان ادهم</p>
+                                                            <p>rasha@gmail.com</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>جونيور مصمم وجهات مستخدم</td>
-                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                            <td>تصميم وجهات مستخدم</td>
-                                            <td><span class="status part-time">دوام جزئي</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                                </td>
+                                                <td>جونيور مصمم وجهات مستخدم</td>
+                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                <td>تصميم وجهات مستخدم</td>
+                                                <td><span class="status part-time">دوام جزئي</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                    <div class="details_employee">
-                                                        <p>مروان ادهم</p>
-                                                        <p>rasha@gmail.com</p>
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                            alt="employee">
+                                                        <div class="details_employee">
+                                                            <p>مروان ادهم</p>
+                                                            <p>rasha@gmail.com</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>جونيور مصمم وجهات مستخدم</td>
-                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                            <td>تصميم وجهات مستخدم</td>
-                                            <td><span class="status hour-system">نظام الساعات</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
-                                    </tbody>
-                                </table>
-                                <script>
-                                    $(document).ready(function () {
-                                        $('#teamWork').DataTable({
-                                            language: {
-                                                search: "البحث",
-                                                lengthMenu: "عرض" + " _MENU_ " + "الأعمال",
-                                                paginate: {
-                                                    first: "الأول",
-                                                    last: "الأخير",
-                                                    next: "التالي",
-                                                    previous: "السابق",
+                                                </td>
+                                                <td>جونيور مصمم وجهات مستخدم</td>
+                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                <td>تصميم وجهات مستخدم</td>
+                                                <td><span class="status hour-system">نظام الساعات</span></td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
+                                        </tbody>
+                                    </table>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('#teamWork').DataTable({
+                                                language: {
+                                                    search: "البحث",
+                                                    lengthMenu: "عرض" + " _MENU_ " + "الأعمال",
+                                                    paginate: {
+                                                        first: "الأول",
+                                                        last: "الأخير",
+                                                        next: "التالي",
+                                                        previous: "السابق",
+                                                    },
+                                                    info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الأعمال",
                                                 },
-                                                info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الأعمال",
-                                            },
-                                            columnDefs: [{
-                                                orderable: false,
-                                                className: 'select-checkbox',
-                                                targets: 0
-                                            }],
-                                            select: {
-                                                style: 'os',
-                                                selector: 'td:first-child'
-                                            },
-                                            order: [[1, 'asc']]
+                                                columnDefs: [{
+                                                    orderable: false,
+                                                    className: 'select-checkbox',
+                                                    targets: 0
+                                                }],
+                                                select: {
+                                                    style: 'os',
+                                                    selector: 'td:first-child'
+                                                },
+                                                order: [[1, 'asc']]
+                                            });
                                         });
-                                    });
-                                </script>
+                                    </script>
+                                </div>
                             </div>
                         </div>
                         <!-- End team work details -->
@@ -1007,146 +1021,151 @@
                             <div class="supervisors_project">
                                 <input type="text" class="form-control filter" name="dateSupervisors" />
                                 <script>$('input[name="dateSupervisors"]').daterangepicker();</script>
-                                <table class="table" id="supervisorsProject">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>رقم الموظف</th>
-                                            <th>الاسم</th>
-                                            <th>تاريخ التوظيف</th>
-                                            <th>رقم الجوال</th>
-                                            <th>التخصص</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                    <div class="details_employee">
-                                                        <p>مروان ادهم</p>
-                                                        <p>rasha@gmail.com</p>
+                                <div class="table-responsive">
+                                    <table class="table" id="supervisorsProject">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>رقم الموظف</th>
+                                                <th>الاسم</th>
+                                                <th>تاريخ التوظيف</th>
+                                                <th>رقم الجوال</th>
+                                                <th>التخصص</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                            alt="employee">
+                                                        <div class="details_employee">
+                                                            <p>مروان ادهم</p>
+                                                            <p>rasha@gmail.com</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                            <td>تصميم وجهات مستخدم</td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                                </td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                <td>تصميم وجهات مستخدم</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                    <div class="details_employee">
-                                                        <p>مروان ادهم</p>
-                                                        <p>rasha@gmail.com</p>
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                            alt="employee">
+                                                        <div class="details_employee">
+                                                            <p>مروان ادهم</p>
+                                                            <p>rasha@gmail.com</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                            <td>تصميم وجهات مستخدم</td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
+                                                </td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                <td>تصميم وجهات مستخدم</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
 
-                                        <!-- For loop this details table -->
-                                        <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img src="./media/image/7w7w.jpg" class="img_employee" alt="employee">
-                                                    <div class="details_employee">
-                                                        <p>مروان ادهم</p>
-                                                        <p>rasha@gmail.com</p>
+                                            <!-- For loop this details table -->
+                                            <tr>
+                                                <td></td>
+                                                <td>ADM221-10</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
+                                                            alt="employee">
+                                                        <div class="details_employee">
+                                                            <p>مروان ادهم</p>
+                                                            <p>rasha@gmail.com</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                            <td>تصميم وجهات مستخدم</td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                        <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- For loop this details table -->
-                                    </tbody>
-                                </table>
-                                <script>
-                                    $(document).ready(function () {
-                                        $('#supervisorsProject').DataTable({
-                                            language: {
-                                                search: "البحث",
-                                                lengthMenu: "عرض" + " _MENU_ " + "الأعمال",
-                                                paginate: {
-                                                    first: "الأول",
-                                                    last: "الأخير",
-                                                    next: "التالي",
-                                                    previous: "السابق",
+                                                </td>
+                                                <td>مايو 22 , 2022</td>
+                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                                                <td>تصميم وجهات مستخدم</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">عرض تفاصيل الوظيفة</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- For loop this details table -->
+                                        </tbody>
+                                    </table>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('#supervisorsProject').DataTable({
+                                                language: {
+                                                    search: "البحث",
+                                                    lengthMenu: "عرض" + " _MENU_ " + "الأعمال",
+                                                    paginate: {
+                                                        first: "الأول",
+                                                        last: "الأخير",
+                                                        next: "التالي",
+                                                        previous: "السابق",
+                                                    },
+                                                    info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الأعمال",
                                                 },
-                                                info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الأعمال",
-                                            },
-                                            columnDefs: [{
-                                                orderable: false,
-                                                className: 'select-checkbox',
-                                                targets: 0
-                                            }],
-                                            select: {
-                                                style: 'os',
-                                                selector: 'td:first-child'
-                                            },
-                                            order: [[1, 'asc']]
+                                                columnDefs: [{
+                                                    orderable: false,
+                                                    className: 'select-checkbox',
+                                                    targets: 0
+                                                }],
+                                                select: {
+                                                    style: 'os',
+                                                    selector: 'td:first-child'
+                                                },
+                                                order: [[1, 'asc']]
+                                            });
                                         });
-                                    });
-                                </script>
+                                    </script>
+                                </div>
                             </div>
                         </div>
                         <!-- End supervisors to project details -->

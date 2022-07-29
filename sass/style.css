@@ -327,6 +327,12 @@ body {
   overflow-x: hidden;
 }
 
+.chart-container {
+  height: 120vh;
+  width: 100%;
+  position: relative;
+}
+
 table tbody tr td {
   vertical-align: middle;
 }
@@ -1303,7 +1309,7 @@ table tbody tr td {
 .index_cards .content .single_project h5 {
   font-family: "semibold";
   color: #102b21;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 .index_cards .content .single_project .work_btn {
   background-color: #21765e;
@@ -1781,6 +1787,7 @@ table tbody tr td {
   border-radius: 25px;
   display: inline-block;
   padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
 }
 .index_cards .content .details_job .general_description_job .conditions {
   margin-top: 2rem;
@@ -3649,6 +3656,81 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 991.98px) {
+  .chart-container {
+    height: 50vh;
+  }
+  .modal-dialog {
+    max-width: 80% !important;
+  }
+  .index_cards .setting {
+    padding: 1rem 1rem 5rem;
+  }
+  .index_cards .setting .tab-content {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info {
+    flex-direction: column;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info .image {
+    width: 100%;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info .image .avatar-upload {
+    margin: 0 auto 2rem;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info .basic_info_data {
+    width: 100%;
+  }
+  .index_cards .setting .tab-content .supervisors .card_supervisors {
+    width: 90%;
+    margin: 0 5% 2rem;
+  }
+  .index_cards .setting .tab-content .supervisors .card_supervisors:nth-child(odd) {
+    -webkit-margin-start: 5%;
+            margin-inline-start: 5%;
+  }
+  .index_cards .setting .setting_mobile {
+    flex-direction: column !important;
+  }
+  .index_cards .setting .setting_mobile .nav-pills {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .index_cards .setting .setting_mobile .nav-pills .nav-link {
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 0;
+    font-size: 0.7rem;
+  }
+  .index_cards .setting .setting_mobile .nav-pills .nav-link.active {
+    -webkit-border-start: 0;
+            border-inline-start: 0;
+    border-bottom: 3px solid #21765e;
+  }
+  .index_cards .content {
+    padding: 1rem 1rem 5rem;
+  }
+  .index_cards .content .add_employment_officials .basic_info {
+    flex-direction: column;
+  }
+  .index_cards .content .add_employment_officials .basic_info .image {
+    width: 100%;
+  }
+  .index_cards .content .add_employment_officials .basic_info .image .avatar-upload {
+    margin: 0 auto 2rem;
+  }
+  .index_cards .content .add_employment_officials .basic_info .employment_officials_data {
+    width: 100%;
+  }
+  .index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group,
+.index_cards .content .add_employment_officials .basic_info .employment_officials_data .work_width {
+    width: 100%;
+  }
+  .index_cards .content .add_employment_officials .buttons {
+    width: 100%;
+  }
   .index_cards .content .welcome {
     flex-direction: column;
   }
@@ -3674,9 +3756,54 @@ table tbody tr td {
     flex-wrap: nowrap;
     justify-content: center;
     padding: 0;
+    margin-top: 1rem;
+  }
+  .index_cards .content .employment_officials .filter {
+    width: 28% !important;
+    -webkit-margin-end: 0.5rem;
+            margin-inline-end: 0.5rem;
+  }
+  .index_cards .content .details_job .cards_job {
+    display: block;
+  }
+  .index_cards .content .details_job .cards_job .details_job_card {
+    width: 47%;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .index_cards .content .details_job .cards_job .details_job_card:last-child {
+    width: 47%;
+  }
+  .index_cards .content .single_project .tab-content .chances_work .filter {
+    width: 30%;
+    -webkit-margin-end: 1%;
+            margin-inline-end: 1%;
+  }
+  .index_cards .employee_details {
+    padding: 1rem 1rem 5rem;
+  }
+  .index_cards .employee_details .employee_details_mobile {
+    margin-bottom: 2rem;
+  }
+  .index_cards .employee_details .basic_information .data {
+    width: 48%;
+  }
+  .index_cards .employee_details .other_candidates .card_other_candidates {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+  .index_cards .employee_details .employee_financial .card_financial {
+    width: 35%;
+    margin: 0 1.5% 1rem;
   }
 }
 @media only screen and (max-width: 600px) {
+  .chart-container {
+    height: 40vh;
+  }
+  .modal-dialog {
+    max-width: 100% !important;
+  }
   .index_cards .content .welcome {
     flex-direction: column;
   }
@@ -3688,5 +3815,76 @@ table tbody tr td {
     margin: 0 auto;
     padding: 1.5rem 2rem;
     margin-bottom: 1rem;
+  }
+  .index_cards .content .single_project .single_project_mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .index_cards .content .single_project .single_project_mobile h5 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .index_cards .content .single_project .nav-tabs .nav-item {
+    width: 80%;
+  }
+  .index_cards .content .single_project .nav-tabs .nav-item .nav-link {
+    font-size: 0.7rem !important;
+  }
+  .index_cards .content .single_project .tab-content .tab-pane .details_project .details_project_location {
+    display: block;
+  }
+  .index_cards .content .single_project .tab-content .tab-pane .details_project .details_project_location .card_details_project {
+    width: 48% !important;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  .index_cards .content .single_project .tab-content .tab-pane .details_project .sub_location .card_details_project {
+    width: 33%;
+  }
+  .index_cards .content .details_job .cards_job {
+    display: block;
+  }
+  .index_cards .content .details_job .cards_job .details_job_card {
+    width: 80%;
+    margin: 0 10% 1rem;
+    display: inline-block;
+  }
+  .index_cards .content .details_job .cards_job .details_job_card:last-child {
+    width: 80%;
+  }
+  .index_cards .setting .setting_mobile .nav-pills .nav-link {
+    width: 48%;
+  }
+  .index_cards .reports .nav-tabs .nav-item {
+    width: 50%;
+    padding: 0.5rem 0;
+  }
+  .index_cards .reports .nav-tabs .nav-item .nav-link {
+    font-size: 0.8rem !important;
+  }
+  .index_cards .employee_details .employee_details_mobile {
+    flex-direction: column;
+  }
+  .index_cards .employee_details .employee_details_mobile .buttons {
+    margin-top: 1rem;
+  }
+  .index_cards .employee_details .basic_information .data {
+    width: 90%;
+  }
+  .index_cards .employee_details .about_employee p {
+    width: 100%;
+  }
+  .index_cards .employee_details .other_candidates .card_other_candidates {
+    width: 90%;
+    margin: 0 5% 1rem;
+  }
+  .index_cards .employee_details .employee_financial .card_financial {
+    width: 90%;
+    margin: 0 1.5% 1rem;
+  }
+  .index_cards .employee_details .reating_employee .reating_card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

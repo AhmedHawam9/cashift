@@ -165,7 +165,7 @@
             <!-- ======= Start Content ======= -->
             <div class="setting">
                 <h5>الاعدادات العامة</h5>
-                <div class="d-flex align-items-start">
+                <div class="d-flex align-items-start setting_mobile">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical">
                         <button class="nav-link active" id="v-pills-basic-tab" data-bs-toggle="pill"
@@ -292,12 +292,12 @@
                                                     <div class="avatar-edit">
                                                         <input type='file' id="imageUploadCompany"
                                                             accept=".png, .jpg, .jpeg" />
-                                                        <label for="imageUpload"><i
+                                                        <label for="imageUploadCompany"><i
                                                                 class="fa-solid fa-camera"></i></label>
                                                     </div>
                                                 </div>
                                                 <script>
-                                                    function readURL(input) {
+                                                    function readURLCompany(input) {
                                                         if (input.files && input.files[0]) {
                                                             var reader = new FileReader();
                                                             reader.onload = function (e) {
@@ -309,7 +309,7 @@
                                                         }
                                                     }
                                                     $("#imageUploadCompany").change(function () {
-                                                        readURL(this);
+                                                        readURLCompany(this);
                                                     });
                                                 </script>
                                             </div>

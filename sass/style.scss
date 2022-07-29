@@ -27,7 +27,11 @@ $SecondColor: #68245d;
 body {
   overflow-x: hidden;
 }
-
+.chart-container {
+  height: 120vh;
+  width: 100%;
+  position: relative;
+}
 table tbody tr td {
   vertical-align: middle;
 }
@@ -1259,7 +1263,7 @@ table tbody tr td {
       h5 {
         font-family: "semibold";
         color: #102b21;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
       }
 
       .work_btn {
@@ -1878,6 +1882,7 @@ table tbody tr td {
             border-radius: 25px;
             display: inline-block;
             padding: .5rem 1rem;
+            margin-bottom: .5rem;
           }
         }
 
@@ -4191,8 +4196,104 @@ table tbody tr td {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .chart-container {
+    height: 50vh;
+  }
+  .modal-dialog {
+    max-width: 80% !important;
+  }
   .index_cards {
+    .setting {
+      padding: 1rem 1rem 5rem;
+
+      .tab-content {
+        .basic_info_form {
+          .basic_info {
+            flex-direction: column;
+
+            .image {
+              width: 100%;
+
+              .avatar-upload {
+                margin: 0 auto 2rem;
+              }
+            }
+
+            .basic_info_data {
+              width: 100%;
+            }
+          }
+        }
+
+        width: 100%;
+        padding: 0 .5rem;
+
+        .supervisors {
+          .card_supervisors {
+            width: 90%;
+            margin: 0 5% 2rem;
+
+            &:nth-child(odd) {
+              margin-inline-start: 5%;
+            }
+          }
+        }
+      }
+
+      .setting_mobile {
+        flex-direction: column !important;
+
+        .nav-pills {
+          width: 100%;
+          display: block;
+          margin-bottom: 1rem;
+
+          .nav-link {
+            width: 24%;
+            display: inline-block;
+            text-align: center;
+            border-bottom: 0;
+            font-size: .7rem;
+
+            &.active {
+              border-inline-start: 0;
+              border-bottom: 3px solid #21765e;
+            }
+          }
+        }
+      }
+    }
+
     .content {
+      padding: 1rem 1rem 5rem;
+
+      .add_employment_officials {
+        .basic_info {
+          flex-direction: column;
+
+          .image {
+            width: 100%;
+
+            .avatar-upload {
+              margin: 0 auto 2rem;
+            }
+          }
+
+          .employment_officials_data {
+            width: 100%;
+
+            .form-group,
+            .work_width {
+              width: 100%;
+            }
+          }
+        }
+
+        .buttons {
+          width: 100%;
+        }
+      }
+
       .welcome {
         flex-direction: column;
       }
@@ -4225,6 +4326,62 @@ table tbody tr td {
           flex-wrap: nowrap;
           justify-content: center;
           padding: 0;
+          margin-top: 1rem;
+        }
+      }
+
+      .employment_officials {
+        .filter {
+          width: 28% !important;
+          margin-inline-end: .5rem;
+        }
+      }
+
+      .details_job {
+        .cards_job {
+          display: block;
+          .details_job_card {
+            width: 47%;
+            margin-bottom: 1rem;
+            display: inline-block;
+            &:last-child {
+              width: 47%;
+            }
+          }
+        }
+      }
+      .single_project {
+        .tab-content {
+          .chances_work {
+            .filter {
+              width: 30%;
+              margin-inline-end: 1%;
+            }
+          }
+        }
+      }
+    }
+
+    .employee_details {
+      padding: 1rem 1rem 5rem;
+      .employee_details_mobile {
+        margin-bottom: 2rem;
+      }
+      .basic_information {
+        .data {
+          width: 48%;
+        }
+      }
+      .other_candidates {
+        .card_other_candidates {
+          width: 48%;
+          margin-bottom: 1rem;
+        }
+      }
+      .employee_financial {
+        .card_financial {
+          width: 35%;
+          margin: 0 1.5% 1rem;
         }
       }
     }
@@ -4232,6 +4389,12 @@ table tbody tr td {
 }
 
 @media only screen and (max-width: 600px) {
+  .chart-container {
+    height: 40vh;
+  }
+  .modal-dialog {
+    max-width: 100% !important;
+  }
   .index_cards {
     .content {
       .welcome {
@@ -4246,6 +4409,121 @@ table tbody tr td {
           margin: 0 auto;
           padding: 1.5rem 2rem;
           margin-bottom: 1rem;
+        }
+      }
+
+      .single_project {
+        .single_project_mobile {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h5 {
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+        .nav-tabs {
+          .nav-item {
+            width: 80%;
+
+            .nav-link {
+              font-size: .7rem !important;
+            }
+          }
+        }
+        .tab-content {
+          .tab-pane {
+            .details_project {
+              .details_project_location {
+                display: block;
+                .card_details_project {
+                  width: 48% !important;
+                  display: inline-block;
+                  margin-bottom: 1rem;
+                }
+              }
+              .sub_location {
+                .card_details_project {
+                  width: 33%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .details_job {
+        .cards_job {
+          display: block;
+          .details_job_card {
+            width: 80%;
+            margin: 0 10% 1rem;
+            display: inline-block;
+            &:last-child {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+
+    .setting {
+      .setting_mobile {
+
+        .nav-pills {
+          .nav-link {
+            width: 48%;
+          }
+        }
+      }
+    }
+
+    .reports {
+      .nav-tabs {
+        .nav-item {
+          width: 50%;
+          padding: .5rem 0;
+
+          .nav-link {
+            font-size: .8rem !important;
+          }
+        }
+      }
+    }
+
+
+    .employee_details {
+      .employee_details_mobile {
+        flex-direction: column;
+        .buttons {
+          margin-top: 1rem;
+        }
+      }
+      .basic_information {
+        .data {
+          width: 90%;
+        }
+      }
+      .about_employee {
+        p {
+          width: 100%;
+        }
+      }
+      .other_candidates {
+        .card_other_candidates {
+          width: 90%;
+          margin: 0 5% 1rem;
+        }
+      }
+      .employee_financial {
+        .card_financial {
+          width: 90%;
+          margin: 0 1.5% 1rem;
+        }
+      }
+      .reating_employee {
+        .reating_card {
+          width: 100%;
         }
       }
     }

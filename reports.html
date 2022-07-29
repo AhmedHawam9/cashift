@@ -65,8 +65,8 @@
         align-items-center align-items-sm-start
       " id="menu">
                 <div class="image_logo">
-        <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-      </div>
+                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+                </div>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link align-middle">
                         <img src="./media/image/icon/home.svg" alt="icon" />
@@ -346,42 +346,44 @@
                                             </div>
                                         </div>
                                         <img src="./media/image/map.png" alt="map">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">المدينة</th>
-                                                    <th scope="col">عدد المشاريع</th>
-                                                    <th scope="col">عدد الموظفين</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>الرياض</td>
-                                                    <td>22</td>
-                                                    <td>200</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>الدمام</td>
-                                                    <td>50</td>
-                                                    <td>400</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>الخبر</td>
-                                                    <td>60</td>
-                                                    <td>200</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>المدينة</td>
-                                                    <td>22</td>
-                                                    <td>200</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>مكة</td>
-                                                    <td>22</td>
-                                                    <td>200</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">المدينة</th>
+                                                        <th scope="col">عدد المشاريع</th>
+                                                        <th scope="col">عدد الموظفين</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>الرياض</td>
+                                                        <td>22</td>
+                                                        <td>200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>الدمام</td>
+                                                        <td>50</td>
+                                                        <td>400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>الخبر</td>
+                                                        <td>60</td>
+                                                        <td>200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>المدينة</td>
+                                                        <td>22</td>
+                                                        <td>200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>مكة</td>
+                                                        <td>22</td>
+                                                        <td>200</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                     <!-- End Region project -->
                                 </div>
@@ -413,151 +415,156 @@
                                         <div class="tab-content" id="pills-tabContent">
                                             <div class="tab-pane fade show active" id="pills-day" role="tabpanel"
                                                 aria-labelledby="pills-day-tab" tabindex="0">
-                                                <canvas id="percentageProjectsDay" width="400" height="150vh"></canvas>
-                                                <script>
-                                                    var barChartDataProjectsDay = {
-                                                        labels: [
-                                                            "sat",
-                                                            "sun",
-                                                            "mon",
-                                                            "tue",
-                                                            "wed",
-                                                            "thu",
-                                                            "fri",
-                                                        ],
-                                                        datasets: [
-                                                            {
-                                                                type: "line",
-                                                                label: "التقدم للوظائف",
-                                                                backgroundColor: 'rgba(36, 104, 79, .1)',
-                                                                borderColor: "#24684F",
-                                                                fill: true,
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [10, 7, 5, 6, 9, 7, 8]
-                                                            },
-                                                            {
-                                                                type: "line",
-                                                                label: "تصفح الوظائف",
-                                                                backgroundColor: "#68245D",
-                                                                borderColor: "#68245D",
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [6, 9, 7, 5, 10, 9, 8]
-                                                            },
-                                                        ]
-                                                    };
+                                                <div class="chart-containers">
+                                                    <canvas id="percentageProjectsDay"></canvas>
+                                                    <script>
+                                                        var barChartDataProjectsDay = {
+                                                            labels: [
+                                                                "sat",
+                                                                "sun",
+                                                                "mon",
+                                                                "tue",
+                                                                "wed",
+                                                                "thu",
+                                                                "fri",
+                                                            ],
+                                                            datasets: [
+                                                                {
+                                                                    type: "line",
+                                                                    label: "التقدم للوظائف",
+                                                                    backgroundColor: 'rgba(36, 104, 79, .1)',
+                                                                    borderColor: "#24684F",
+                                                                    fill: true,
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [10, 7, 5, 6, 9, 7, 8]
+                                                                },
+                                                                {
+                                                                    type: "line",
+                                                                    label: "تصفح الوظائف",
+                                                                    backgroundColor: "#68245D",
+                                                                    borderColor: "#68245D",
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [6, 9, 7, 5, 10, 9, 8]
+                                                                },
+                                                            ]
+                                                        };
 
-                                                    var chartOptionsProjectsDay = {
-                                                        responsive: true,
-                                                        legend: {
-                                                            position: "top"
-                                                        },
-                                                        title: {
-                                                            display: true,
-                                                            text: "Chart.js Bar Chart"
-                                                        },
-                                                    }
-                                                </script>
+                                                        var chartOptionsProjectsDay = {
+                                                            responsive: true,
+                                                            legend: {
+                                                                position: "top"
+                                                            },
+                                                            title: {
+                                                                display: true,
+                                                                text: "Chart.js Bar Chart"
+                                                            },
+                                                        }
+                                                    </script>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="pills-week" role="tabpanel"
                                                 aria-labelledby="pills-week-tab" tabindex="0">
-                                                <canvas id="percentageProjectsWeek" width="400" height="150vh"></canvas>
-                                                <script>
-                                                    var barChartDataProjectsWeek = {
-                                                        labels: [
-                                                            "sat",
-                                                            "sun",
-                                                            "mon",
-                                                            "tue",
-                                                            "wed",
-                                                            "thu",
-                                                            "fri",
-                                                        ],
-                                                        datasets: [
-                                                            {
-                                                                type: "line",
-                                                                label: "التقدم للوظائف",
-                                                                backgroundColor: 'rgba(36, 104, 79, .1)',
-                                                                borderColor: "#24684F",
-                                                                fill: true,
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [10, 7, 5, 6, 9, 7, 8]
-                                                            },
-                                                            {
-                                                                type: "line",
-                                                                label: "تصفح الوظائف",
-                                                                backgroundColor: "#68245D",
-                                                                borderColor: "#68245D",
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [6, 9, 7, 5, 10, 9, 8]
-                                                            },
-                                                        ]
-                                                    };
+                                                <div class="chart-containers">
+                                                    <canvas id="percentageProjectsWeek"></canvas>
+                                                    <script>
+                                                        var barChartDataProjectsWeek = {
+                                                            labels: [
+                                                                "sat",
+                                                                "sun",
+                                                                "mon",
+                                                                "tue",
+                                                                "wed",
+                                                                "thu",
+                                                                "fri",
+                                                            ],
+                                                            datasets: [
+                                                                {
+                                                                    type: "line",
+                                                                    label: "التقدم للوظائف",
+                                                                    backgroundColor: 'rgba(36, 104, 79, .1)',
+                                                                    borderColor: "#24684F",
+                                                                    fill: true,
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [10, 7, 5, 6, 9, 7, 8]
+                                                                },
+                                                                {
+                                                                    type: "line",
+                                                                    label: "تصفح الوظائف",
+                                                                    backgroundColor: "#68245D",
+                                                                    borderColor: "#68245D",
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [6, 9, 7, 5, 10, 9, 8]
+                                                                },
+                                                            ]
+                                                        };
 
-                                                    var chartOptionsProjectsWeek = {
-                                                        responsive: true,
-                                                        legend: {
-                                                            position: "top"
-                                                        },
-                                                        title: {
-                                                            display: true,
-                                                            text: "Chart.js Bar Chart"
-                                                        },
-                                                    }
-                                                </script>
+                                                        var chartOptionsProjectsWeek = {
+                                                            responsive: true,
+                                                            legend: {
+                                                                position: "top"
+                                                            },
+                                                            title: {
+                                                                display: true,
+                                                                text: "Chart.js Bar Chart"
+                                                            },
+                                                        }
+                                                    </script>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="pills-month" role="tabpanel"
                                                 aria-labelledby="pills-month-tab" tabindex="0">
-                                                <canvas id="percentageProjectsMonth" width="400"
-                                                    height="150vh"></canvas>
-                                                <script>
-                                                    var barChartDataProjectsMonth = {
-                                                        labels: [
-                                                            "sat",
-                                                            "sun",
-                                                            "mon",
-                                                            "tue",
-                                                            "wed",
-                                                            "thu",
-                                                            "fri",
-                                                        ],
-                                                        datasets: [
-                                                            {
-                                                                type: "line",
-                                                                label: "التقدم للوظائف",
-                                                                backgroundColor: 'rgba(36, 104, 79, .1)',
-                                                                borderColor: "#24684F",
-                                                                fill: true,
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [10, 7, 5, 6, 9, 7, 8]
-                                                            },
-                                                            {
-                                                                type: "line",
-                                                                label: "تصفح الوظائف",
-                                                                backgroundColor: "#68245D",
-                                                                borderColor: "#68245D",
-                                                                borderWidth: 1,
-                                                                tension: 0.1,
-                                                                data: [6, 9, 7, 5, 10, 9, 8]
-                                                            },
-                                                        ]
-                                                    };
+                                                <div class="chart-containers">
+                                                    <canvas id="percentageProjectsMonth"></canvas>
+                                                    <script>
+                                                        var barChartDataProjectsMonth = {
+                                                            labels: [
+                                                                "sat",
+                                                                "sun",
+                                                                "mon",
+                                                                "tue",
+                                                                "wed",
+                                                                "thu",
+                                                                "fri",
+                                                            ],
+                                                            datasets: [
+                                                                {
+                                                                    type: "line",
+                                                                    label: "التقدم للوظائف",
+                                                                    backgroundColor: 'rgba(36, 104, 79, .1)',
+                                                                    borderColor: "#24684F",
+                                                                    fill: true,
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [10, 7, 5, 6, 9, 7, 8]
+                                                                },
+                                                                {
+                                                                    type: "line",
+                                                                    label: "تصفح الوظائف",
+                                                                    backgroundColor: "#68245D",
+                                                                    borderColor: "#68245D",
+                                                                    borderWidth: 1,
+                                                                    tension: 0.1,
+                                                                    data: [6, 9, 7, 5, 10, 9, 8]
+                                                                },
+                                                            ]
+                                                        };
 
-                                                    var chartOptionsProjectsMonth = {
-                                                        responsive: true,
-                                                        legend: {
-                                                            position: "top"
-                                                        },
-                                                        title: {
-                                                            display: true,
-                                                            text: "Chart.js Bar Chart"
-                                                        },
-                                                    }
-                                                </script>
+                                                        var chartOptionsProjectsMonth = {
+                                                            responsive: true,
+                                                            legend: {
+                                                                position: "top"
+                                                            },
+                                                            title: {
+                                                                display: true,
+                                                                text: "Chart.js Bar Chart"
+                                                            },
+                                                        }
+                                                    </script>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -567,63 +574,65 @@
                                     <!-- Start chart job -->
                                     <div class="percentage_jobs">
                                         <h5>نسبة القبول على الوظائف</h5>
-                                        <canvas id="percentageJobsAccepted" width="400" height="120vh"></canvas>
-                                        <script>
-                                            var barChartDataJobs = {
-                                                labels: [
-                                                    "Jan",
-                                                    "Feb",
-                                                    "Mar",
-                                                    "Apr",
-                                                    "May",
-                                                    "Jun",
-                                                    "Jul",
-                                                    "Aug",
-                                                    "Sep",
-                                                    "Oct",
-                                                    "Nov",
-                                                ],
-                                                datasets: [
-                                                    {
-                                                        type: 'line',
-                                                        label: "شغل الوظائف",
-                                                        backgroundColor: "#3F3F44",
-                                                        borderColor: "#3F3F44",
-                                                        borderWidth: 1,
-                                                        data: [6, 9, 7, 3, 10, 7, 4, 6, 7, 10, 8]
-                                                    },
-                                                    {
-                                                        type: "bar",
-                                                        label: "التقدم للوظائف",
-                                                        backgroundColor: "#21765E",
-                                                        borderColor: "#21765E",
-                                                        borderWidth: 1,
-                                                        data: [10, 7, 4, 6, 9, 7, 3, 10, 13, 8, 11]
-                                                    },
-                                                    {
-                                                        type: "bar",
-                                                        label: "تصفح الوظائف",
-                                                        backgroundColor: "#E8EFED",
-                                                        borderColor: "#E8EFED",
-                                                        borderWidth: 1,
-                                                        tension: 0.1,
-                                                        data: [6, 9, 7, 3, 10, 7, 4, 6, 7, 10, 8]
-                                                    },
-                                                ]
-                                            };
+                                        <div class="chart-container">
+                                            <canvas id="percentageJobsAccepted"></canvas>
+                                            <script>
+                                                var barChartDataJobs = {
+                                                    labels: [
+                                                        "Jan",
+                                                        "Feb",
+                                                        "Mar",
+                                                        "Apr",
+                                                        "May",
+                                                        "Jun",
+                                                        "Jul",
+                                                        "Aug",
+                                                        "Sep",
+                                                        "Oct",
+                                                        "Nov",
+                                                    ],
+                                                    datasets: [
+                                                        {
+                                                            type: 'line',
+                                                            label: "شغل الوظائف",
+                                                            backgroundColor: "#3F3F44",
+                                                            borderColor: "#3F3F44",
+                                                            borderWidth: 1,
+                                                            data: [6, 9, 7, 3, 10, 7, 4, 6, 7, 10, 8]
+                                                        },
+                                                        {
+                                                            type: "bar",
+                                                            label: "التقدم للوظائف",
+                                                            backgroundColor: "#21765E",
+                                                            borderColor: "#21765E",
+                                                            borderWidth: 1,
+                                                            data: [10, 7, 4, 6, 9, 7, 3, 10, 13, 8, 11]
+                                                        },
+                                                        {
+                                                            type: "bar",
+                                                            label: "تصفح الوظائف",
+                                                            backgroundColor: "#E8EFED",
+                                                            borderColor: "#E8EFED",
+                                                            borderWidth: 1,
+                                                            tension: 0.1,
+                                                            data: [6, 9, 7, 3, 10, 7, 4, 6, 7, 10, 8]
+                                                        },
+                                                    ]
+                                                };
 
-                                            var chartOptionsJobs = {
-                                                responsive: true,
-                                                legend: {
-                                                    position: "top"
-                                                },
-                                                title: {
-                                                    display: true,
-                                                    text: "Chart.js Bar Chart"
-                                                },
-                                            }
+                                                var chartOptionsJobs = {
+                                                    responsive: true,
+                                                    legend: {
+                                                        position: "top"
+                                                    },
+                                                    title: {
+                                                        display: true,
+                                                        text: "Chart.js Bar Chart"
+                                                    },
+                                                }
 
-                                        </script>
+                                            </script>
+                                        </div>
                                     </div>
                                     <!-- End chart job -->
                                 </div>

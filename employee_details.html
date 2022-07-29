@@ -67,8 +67,8 @@
         align-items-center align-items-sm-start
       " id="menu">
                 <div class="image_logo">
-        <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-      </div>
+                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+                </div>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link align-middle">
                         <img src="./media/image/icon/home.svg" alt="icon" />
@@ -170,7 +170,7 @@
 
             <!-- ======= Start Content ======= -->
             <div class="employee_details">
-                <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-between employee_details_mobile">
                     <h5>تفاصيل الموظف</h5>
                     <div class="buttons">
                         <button class="btn reject">رفض</button>
@@ -305,7 +305,21 @@
                                 var swiper = new Swiper(".mySwiper", {
                                     slidesPerView: 3,
                                     spaceBetween: 30,
-                                    slidesPerGroup: 3,
+                                    slidesPerGroup: 1,
+                                    breakpoints: {
+                                        300: {
+                                            slidesPerView: 1,
+                                        },
+
+                                        768: {
+                                            slidesPerView: 2,
+                                        },
+
+                                        1024: {
+                                            slidesPerView: 3,
+                                            centeredSlides: true,
+                                        },
+                                    },
                                     loop: true,
                                     loopFillGroupWithBlank: true,
                                     navigation: {
