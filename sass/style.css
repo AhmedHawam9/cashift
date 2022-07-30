@@ -334,7 +334,7 @@ body {
 }
 
 .chart-container {
-  height: 120vh;
+  height: 70vh;
   width: 100%;
   position: relative;
 }
@@ -1200,6 +1200,9 @@ table tbody tr td {
 .index_cards .content .add_project .form-group .add svg {
   position: unset;
   color: #fff;
+}
+.index_cards .content .add_project .form-group .modal .modal-dialog {
+  max-width: 50%;
 }
 .index_cards .content .add_project .form-group label {
   font-family: "regular";

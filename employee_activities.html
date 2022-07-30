@@ -32,9 +32,9 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Datapicker cdn -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-hijri-datetimepicker.min.js"></script>
     <!-- ? Datapicker cdn -->
 
     <!-- ? Title -->
@@ -174,8 +174,12 @@
                     </div>
                     <!-- Start employee details -->
                     <div class="employee_table">
-                        <input type="text" class="form-control filter" name="dates" />
-                        <script>$('input[name="dates"]').daterangepicker();</script>
+                        <input type="text" class="form-control filter" name="dates" id="hijri-date-input" />
+                        <script type="text/javascript">
+                            $(function () {
+                                $("#hijri-date-input").hijriDatePicker();
+                            });
+                        </script>
                         <div class="table-responsive">
                             <table class="table table-bordered" id="chancesWork">
                                 <thead>

@@ -35,9 +35,9 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Datapicker cdn -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-hijri-datetimepicker.min.js"></script>
     <!-- ? Datapicker cdn -->
 
     <!-- ? Title -->
@@ -660,7 +660,7 @@
                         <div class="tab-pane fade" id="chances-tab-pane" role="tabpanel" aria-labelledby="chances-tab"
                             tabindex="0">
                             <div class="chances_work">
-                                <input type="text" class="form-control filter" name="dates" />
+                                <input type="text" class="form-control filter" name="dates" id="hijri-date-input" />
                                 <select name="" class="selectpicker form-control filter" title="الوظيفة">
                                     <option value="">جرافيك ديزاينر</option>
                                     <option value="">برمجة</option>
@@ -669,7 +669,11 @@
                                     <option value="">الدمام</option>
                                     <option value="">الرياض</option>
                                 </select>
-                                <script>$('input[name="dates"]').daterangepicker();</script>
+                                <script type="text/javascript">
+                                    $(function () {
+                                        $("#hijri-date-input").hijriDatePicker();
+                                    });
+                                </script>
                                 <div class="table-responsive">
                                     <table class="table" id="chancesWork">
                                         <thead>
@@ -1019,8 +1023,12 @@
                         <div class="tab-pane fade" id="supervisors-tab-pane" role="tabpanel"
                             aria-labelledby="supervisors-tab" tabindex="0">
                             <div class="supervisors_project">
-                                <input type="text" class="form-control filter" name="dateSupervisors" />
-                                <script>$('input[name="dateSupervisors"]').daterangepicker();</script>
+                                <input type="text" class="form-control filter" name="dateSupervisors" id="dateSupervisors" />
+                                <script type="text/javascript">
+                                    $(function () {
+                                        $("#dateSupervisors").hijriDatePicker();
+                                    });
+                                </script>
                                 <div class="table-responsive">
                                     <table class="table" id="supervisorsProject">
                                         <thead>

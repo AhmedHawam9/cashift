@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
 }
 .chart-container {
-  height: 120vh;
+  height: 70vh;
   width: 100%;
   position: relative;
 }
@@ -1134,6 +1134,9 @@ table tbody tr td {
             position: unset;
             color: #fff;
           }
+        }
+        .modal .modal-dialog {
+          max-width: 50%;
         }
 
         label {

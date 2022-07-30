@@ -35,9 +35,9 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Datapicker cdn -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-hijri-datetimepicker.min.js"></script>
     <!-- ? Datapicker cdn -->
 
     <!-- ? Title -->
@@ -178,7 +178,7 @@
                     <div class="tab-content" id="myTabContent">
                         <!-- Start chances work details -->
                         <div class="chances_work">
-                            <input type="text" class="form-control filter" name="dates" />
+                            <input type="text" class="form-control filter" name="dates" id="hijri-date-input" />
                             <select name="" class="selectpicker form-control filter" title="المدينة">
                                 <option value="">الدمام</option>
                                 <option value="">الرياض</option>
@@ -191,7 +191,11 @@
                                 <option value="">الطلبات المنتهية</option>
                                 <option value="">الطلبات الغير مكتملة</option>
                             </select>
-                            <script>$('input[name="dates"]').daterangepicker();</script>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $("#hijri-date-input").hijriDatePicker();
+                                });
+                            </script>
                             <div class="table-responsive">
                                 <table class="table" id="chancesWork">
                                     <thead>
