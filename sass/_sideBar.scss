@@ -30,11 +30,14 @@
     min-height: 100vh;
     padding: 2rem 0;
 
-    .logo {
-        width: 110px;
-        margin-bottom: 2rem;
-        display: block;
-        padding: 0 1.5rem;
+    .image_logo {
+        width: 100%;
+        .logo {
+            width: 60%;
+            margin: 0 auto 2rem;
+            display: block;
+            padding: 0 1.5rem;
+        }
     }
 
     .nav-pills,
@@ -193,6 +196,11 @@
     .sidebar {
         margin-right: -25%;
         width: 25%;
+        .image_logo {
+            .logo {
+                width: 85%;
+            }
+        }
     }
 
     .sidebar.open {

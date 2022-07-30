@@ -1071,11 +1071,11 @@ table tbody tr td {
             margin-inline-end: 2%;
           }
 
-          .bootstrap-select {
-            .dropdown-menu {
-              width: 100%;
-            }
-          }
+        }
+      }
+      .bootstrap-select {
+        .dropdown-menu {
+          width: 100%;
         }
       }
 
@@ -1109,10 +1109,32 @@ table tbody tr td {
         }
       }
 
+      .optionBox {
+        .block {
+          .form-group {
+            width: 100%;
+            margin-top: .5rem;
+          }
+        }
+      }
+
       .form-group {
         position: relative;
         margin-top: 1.5rem;
         width: 85%;
+        .remove {
+          svg {
+            position: unset;
+            color: #fff;
+          }
+        }
+        .add {
+          margin-top: 1rem;
+          svg{
+            position: unset;
+            color: #fff;
+          }
+        }
 
         label {
           font-family: "regular";
@@ -4193,6 +4215,14 @@ table tbody tr td {
       }
     }
   }
+  .basic_info {
+    .image {
+      width: 30% !important;
+    }
+    .employment_officials_data {
+      width: 70% !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -4350,6 +4380,7 @@ table tbody tr td {
           }
         }
       }
+
       .single_project {
         .tab-content {
           .chances_work {
@@ -4358,6 +4389,27 @@ table tbody tr td {
               margin-inline-end: 1%;
             }
           }
+        }
+      }
+
+      .add_supervisor {
+        .basic_info {
+          flex-direction: column;
+          .image {
+            width: 100%;
+            .avatar-upload {
+              margin: 0 auto 2rem;
+            }
+          }
+          .employment_officials_data {
+            width: 100%;
+            .form-group {
+              width: 100%;
+            }
+          }
+        }
+        .buttons {
+          width: 100%;
         }
       }
     }

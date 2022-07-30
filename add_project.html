@@ -55,8 +55,8 @@
         align-items-center align-items-sm-start
       " id="menu">
                 <div class="image_logo">
-        <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-      </div>
+                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+                </div>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link align-middle">
                         <img src="./media/image/icon/home.svg" alt="icon" />
@@ -203,26 +203,43 @@
                                 </select>
                             </div>
                             <div class="form-group location_section" id="location" style="display: none;">
-                                <label for=""> إضافة عنوان فرعي</label>
-                                <button class="btn location" type="button" onclick="getAnthorLocation()"><i
-                                        class="fa-solid fa-location-dot"></i></button>
-                                <p id="lan" class="lat"></p>
+                                <div class="optionBox">
+                                    <div class="block">
+                                        <label for="">إضافة عنوان فرعي</label>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="btn location" type="button" id="btn" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </button>
+                                            <span class="remove btn btn-danger">
+                                                <i class="fa-solid fa-circle-minus"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <span class="add btn btn-success"><i class="fa-solid fa-circle-plus"></i></span>
+                                    </div>
+                                </div>
                                 <script>
-                                    var lan = document.getElementById("lan");
-
-                                    function getAnthorLocation() {
-                                        if (navigator.geolocation) {
-                                            navigator.geolocation.getCurrentPosition(showAnthorPosition);
-                                        } else {
-                                            lan.innerHTML = "Geolocation is not supported by this browser.";
-                                        }
-                                    }
-
-                                    function showAnthorPosition(position) {
-                                        lan.innerHTML = "Latitude: " + position.coords.latitude +
-                                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Longitude: " + position.coords.longitude;
-                                    }
+                                    $('.add').click(function () {
+                                        $('.block:last').before('<div class="block"><div class="form-group" id="location"><label for="">إضافة عنوان فرعي</label><div class="d-flex justify-content-between align-items-center"><button class="btn location" type="button" id="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-location-dot"></i></button><span class="remove btn btn-danger"><i class="fa-solid fa-circle-minus"></i></span></div></div></div>');
+                                    });
+                                    $('.optionBox').on('click', '.remove', function () {
+                                        $(this).parent().parent().remove();
+                                    });
                                 </script>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div id='map'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <script>
                                 $(function () {
@@ -332,14 +349,16 @@
                                                 <p>سيؤدي الضغط على زر الغاء الى فقد كل الداتا المدخلة </p>
                                                 <div class="buttons cancel_project">
                                                     <a href="index.html" class="btn submit">تأكيد الالغاء</a>
-                                                    <button class="btn cancel" type="button" data-bs-dismiss="modal">العودة لانشاء
+                                                    <button class="btn cancel" type="button"
+                                                        data-bs-dismiss="modal">العودة لانشاء
                                                         المشروع</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn submit" type="button" onclick="successAlert()">إضافة مشروع جديد</button>
+                                <button class="btn submit" type="button" onclick="successAlert()">إضافة مشروع
+                                    جديد</button>
                                 <script>
                                     function successAlert() {
                                         Swal.fire({

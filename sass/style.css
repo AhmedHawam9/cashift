@@ -112,9 +112,12 @@
   min-height: 100vh;
   padding: 2rem 0;
 }
-.sidebar .logo {
-  width: 110px;
-  margin-bottom: 2rem;
+.sidebar .image_logo {
+  width: 100%;
+}
+.sidebar .image_logo .logo {
+  width: 60%;
+  margin: 0 auto 2rem;
   display: block;
   padding: 0 1.5rem;
 }
@@ -248,6 +251,9 @@
   .sidebar {
     margin-right: -25%;
     width: 25%;
+  }
+  .sidebar .image_logo .logo {
+    width: 85%;
   }
   .sidebar.open span {
     font-size: 0.7rem;
@@ -1150,7 +1156,7 @@ table tbody tr td {
   -webkit-margin-end: 2%;
           margin-inline-end: 2%;
 }
-.index_cards .content .add_project .work_width .form-group .bootstrap-select .dropdown-menu {
+.index_cards .content .add_project .bootstrap-select .dropdown-menu {
   width: 100%;
 }
 .index_cards .content .add_project .income {
@@ -1175,10 +1181,25 @@ table tbody tr td {
 .index_cards .content .add_project .income .invisable {
   visibility: hidden;
 }
+.index_cards .content .add_project .optionBox .block .form-group {
+  width: 100%;
+  margin-top: 0.5rem;
+}
 .index_cards .content .add_project .form-group {
   position: relative;
   margin-top: 1.5rem;
   width: 85%;
+}
+.index_cards .content .add_project .form-group .remove svg {
+  position: unset;
+  color: #fff;
+}
+.index_cards .content .add_project .form-group .add {
+  margin-top: 1rem;
+}
+.index_cards .content .add_project .form-group .add svg {
+  position: unset;
+  color: #fff;
 }
 .index_cards .content .add_project .form-group label {
   font-family: "regular";
@@ -3654,6 +3675,12 @@ table tbody tr td {
   .index_cards .content .left_content .best_project .card_project .percentage_bar .bar .title {
     font-size: 0.6rem;
   }
+  .basic_info .image {
+    width: 30% !important;
+  }
+  .basic_info .employment_officials_data {
+    width: 70% !important;
+  }
 }
 @media only screen and (max-width: 991.98px) {
   .chart-container {
@@ -3778,6 +3805,24 @@ table tbody tr td {
     width: 30%;
     -webkit-margin-end: 1%;
             margin-inline-end: 1%;
+  }
+  .index_cards .content .add_supervisor .basic_info {
+    flex-direction: column;
+  }
+  .index_cards .content .add_supervisor .basic_info .image {
+    width: 100%;
+  }
+  .index_cards .content .add_supervisor .basic_info .image .avatar-upload {
+    margin: 0 auto 2rem;
+  }
+  .index_cards .content .add_supervisor .basic_info .employment_officials_data {
+    width: 100%;
+  }
+  .index_cards .content .add_supervisor .basic_info .employment_officials_data .form-group {
+    width: 100%;
+  }
+  .index_cards .content .add_supervisor .buttons {
+    width: 100%;
   }
   .index_cards .employee_details {
     padding: 1rem 1rem 5rem;
