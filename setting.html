@@ -10,7 +10,37 @@
     <!-- ? Main CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <link rel="stylesheet" href="sass/style.css" />
+    <!-- <link rel="stylesheet" href="sass/style.css" /> -->
+    <script>
+        if (localStorage.getItem("lang") == "ar") {
+            var cssId = 'myCss';  // you could encode the css path itself to generate id..
+            if (!document.getElementById(cssId)) {
+                var head = document.getElementsByTagName('head')[0];
+                var link = document.createElement('link');
+                link.id = cssId;
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'sass/style.css';
+                link.media = 'all';
+                head.appendChild(link);
+            }
+            // console.log("ar")
+        }
+        else if (localStorage.getItem("lang") == "en") {
+            var cssId = 'myCss';  // you could encode the css path itself to generate id..
+            if (!document.getElementById(cssId)) {
+                var head = document.getElementsByTagName('head')[0];
+                var link = document.createElement('link');
+                link.id = cssId;
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'sass/style_ltr.css';
+                link.media = 'all';
+                head.appendChild(link);
+            }
+            console.log("en")
+        }
+    </script>
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
@@ -61,8 +91,8 @@
         align-items-center align-items-sm-start
       " id="menu">
                 <div class="image_logo">
-        <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-      </div>
+                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+                </div>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link align-middle">
                         <img src="./media/image/icon/home.svg" alt="icon" />
@@ -137,15 +167,29 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item">
+                                    <a class="dropdown-item" onclick="changeLocaleAr()">
                                         <img src="./media/image/saudi-arabia.png" alt="saudi-arabia">
                                         عربي
                                     </a>
-                                    <a class="dropdown-item">
+                                    <a class="dropdown-item" onclick="changeLocaleEn()">
                                         <img src="./media/image/united-kingdom.png" alt="united-kingdom">
                                         إنجليزي
                                     </a>
                                 </li>
+                                <script>
+                                    function changeLocaleAr() {
+                                        localStorage.setItem("lang", "ar");
+                                        location.reload();
+                                    }
+                                    function changeLocaleEn() {
+                                        localStorage.setItem("lang", "en");
+                                        location.reload();
+                                    }
+                                    function readLang() {
+                                        var lang = localStorage.getItem("lang");
+                                        document.getElementById("langHtml").innerHTML = lang;
+                                    }
+                                </script>
                             </ul>
                         </div>
                     </div>
@@ -556,14 +600,15 @@
                                         </div>
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </button>
                                         <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
-                                          <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
+                                            <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
+                                            <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
                                         </ul>
-                                      </div>
+                                    </div>
                                 </div>
                                 <!-- End card supervisors -->
 
@@ -587,14 +632,15 @@
                                         </div>
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </button>
                                         <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
-                                          <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
+                                            <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
+                                            <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
                                         </ul>
-                                      </div>
+                                    </div>
                                 </div>
                                 <!-- End card supervisors -->
 
@@ -618,14 +664,15 @@
                                         </div>
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </button>
                                         <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
-                                          <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
+                                            <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
+                                            <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
                                         </ul>
-                                      </div>
+                                    </div>
                                 </div>
                                 <!-- End card supervisors -->
 
@@ -649,14 +696,15 @@
                                         </div>
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </button>
                                         <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
-                                          <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
+                                            <li><a class="dropdown-item" href="#">تعديل البيانات</a></li>
+                                            <li><a class="dropdown-item" href="#">تعطيل العمل</a></li>
                                         </ul>
-                                      </div>
+                                    </div>
                                 </div>
                                 <!-- End card supervisors -->
                             </div>
