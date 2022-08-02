@@ -282,8 +282,8 @@
 /* ====== small laptop style ====== */
 @media only screen and (max-width: 1200px) {
   .sidebar {
-    margin-right: -25%;
-    width: 25%;
+    margin-right: 0%;
+    width: 10%;
   }
   .sidebar .image_logo .logo {
     width: 85%;
