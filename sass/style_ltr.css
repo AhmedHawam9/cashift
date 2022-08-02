@@ -913,6 +913,7 @@ table tbody tr td {
   position: absolute;
   right: 5%;
   top: 45%;
+  transform: rotate(180deg);
 }
 .index_cards .content .projects .statistics .card_statistics span {
   text-align: center;
