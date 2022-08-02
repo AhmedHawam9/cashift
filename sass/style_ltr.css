@@ -3871,6 +3871,9 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 600px) {
+  .table-responsive .form-check .form-check-input {
+    float: right;
+  }
   .index_cards .content .single_project .tab-content .supervisors_project .filter, .index_cards .content .single_project .tab-content .team_work .filter{
     width: 50%;
   }
