@@ -1,6 +1,8 @@
 //=========== Active sidebar dashboard =============
 const currentLocationDashboard = location.href;
-const menuItemDashboard = document.querySelectorAll(".sidebar .nav-item .nav-link");
+const menuItemDashboard = document.querySelectorAll(
+  ".sidebar .nav-item .nav-link"
+);
 const menuLengthDashboard = menuItemDashboard.length;
 for (let i = 0; i < menuLengthDashboard; i++) {
   if (menuItemDashboard[i].href === currentLocationDashboard) {
@@ -16,3 +18,21 @@ toggler.addEventListener("click", function () {
   sideBar.classList.toggle("open");
 });
 //=========== sidebar toggle =============
+
+//=========== Close inspect =============
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+document.onkeydown = function (e) {
+  if (event.keyCode == 123) {
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+    return false;
+  }
+};
+//=========== Close inspect =============
