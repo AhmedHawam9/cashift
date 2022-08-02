@@ -741,7 +741,7 @@ table tbody tr td {
   font-size: 0.8rem;
   padding: 0.3rem;
   -webkit-margin-end: 0.5rem;
-          margin-inline-end: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 .index_cards .content .employment_rates .rates span {
   color: #011c1e;
