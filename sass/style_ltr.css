@@ -3695,6 +3695,9 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 991.98px) {
+  .index_cards .content .single_project .tab-content .supervisors_project .filter, .index_cards .content .single_project .tab-content .team_work .filter{
+    width: 33%;
+  }
   .image .avatar-upload .avatar-preview {
     margin: 0 auto;
   }
@@ -3868,6 +3871,9 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 600px) {
+  .index_cards .content .single_project .tab-content .supervisors_project .filter, .index_cards .content .single_project .tab-content .team_work .filter{
+    width: 50%;
+  }
   .sidebar.open .nav-pills .nav-item {
     width: 20%;
   }
