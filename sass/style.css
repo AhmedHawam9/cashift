@@ -334,6 +334,10 @@ body {
   direction: rtl;
 }
 
+.accordion-button {
+  text-align: start !important;
+}
+
 .chart-container {
   height: 70vh;
   width: 100%;
@@ -2178,10 +2182,10 @@ table tbody tr td {
 }
 .index_cards .content .add_employment_officials .basic_info .image .avatar-upload .avatar-edit input + label {
   display: block;
-  width: 90%;
+  width: 75%;
   padding: 0.7rem 0;
   text-align: center;
-  margin: 1rem auto 0;
+  margin: 1rem 0 0;
   font-size: 0.8rem;
   font-family: "semibold";
   color: #21765e;
@@ -2197,8 +2201,8 @@ table tbody tr td {
   border: 1px solid #21765e;
 }
 .index_cards .content .add_employment_officials .basic_info .image .avatar-upload .avatar-preview {
-  width: 192px;
-  height: 192px;
+  width: 150px;
+  height: 150px;
   position: relative;
   border-radius: 100%;
   border: 6px solid #F8F8F8;
@@ -2348,7 +2352,7 @@ table tbody tr td {
   border: none;
 }
 .index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-preview {
-  width: 250px;
+  width: 150px;
   height: 150px;
   position: relative;
   border-radius: 0;
@@ -2405,10 +2409,10 @@ table tbody tr td {
 }
 .index_cards .content .add_supervisor .basic_info .image .avatar-upload .avatar-edit input + label {
   display: block;
-  width: 90%;
+  width: 75%;
   padding: 0.7rem 0;
   text-align: center;
-  margin: 1rem auto 0;
+  margin: 1rem 0 0;
   font-size: 0.8rem;
   font-family: "semibold";
   color: #21765e;
@@ -2424,8 +2428,8 @@ table tbody tr td {
   border: 1px solid #21765e;
 }
 .index_cards .content .add_supervisor .basic_info .image .avatar-upload .avatar-preview {
-  width: 192px;
-  height: 192px;
+  width: 150px;
+  height: 150px;
   position: relative;
   border-radius: 100%;
   border: 6px solid #F8F8F8;
@@ -2566,7 +2570,7 @@ table tbody tr td {
   border: none;
 }
 .index_cards .content .add_supervisor .basic_info .employment_officials_data .form-group .image .avatar-upload .avatar-preview {
-  width: 250px;
+  width: 150px;
   height: 150px;
   position: relative;
   border-radius: 0;
@@ -3175,10 +3179,10 @@ table tbody tr td {
 }
 .index_cards .setting .tab-content .basic_info_form .basic_info .image .avatar-upload .avatar-edit input + label {
   display: block;
-  width: 90%;
+  width: 75%;
   padding: 0.7rem 0;
   text-align: center;
-  margin: 1rem auto 0;
+  margin: 1rem 0 0;
   font-size: 0.8rem;
   font-family: "semibold";
   color: #21765e;
@@ -3194,8 +3198,8 @@ table tbody tr td {
   border: 1px solid #21765e;
 }
 .index_cards .setting .tab-content .basic_info_form .basic_info .image .avatar-upload .avatar-preview {
-  width: 192px;
-  height: 192px;
+  width: 150px;
+  height: 150px;
   position: relative;
   border-radius: 100%;
   border: 6px solid #F8F8F8;
@@ -3333,7 +3337,7 @@ table tbody tr td {
   border: none;
 }
 .index_cards .setting .tab-content .basic_info_form .basic_info .basic_info_data .form-group .image .avatar-upload .avatar-preview {
-  width: 250px;
+  width: 150px;
   height: 150px;
   position: relative;
   border-radius: 0;
@@ -3687,6 +3691,19 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 991.98px) {
+  .image .avatar-upload .avatar-preview {
+    margin: 0 auto;
+  }
+  .image .avatar-upload .avatar-edit input + label {
+    margin: 1rem auto 0 !important;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info .basic_info_data .form-group .image .avatar-upload .avatar-preview {
+    width: 100%;
+    margin: 0;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info .image .avatar-upload {
+    margin: 0 0 2rem !important;
+  }
   .chart-container {
     height: 50vh;
   }
@@ -3704,13 +3721,13 @@ table tbody tr td {
     flex-direction: column;
   }
   .index_cards .setting .tab-content .basic_info_form .basic_info .image {
-    width: 100%;
+    width: 100% !important;
   }
   .index_cards .setting .tab-content .basic_info_form .basic_info .image .avatar-upload {
     margin: 0 auto 2rem;
   }
   .index_cards .setting .tab-content .basic_info_form .basic_info .basic_info_data {
-    width: 100%;
+    width: 100% !important;
   }
   .index_cards .setting .tab-content .supervisors .card_supervisors {
     width: 90%;
@@ -3747,13 +3764,13 @@ table tbody tr td {
     flex-direction: column;
   }
   .index_cards .content .add_employment_officials .basic_info .image {
-    width: 100%;
+    width: 100% !important;
   }
   .index_cards .content .add_employment_officials .basic_info .image .avatar-upload {
     margin: 0 auto 2rem;
   }
   .index_cards .content .add_employment_officials .basic_info .employment_officials_data {
-    width: 100%;
+    width: 100% !important;
   }
   .index_cards .content .add_employment_officials .basic_info .employment_officials_data .form-group,
 .index_cards .content .add_employment_officials .basic_info .employment_officials_data .work_width {
@@ -3814,13 +3831,13 @@ table tbody tr td {
     flex-direction: column;
   }
   .index_cards .content .add_supervisor .basic_info .image {
-    width: 100%;
+    width: 100% !important;
   }
   .index_cards .content .add_supervisor .basic_info .image .avatar-upload {
     margin: 0 auto 2rem;
   }
   .index_cards .content .add_supervisor .basic_info .employment_officials_data {
-    width: 100%;
+    width: 100% !important;
   }
   .index_cards .content .add_supervisor .basic_info .employment_officials_data .form-group {
     width: 100%;
@@ -3847,8 +3864,32 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 600px) {
+  .sidebar.open .nav-pills .nav-item {
+    width: 20%;
+  }
+  .sidebar.open .nav-pills .nav-item .nav-link span {
+    font-size: 0.5rem;
+  }
+  .sidebar.open .nav-pills .nav-item:nth-child(6) {
+    display: none;
+  }
+  .sidebar.open .nav-pills .nav-item:nth-child(7) {
+    display: none;
+  }
   .navbar .d-flex.w-25 {
     width: 50% !important;
+  }
+  .index_cards .setting .tab-content .profile_setting .nav-tabs {
+    padding: 0;
+  }
+  .index_cards .setting .tab-content .profile_setting .nav-tabs .nav-item {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .index_cards .setting .tab-content .profile_setting .nav-tabs .nav-item .nav-link {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.5rem;
   }
   .chart-container {
     height: 40vh;
@@ -3863,7 +3904,7 @@ table tbody tr td {
     flex-direction: column;
   }
   .index_cards .content .statistics .card_statistics {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 1.5rem 2rem;
     margin-bottom: 1rem;
@@ -3879,7 +3920,7 @@ table tbody tr td {
     margin-bottom: 1rem;
   }
   .index_cards .content .single_project .nav-tabs .nav-item {
-    width: 80%;
+    width: 50%;
   }
   .index_cards .content .single_project .nav-tabs .nav-item .nav-link {
     font-size: 0.7rem !important;
@@ -3905,6 +3946,23 @@ table tbody tr td {
   }
   .index_cards .content .details_job .cards_job .details_job_card:last-child {
     width: 80%;
+  }
+  .index_cards .setting .tab-content .notifications p, .index_cards .setting .tab-content .delete_account p {
+    width: 100%;
+  }
+  .index_cards .setting .tab-content .supervisors {
+    padding: 0.5rem;
+  }
+  .index_cards .setting .tab-content .supervisors .card_supervisors {
+    width: 100%;
+    margin: 0 0 2rem;
+  }
+  .index_cards .setting .tab-content .supervisors .card_supervisors:nth-child(odd) {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+  }
+  .index_cards .setting .tab-content .supervisors .card_supervisors .details_card_supervisors .contact {
+    font-size: 0.8rem;
   }
   .index_cards .setting .setting_mobile .nav-pills .nav-link {
     width: 48%;
@@ -3938,5 +3996,81 @@ table tbody tr td {
   }
   .index_cards .employee_details .reating_employee .reating_card {
     width: 100%;
+  }
+  .table-responsive table {
+    border: 0;
+    width: 100% !important;
+  }
+  .table-responsive caption {
+    font-size: 1.3em;
+  }
+  .table-responsive thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .table-responsive tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  .table-responsive td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: end !important;
+  }
+  .table-responsive td.title {
+    text-align: center !important;
+  }
+  .table-responsive td.name .d-flex, .table-responsive td.name .details_team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .table-responsive td.name .d-flex img, .table-responsive td.name .details_team img {
+    margin: 0;
+  }
+  .table-responsive td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .table-responsive td:last-child {
+    border-bottom: 0;
+  }
+  .table-responsive .select-checkbox {
+    display: none;
+  }
+  .table-responsive .custom_checkbox {
+    display: block !important;
+  }
+  table tbody tr td .status, table tbody tr td .type_work {
+    display: inline-block !important;
+  }
+  table tbody tr td .d-flex, table tbody tr td .details_team {
+    display: inline-flex !important;
+    justify-content: center;
+    text-align: center;
+  }
+  table tbody tr td .d-flex img {
+    margin: 0 auto;
+  }
+  .dataTables_length {
+    margin-bottom: 1rem;
+  }
+  .nav-tabs {
+    margin-top: 1rem !important;
   }
 }/*# sourceMappingURL=style.css.map */

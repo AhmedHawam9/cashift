@@ -28,6 +28,9 @@ body {
   overflow-x: hidden;
   direction: rtl;
 }
+.accordion-button {
+  text-align: start !important;
+}
 .chart-container {
   height: 70vh;
   width: 100%;
@@ -2390,10 +2393,10 @@ table tbody tr td {
 
                 +label {
                   display: block;
-                  width: 90%;
+                  width: 75%;
                   padding: .7rem 0;
                   text-align: center;
-                  margin: 1rem auto 0;
+                  margin: 1rem 0 0;
                   font-size: .8rem;
                   font-family: "semibold";
                   color: $PrimaryColor;
@@ -2413,8 +2416,8 @@ table tbody tr td {
             }
 
             .avatar-preview {
-              width: 192px;
-              height: 192px;
+              width: 150px;
+              height: 150px;
               position: relative;
               border-radius: 100%;
               border: 6px solid #F8F8F8;
@@ -2580,7 +2583,7 @@ table tbody tr td {
                 }
 
                 .avatar-preview {
-                  width: 250px;
+                  width: 150px;
                   height: 150px;
                   position: relative;
                   border-radius: 0;
@@ -2651,10 +2654,10 @@ table tbody tr td {
 
                 +label {
                   display: block;
-                  width: 90%;
+                  width: 75%;
                   padding: .7rem 0;
                   text-align: center;
-                  margin: 1rem auto 0;
+                  margin: 1rem 0 0;
                   font-size: .8rem;
                   font-family: "semibold";
                   color: $PrimaryColor;
@@ -2674,8 +2677,8 @@ table tbody tr td {
             }
 
             .avatar-preview {
-              width: 192px;
-              height: 192px;
+              width: 150px;
+              height: 150px;
               position: relative;
               border-radius: 100%;
               border: 6px solid #F8F8F8;
@@ -2832,7 +2835,7 @@ table tbody tr td {
                 }
 
                 .avatar-preview {
-                  width: 250px;
+                  width: 150px;
                   height: 150px;
                   position: relative;
                   border-radius: 0;
@@ -3582,10 +3585,10 @@ table tbody tr td {
 
                   +label {
                     display: block;
-                    width: 90%;
+                    width: 75%;
                     padding: .7rem 0;
                     text-align: center;
-                    margin: 1rem auto 0;
+                    margin: 1rem 0 0;
                     font-size: .8rem;
                     font-family: "semibold";
                     color: $PrimaryColor;
@@ -3605,8 +3608,8 @@ table tbody tr td {
               }
 
               .avatar-preview {
-                width: 192px;
-                height: 192px;
+                width: 150px;
+                height: 150px;
                 position: relative;
                 border-radius: 100%;
                 border: 6px solid #F8F8F8;
@@ -3758,7 +3761,7 @@ table tbody tr td {
                   }
 
                   .avatar-preview {
-                    width: 250px;
+                    width: 150px;
                     height: 150px;
                     position: relative;
                     border-radius: 0;
@@ -4230,6 +4233,19 @@ table tbody tr td {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .image .avatar-upload .avatar-preview {
+    margin: 0 auto;
+  }
+  .image .avatar-upload .avatar-edit input + label {
+    margin: 1rem auto 0 !important;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info .basic_info_data .form-group .image .avatar-upload .avatar-preview {
+    width: 100%;
+    margin: 0;
+  }
+  .index_cards .setting .tab-content .basic_info_form .basic_info .image .avatar-upload {
+    margin: 0 0 2rem !important;
+  }
   .chart-container {
     height: 50vh;
   }
@@ -4246,7 +4262,7 @@ table tbody tr td {
             flex-direction: column;
 
             .image {
-              width: 100%;
+              width: 100% !important;
 
               .avatar-upload {
                 margin: 0 auto 2rem;
@@ -4254,7 +4270,7 @@ table tbody tr td {
             }
 
             .basic_info_data {
-              width: 100%;
+              width: 100% !important;
             }
           }
         }
@@ -4306,7 +4322,7 @@ table tbody tr td {
           flex-direction: column;
 
           .image {
-            width: 100%;
+            width: 100% !important;
 
             .avatar-upload {
               margin: 0 auto 2rem;
@@ -4314,7 +4330,7 @@ table tbody tr td {
           }
 
           .employment_officials_data {
-            width: 100%;
+            width: 100% !important;
 
             .form-group,
             .work_width {
@@ -4400,13 +4416,13 @@ table tbody tr td {
         .basic_info {
           flex-direction: column;
           .image {
-            width: 100%;
+            width: 100% !important;
             .avatar-upload {
               margin: 0 auto 2rem;
             }
           }
           .employment_officials_data {
-            width: 100%;
+            width: 100% !important;
             .form-group {
               width: 100%;
             }
@@ -4445,9 +4461,39 @@ table tbody tr td {
 }
 
 @media only screen and (max-width: 600px) {
+  .sidebar.open {
+    .nav-pills {
+      .nav-item {
+        width: 20%;
+        .nav-link {
+          span {
+            font-size: .5rem;
+          }
+        }
+        &:nth-child(6) {
+          display: none;
+        }
+        &:nth-child(7) {
+          display: none;
+        }
+      }
+    }
+  }
   .navbar .d-flex.w-25 {
     width: 50% !important;
   }
+  .index_cards .setting .tab-content .profile_setting .nav-tabs{
+    padding: 0;
+    .nav-item{
+      width: 50%;
+      margin-bottom: 1rem;
+      .nav-link {
+        font-size: .8rem;
+        width: 100%;
+        padding: 0.5rem;
+      }
+    }
+  }  
   .chart-container {
     height: 40vh;
   }
@@ -4464,7 +4510,7 @@ table tbody tr td {
         flex-direction: column;
 
         .card_statistics {
-          width: 90%;
+          width: 100%;
           margin: 0 auto;
           padding: 1.5rem 2rem;
           margin-bottom: 1rem;
@@ -4484,7 +4530,7 @@ table tbody tr td {
         }
         .nav-tabs {
           .nav-item {
-            width: 80%;
+            width: 50%;
 
             .nav-link {
               font-size: .7rem !important;
@@ -4527,6 +4573,28 @@ table tbody tr td {
     }
 
     .setting {
+      .tab-content {
+        .notifications, .delete_account {
+          p {
+            width: 100%;
+          }
+        }
+        .supervisors {
+          padding: .5rem;
+          .card_supervisors {
+            width: 100%;
+            margin: 0 0 2rem;
+            &:nth-child(odd) {
+              margin-inline-start: 0;
+            }
+            .details_card_supervisors {
+              .contact {
+                font-size: .8rem;
+              }
+            }
+          }
+        }
+      }
       .setting_mobile {
 
         .nav-pills {
@@ -4586,5 +4654,86 @@ table tbody tr td {
         }
       }
     }
+  }
+  .table-responsive table{
+    border: 0;
+    width: 100% !important;
+  }
+
+  .table-responsive caption {
+    font-size: 1.3em;
+  }
+  
+  .table-responsive thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .table-responsive tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .table-responsive td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: end !important;
+  }
+  .table-responsive td.title {
+    text-align: center !important;
+  }
+  .table-responsive td.name .d-flex, .table-responsive td.name .details_team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .table-responsive td.name .d-flex img, .table-responsive td.name .details_team img {
+    margin: 0;
+  }
+  .table-responsive td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .table-responsive td:last-child {
+    border-bottom: 0;
+  }
+  .table-responsive .select-checkbox {
+    display: none;
+  }
+  .table-responsive .custom_checkbox {
+    display: block !important;
+  }
+  table tbody tr td .status, table tbody tr td .type_work {
+    display: inline-block !important;
+  }
+  table tbody tr td .d-flex, table tbody tr td .details_team {
+    display: inline-flex !important;
+    justify-content: center;
+    text-align: center;
+  }
+  table tbody tr td .d-flex img {
+    margin: 0 auto;
+  }
+  .dataTables_length {
+    margin-bottom: 1rem;
+  }
+  .nav-tabs {
+    margin-top: 1rem !important;
   }
 }

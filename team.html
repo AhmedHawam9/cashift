@@ -213,7 +213,9 @@
                             <img src="./media/image/7w7w.jpg" class="admin_img" alt="person" />
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
+                            <li><a class="dropdown-item" href="reports.html">التقارير</a></li>
+              <li><a class="dropdown-item" href="setting.html">الاعدادات</a></li>
+              <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
                         </ul>
                     </div>
                 </div>
@@ -253,22 +255,22 @@
                                     <table class="table" id="chancesWork">
                                         <thead>
                                             <tr>
-                                                <th></th>
-                                                <th>رقم التخصص</th>
-                                                <th>الاسم</th>
-                                                <th>المستوي الوظيفي</th>
-                                                <th>رقم الجوال</th>
-                                                <th>التخصص</th>
-                                                <th>نوع العمل</th>
-                                                <th></th>
+                                                <th scope="col"></th>
+                                                <th scope="col">رقم التخصص</th>
+                                                <th scope="col">الاسم</th>
+                                                <th scope="col">المستوي الوظيفي</th>
+                                                <th scope="col">رقم الجوال</th>
+                                                <th scope="col">التخصص</th>
+                                                <th scope="col">نوع العمل</th>
+                                                <th scope="col"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <!-- For loop this details table -->
                                             <tr>
-                                                <td></td>
-                                                <td>ADM221-10</td>
-                                                <td>
+                                                <td data-label="id"></td>
+                                                <td data-label="رقم التخصص">ADM221-10</td>
+                                                <td data-label="الاسم">
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -278,11 +280,13 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>جونيور مصمم وجهات مستخدم</td>
-                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                <td>تصميم وجهات مستخدم</td>
-                                                <td><span class="status full-time">دوام كامل</span></td>
-                                                <td>
+                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
+                                                    1548 251</td>
+                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                <td data-label="نوع العمل"><span class="status full-time">دوام
+                                                        كامل</span></td>
+                                                <td data-label="الاجراءات">
                                                     <div class="dropdown">
                                                         <a class="btn dropdown-toggle" href="#" role="button"
                                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -304,9 +308,9 @@
 
                                             <!-- For loop this details table -->
                                             <tr>
-                                                <td></td>
-                                                <td>ADM221-10</td>
-                                                <td>
+                                                <td data-label="id"></td>
+                                                <td data-label="رقم التخصص">ADM221-10</td>
+                                                <td data-label="الاسم">
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -316,11 +320,13 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>جونيور مصمم وجهات مستخدم</td>
-                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                <td>تصميم وجهات مستخدم</td>
-                                                <td><span class="status part-time">دوام جزئي</span></td>
-                                                <td>
+                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
+                                                    1548 251</td>
+                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                <td data-label="نوع العمل"><span class="status part-time">دوام
+                                                        جزئي</span></td>
+                                                <td data-label="الاجراءات">
                                                     <div class="dropdown">
                                                         <a class="btn dropdown-toggle" href="#" role="button"
                                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -342,9 +348,9 @@
 
                                             <!-- For loop this details table -->
                                             <tr>
-                                                <td></td>
-                                                <td>ADM221-10</td>
-                                                <td>
+                                                <td data-label="id"></td>
+                                                <td data-label="رقم التخصص">ADM221-10</td>
+                                                <td data-label="الاسم">
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -354,11 +360,13 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>جونيور مصمم وجهات مستخدم</td>
-                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                <td>تصميم وجهات مستخدم</td>
-                                                <td><span class="status hour-system">نظام الساعات</span></td>
-                                                <td>
+                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
+                                                    1548 251</td>
+                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                <td data-label="نوع العمل"><span class="status hour-system">نظام
+                                                        الساعات</span></td>
+                                                <td data-label="الاجراءات">
                                                     <div class="dropdown">
                                                         <a class="btn dropdown-toggle" href="#" role="button"
                                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -380,9 +388,9 @@
 
                                             <!-- For loop this details table -->
                                             <tr>
-                                                <td></td>
-                                                <td>ADM221-10</td>
-                                                <td>
+                                                <td data-label="id"></td>
+                                                <td data-label="رقم التخصص">ADM221-10</td>
+                                                <td data-label="الاسم">
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -392,11 +400,13 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>جونيور مصمم وجهات مستخدم</td>
-                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                <td>تصميم وجهات مستخدم</td>
-                                                <td><span class="status hour-system">نظام الساعات</span></td>
-                                                <td>
+                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
+                                                    1548 251</td>
+                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                <td data-label="نوع العمل"><span class="status hour-system">نظام
+                                                        الساعات</span></td>
+                                                <td data-label="الاجراءات">
                                                     <div class="dropdown">
                                                         <a class="btn dropdown-toggle" href="#" role="button"
                                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -418,9 +428,9 @@
 
                                             <!-- For loop this details table -->
                                             <tr>
-                                                <td></td>
-                                                <td>ADM221-10</td>
-                                                <td>
+                                                <td data-label="id"></td>
+                                                <td data-label="رقم التخصص">ADM221-10</td>
+                                                <td data-label="الاسم">
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -430,11 +440,13 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>جونيور مصمم وجهات مستخدم</td>
-                                                <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                <td>تصميم وجهات مستخدم</td>
-                                                <td><span class="status part-time">دوام جزئي</span></td>
-                                                <td>
+                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
+                                                    1548 251</td>
+                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                <td data-label="نوع العمل"><span class="status part-time">دوام
+                                                        جزئي</span></td>
+                                                <td data-label="الاجراءات">
                                                     <div class="dropdown">
                                                         <a class="btn dropdown-toggle" href="#" role="button"
                                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -500,27 +512,27 @@
                                         <table class="table" id="teamWork">
                                             <thead>
                                                 <tr>
-                                                    <th></th>
-                                                    <th>رقم الموظف</th>
-                                                    <th>الاسم</th>
-                                                    <th>المستوي الوظيفي</th>
-                                                    <th>رقم الجوال</th>
-                                                    <th>التخصص</th>
-                                                    <th>نوع العمل</th>
-                                                    <th></th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">رقم الموظف</th>
+                                                    <th scope="col">الاسم</th>
+                                                    <th scope="col">المستوي الوظيفي</th>
+                                                    <th scope="col">رقم الجوال</th>
+                                                    <th scope="col">التخصص</th>
+                                                    <th scope="col">نوع العمل</th>
+                                                    <th scope="col"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <!-- For loop this details table -->
                                                 <tr>
-                                                    <td>
+                                                    <td data-label="اختر" class="custom_checkbox">
                                                         <div class="form-check">
                                                             <input class="form-check-input" name="new_empolyee"
                                                                 type="checkbox" value="">
                                                         </div>
                                                     </td>
-                                                    <td>ADM221-10</td>
-                                                    <td>
+                                                    <td data-label="رقم الموظف">ADM221-10</td>
+                                                    <td data-label="الاسم">
                                                         <div class="d-flex">
                                                             <img src="./media/image/7w7w.jpg" class="img_employee"
                                                                 alt="employee">
@@ -530,11 +542,12 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td>جونيور مصمم وجهات مستخدم</td>
-                                                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                    <td>تصميم وجهات مستخدم</td>
-                                                    <td><span class="status new">جديد</span></td>
-                                                    <td>
+                                                    <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                    <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i>
+                                                        258 1548 251</td>
+                                                    <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                    <td data-label="نوع العمل"><span class="status new">جديد</span></td>
+                                                    <td data-label="الاجراءات">
                                                         <div class="dropdown">
                                                             <a class="btn dropdown-toggle" href="#" role="button"
                                                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -555,14 +568,14 @@
 
                                                 <!-- For loop this details table -->
                                                 <tr>
-                                                    <td>
+                                                    <td data-label="اختر" class="custom_checkbox">
                                                         <div class="form-check">
                                                             <input class="form-check-input" name="new_empolyee"
                                                                 type="checkbox" value="">
                                                         </div>
                                                     </td>
-                                                    <td>ADM221-10</td>
-                                                    <td>
+                                                    <td data-label="رقم الموظف">ADM221-10</td>
+                                                    <td data-label="الاسم">
                                                         <div class="d-flex">
                                                             <img src="./media/image/7w7w.jpg" class="img_employee"
                                                                 alt="employee">
@@ -572,11 +585,12 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td>جونيور مصمم وجهات مستخدم</td>
-                                                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                    <td>تصميم وجهات مستخدم</td>
-                                                    <td><span class="status new">جديد</span></td>
-                                                    <td>
+                                                    <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                    <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i>
+                                                        258 1548 251</td>
+                                                    <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                    <td data-label="نوع العمل"><span class="status new">جديد</span></td>
+                                                    <td data-label="الاجراءات">
                                                         <div class="dropdown">
                                                             <a class="btn dropdown-toggle" href="#" role="button"
                                                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -597,14 +611,14 @@
 
                                                 <!-- For loop this details table -->
                                                 <tr>
-                                                    <td>
+                                                    <td data-label="اختر" class="custom_checkbox">
                                                         <div class="form-check">
                                                             <input class="form-check-input" name="new_empolyee"
                                                                 type="checkbox" value="">
                                                         </div>
                                                     </td>
-                                                    <td>ADM221-10</td>
-                                                    <td>
+                                                    <td data-label="رقم الموظف">ADM221-10</td>
+                                                    <td data-label="الاسم">
                                                         <div class="d-flex">
                                                             <img src="./media/image/7w7w.jpg" class="img_employee"
                                                                 alt="employee">
@@ -614,11 +628,12 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td>جونيور مصمم وجهات مستخدم</td>
-                                                    <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                                                    <td>تصميم وجهات مستخدم</td>
-                                                    <td><span class="status new">جديد</span></td>
-                                                    <td>
+                                                    <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
+                                                    <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i>
+                                                        258 1548 251</td>
+                                                    <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                                                    <td data-label="نوع العمل"><span class="status new">جديد</span></td>
+                                                    <td data-label="الاجراءات">
                                                         <div class="dropdown">
                                                             <a class="btn dropdown-toggle" href="#" role="button"
                                                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -636,6 +651,7 @@
                                                     </td>
                                                 </tr>
                                                 <!-- For loop this details table -->
+
                                             </tbody>
                                         </table>
                                     </div>

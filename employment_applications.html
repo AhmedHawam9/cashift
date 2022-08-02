@@ -216,7 +216,9 @@
                             <img src="./media/image/7w7w.jpg" class="admin_img" alt="person" />
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
+                            <li><a class="dropdown-item" href="reports.html">التقارير</a></li>
+              <li><a class="dropdown-item" href="setting.html">الاعدادات</a></li>
+              <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
                         </ul>
                     </div>
                 </div>
@@ -255,29 +257,29 @@
                                 <table class="table" id="chancesWork">
                                     <thead>
                                         <tr>
-                                            <th></th>
-                                            <th>رقم الطلب</th>
-                                            <th>الاسم</th>
-                                            <th>العنوان</th>
-                                            <th>تاريخ الانشاء</th>
-                                            <th>العدد المطلوب</th>
-                                            <th>التكلفة</th>
-                                            <th>الحالة</th>
-                                            <th></th>
+                                            <th scope="col"></th>
+                                            <th scope="col">رقم الطلب</th>
+                                            <th scope="col">الاسم</th>
+                                            <th scope="col">العنوان</th>
+                                            <th scope="col">تاريخ الانشاء</th>
+                                            <th scope="col">العدد المطلوب</th>
+                                            <th scope="col">التكلفة</th>
+                                            <th scope="col">الحالة</th>
+                                            <th scope="col"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <!-- For loop this details table -->
                                         <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status new">جديد</span></td>
-                                            <td>
+                                            <td data-label="id"></td>
+                                            <td data-label="رقم الطلب">ADM221-10</td>
+                                            <td data-label="الاسم">Junior UI/UX Designer</td>
+                                            <td data-label="العنوان">الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                            <td data-label="تاريخ الانشاء">مايو 22 , 2022</td>
+                                            <td data-label="العدد المطلوب">44</td>
+                                            <td data-label="التكلفة">100 ريال سعودي</td>
+                                            <td data-label="الحالة"><span class="status new">جديد</span></td>
+                                            <td data-label="الاجراءات">
                                                 <div class="dropdown">
                                                     <a class="btn dropdown-toggle" href="#" role="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -296,15 +298,15 @@
 
                                         <!-- For loop this details table -->
                                         <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status active">فعالة</span></td>
-                                            <td>
+                                            <td data-label="id"></td>
+                                            <td data-label="رقم الطلب">ADM221-10</td>
+                                            <td data-label="الاسم">Junior UI/UX Designer</td>
+                                            <td data-label="العنوان">الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                            <td data-label="تاريخ الانشاء">مايو 22 , 2022</td>
+                                            <td data-label="العدد المطلوب">44</td>
+                                            <td data-label="التكلفة">100 ريال سعودي</td>
+                                            <td data-label="الحالة"><span class="status active">فعالة</span></td>
+                                            <td data-label="الاجراءات">
                                                 <div class="dropdown">
                                                     <a class="btn dropdown-toggle" href="#" role="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -323,15 +325,15 @@
 
                                         <!-- For loop this details table -->
                                         <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status cancel">لاغية</span></td>
-                                            <td>
+                                            <td data-label="id"></td>
+                                            <td data-label="رقم الطلب">ADM221-10</td>
+                                            <td data-label="الاسم">Junior UI/UX Designer</td>
+                                            <td data-label="العنوان">الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                            <td data-label="تاريخ الانشاء">مايو 22 , 2022</td>
+                                            <td data-label="العدد المطلوب">44</td>
+                                            <td data-label="التكلفة">100 ريال سعودي</td>
+                                            <td data-label="الحالة"><span class="status cancel">لاغية</span></td>
+                                            <td data-label="الاجراءات">
                                                 <div class="dropdown">
                                                     <a class="btn dropdown-toggle" href="#" role="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -350,15 +352,15 @@
 
                                         <!-- For loop this details table -->
                                         <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status end">منتهية</span></td>
-                                            <td>
+                                            <td data-label="id"></td>
+                                            <td data-label="رقم الطلب">ADM221-10</td>
+                                            <td data-label="الاسم">Junior UI/UX Designer</td>
+                                            <td data-label="العنوان">الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                            <td data-label="تاريخ الانشاء">مايو 22 , 2022</td>
+                                            <td data-label="العدد المطلوب">44</td>
+                                            <td data-label="التكلفة">100 ريال سعودي</td>
+                                            <td data-label="الحالة"><span class="status end">منتهية</span></td>
+                                            <td data-label="الاجراءات">
                                                 <div class="dropdown">
                                                     <a class="btn dropdown-toggle" href="#" role="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -377,15 +379,15 @@
 
                                         <!-- For loop this details table -->
                                         <tr>
-                                            <td></td>
-                                            <td>ADM221-10</td>
-                                            <td>Junior UI/UX Designer</td>
-                                            <td>الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
-                                            <td>مايو 22 , 2022</td>
-                                            <td>44</td>
-                                            <td>100 ريال سعودي</td>
-                                            <td><span class="status fail">فشل</span></td>
-                                            <td>
+                                            <td data-label="id"></td>
+                                            <td data-label="رقم الطلب">ADM221-10</td>
+                                            <td data-label="الاسم">Junior UI/UX Designer</td>
+                                            <td data-label="العنوان">الدمام , شارع السيدة عائشة , عمارة الملك …..</td>
+                                            <td data-label="تاريخ الانشاء">مايو 22 , 2022</td>
+                                            <td data-label="العدد المطلوب">44</td>
+                                            <td data-label="التكلفة">100 ريال سعودي</td>
+                                            <td data-label="الحالة"><span class="status fail">فشل</span></td>
+                                            <td data-label="الاجراءات">
                                                 <div class="dropdown">
                                                     <a class="btn dropdown-toggle" href="#" role="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false">

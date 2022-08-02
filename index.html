@@ -207,6 +207,8 @@
               <img src="./media/image/7w7w.jpg" class="admin_img" alt="person" />
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="reports.html">التقارير</a></li>
+              <li><a class="dropdown-item" href="setting.html">الاعدادات</a></li>
               <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
             </ul>
           </div>
@@ -233,16 +235,16 @@
                     <h5 class="modal-title" id="newJobModalLabel">الوظائف المضافة مؤخرا <span>(32)</span></h5>
                   </div>
                   <div class="modal-body">
-                    <div class="table-responsive">
+                    <div>
                       <table class="table" id="newJob">
                         <thead class="d-none">
                           <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -685,7 +687,7 @@
                   <tbody>
                     <!-- For loop this details team -->
                     <tr>
-                      <td>
+                      <td class="name">
                         <div class="details_team">
                           <img src="./media/image/7w7w.jpg" alt="person">
                           <div class="contact">
@@ -694,13 +696,13 @@
                           </div>
                         </div>
                       </td>
-                      <td>Junior UI/UX Designer</td>
-                      <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                      <td><span class="type_work total">دوام كامل</span></td>
+                      <td data-label="المستوي الوظيفي">Junior UI/UX Designer</td>
+                      <td data-label="رقم الهاتف"><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                      <td data-label="نوع العمل"><span class="type_work total">دوام كامل</span></td>
                     </tr>
                     <!-- For loop this details team -->
                     <tr>
-                      <td>
+                      <td class="name">
                         <div class="details_team">
                           <img src="./media/image/7w7w.jpg" alt="person">
                           <div class="contact">
@@ -709,12 +711,12 @@
                           </div>
                         </div>
                       </td>
-                      <td>Junior UI/UX Designer</td>
-                      <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                      <td><span class="type_work part">دوام جزئي</span></td>
+                      <td data-label="المستوي الوظيفي">Junior UI/UX Designer</td>
+                      <td data-label="رقم الهاتف"><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                      <td data-label="نوع العمل"><span class="type_work part">دوام جزئي</span></td>
                     </tr>
                     <tr>
-                      <td>
+                      <td class="name">
                         <div class="details_team">
                           <img src="./media/image/7w7w.jpg" alt="person">
                           <div class="contact">
@@ -723,9 +725,9 @@
                           </div>
                         </div>
                       </td>
-                      <td>Junior UI/UX Designer</td>
-                      <td><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
-                      <td><span class="type_work hour">نظام الساعات</span></td>
+                      <td data-label="المستوي الوظيفي">Junior UI/UX Designer</td>
+                      <td data-label="رقم الهاتف"><i class="fa-solid fa-phone-flip"></i> 258 1548 251</td>
+                      <td data-label="نوع العمل"><span class="type_work hour">نظام الساعات</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -923,7 +925,7 @@
                   </div>
                 </div>
                 <img src="./media/image/map.png" alt="map">
-                <div class="table-responsive">
+                <div>
                   <table class="table">
                     <thead>
                       <tr>
