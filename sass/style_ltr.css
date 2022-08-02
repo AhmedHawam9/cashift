@@ -3873,10 +3873,10 @@ table tbody tr td {
   .sidebar.open .nav-pills .nav-item .nav-link span {
     font-size: 0.5rem;
   }
-  .sidebar.open .nav-pills .nav-item:nth-child(6) {
+  .sidebar.open .nav-pills .nav-item:nth-child(7) {
     display: none;
   }
-  .sidebar.open .nav-pills .nav-item:nth-child(7) {
+  .sidebar.open .nav-pills .nav-item:nth-child(8) {
     display: none;
   }
   .navbar .d-flex.w-25 {
