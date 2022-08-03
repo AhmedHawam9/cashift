@@ -4476,10 +4476,7 @@ table tbody tr td {
             font-size: .5rem;
           }
         }
-        &:nth-child(7) {
-          display: none;
-        }
-        &:nth-child(8) {
+        &.disable_mobile {
           display: none;
         }
       }

@@ -333,6 +333,9 @@ body {
   overflow-x: hidden;
   direction: ltr;
 }
+.accordion-button {
+  text-align: start !important;
+}
 .dropdown-menu.show {
   right: 0 !important;
   left: unset !important;
@@ -3883,10 +3886,7 @@ table tbody tr td {
   .sidebar.open .nav-pills .nav-item .nav-link span {
     font-size: 0.5rem;
   }
-  .sidebar.open .nav-pills .nav-item:nth-child(7) {
-    display: none;
-  }
-  .sidebar.open .nav-pills .nav-item:nth-child(8) {
+  .sidebar.open .nav-pills .nav-item.disable_mobile {
     display: none;
   }
   .navbar .d-flex.w-25 {
