@@ -164,7 +164,7 @@
 }
 .sidebar .nav-pills .nav-item {
   width: 100%;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 .sidebar .nav-pills .nav-item ul {
   list-style: none;
@@ -179,7 +179,7 @@
   padding: 1rem 1.5rem;
   font-size: 0.85rem;
   background-color: transparent;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 .sidebar .nav-pills .nav-item .nav-link img {
   width: 25px;
