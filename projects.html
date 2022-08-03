@@ -107,11 +107,19 @@
                         <span>الرئيسية</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link align-middle">
+                <li class="nav-item disable_mobile">
+                    <a href="#submenulibrary" data-bs-toggle="collapse"
+                        class="nav-link accordion-button align-middle collapsed">
                         <img src="./media/image/icon/projects.svg" alt="icon" />
                         <span>المشاريع</span>
+                        <i class="fa-solid fa-angle-up"></i>
                     </a>
+                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
+                        <li>
+                            <a href="projects.html" class="nav-link">
+                                <span>المشاريع</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="employment_applications.html" class="nav-link align-middle">
@@ -143,24 +151,7 @@
                         <span>الاعدادات العامة</span>
                     </a>
                 </li>
-                <li class="nav-item disable_mobile">
-                    <a href="#submenulibrary" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="./media/image/icon/team.svg" alt="icon" />
-                        <span>test</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
-                        <li>
-                            <a href="add_work.html" class="nav-link">
-                                <span>test</span></a>
-                        </li>
-                        <li>
-                            <a href="/category_promo" class="nav-link">
-                                <span>test</span></a>
-                        </li>
-                    </ul>
-                </li>
+
             </ul>
             <div class="contact_us">
                 <i class="fa-solid fa-circle-question"></i>
@@ -476,154 +467,161 @@
                             </div>
                         </div>
                         <!-- End available job Section -->
-                    </div>
-                    <!-- End Accounts for projects -->
 
-                    <!-- Start All Projects -->
-                    <div class="tableAllProjects table-responsive">
-                        <table class="table" id="allProjects">
-                            <thead>
-                                <tr>
-                                    <th scope="col">اسم المشروع</th>
-                                    <th scope="col">موقع المشروع</th>
-                                    <th scope="col">تاريخ البدأ</th>
-                                    <th scope="col">فريق العمل</th>
-                                    <th scope="col">تسجيل الحضور</th>
-                                    <th scope="col">حالة المشروع</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- for loop this details project -->
-                                <tr>
-                                    <td class="title">مشروع ال 100 مصمم لانشاء المواقع والتطبيقات</td>
-                                    <td data-label="موقع المشروع">الدمام , منطقة النيل , شارع السيدة عائشة</td>
-                                    <td data-label="تاريخ البدأ">مايو22 , 2022</td>
-                                    <td data-label="فريق العمل">+ 50</td>
-                                    <td data-label="تسجيل الحضور">فى الموقع</td>
-                                    <td data-label="حالة المشروع">
-                                        <span class="status new">
-                                            جديد
-                                        </span>
-                                    </td>
-                                    <td data-label="الاجراءات">
-                                        <div class="dropdown">
-                                            <a class="btn dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="single_project.html">عرض التفاصيل</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#rejectModal">تعطيل</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- for loop this details project -->
+                        <!-- Start All Projects -->
+                        <div class="col-12">
+                            <div class="tableAllProjects table-responsive">
+                                <table class="table" id="allProjects">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">اسم المشروع</th>
+                                            <th scope="col">موقع المشروع</th>
+                                            <th scope="col">تاريخ البدأ</th>
+                                            <th scope="col">فريق العمل</th>
+                                            <th scope="col">تسجيل الحضور</th>
+                                            <th scope="col">حالة المشروع</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- for loop this details project -->
+                                        <tr>
+                                            <td class="title">مشروع ال 100 مصمم لانشاء المواقع والتطبيقات</td>
+                                            <td data-label="موقع المشروع">الدمام , منطقة النيل , شارع السيدة عائشة</td>
+                                            <td data-label="تاريخ البدأ">مايو22 , 2022</td>
+                                            <td data-label="فريق العمل">+ 50</td>
+                                            <td data-label="تسجيل الحضور">فى الموقع</td>
+                                            <td data-label="حالة المشروع">
+                                                <span class="status new">
+                                                    جديد
+                                                </span>
+                                            </td>
+                                            <td data-label="الاجراءات">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="single_project.html">عرض
+                                                                التفاصيل</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#rejectModal">تعطيل</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- for loop this details project -->
 
-                                <!-- for loop this details project -->
-                                <tr>
-                                    <td class="title">مشروع ال 100 مصمم لانشاء المواقع والتطبيقات</td>
-                                    <td data-label="موقع المشروع">الدمام , منطقة النيل , شارع السيدة عائشة </td>
-                                    <td data-label="تاريخ البدأ">مايو22 , 2022</td>
-                                    <td data-label="فريق العمل">+ 50</td>
-                                    <td data-label="تسجيل الحضور">فى الموقع</td>
-                                    <td data-label="حالة المشروع">
-                                        <span class="status end">
-                                            منتهي
-                                        </span>
-                                    </td>
-                                    <td data-label="الاجراءات">
-                                        <div class="dropdown">
-                                            <a class="btn dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="single_project.html">عرض التفاصيل</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="#">إعادة الطلب</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- for loop this details project -->
+                                        <!-- for loop this details project -->
+                                        <tr>
+                                            <td class="title">مشروع ال 100 مصمم لانشاء المواقع والتطبيقات</td>
+                                            <td data-label="موقع المشروع">الدمام , منطقة النيل , شارع السيدة عائشة </td>
+                                            <td data-label="تاريخ البدأ">مايو22 , 2022</td>
+                                            <td data-label="فريق العمل">+ 50</td>
+                                            <td data-label="تسجيل الحضور">فى الموقع</td>
+                                            <td data-label="حالة المشروع">
+                                                <span class="status end">
+                                                    منتهي
+                                                </span>
+                                            </td>
+                                            <td data-label="الاجراءات">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="single_project.html">عرض
+                                                                التفاصيل</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">إعادة الطلب</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- for loop this details project -->
 
-                                <!-- for loop this details project -->
-                                <tr>
-                                    <td class="title">مشروع ال 100 مصمم لانشاء المواقع والتطبيقات</td>
-                                    <td data-label="موقع المشروع">الدمام , منطقة النيل , شارع السيدة عائشة </td>
-                                    <td data-label="تاريخ البدأ">مايو22 , 2022</td>
-                                    <td data-label="فريق العمل">+ 50</td>
-                                    <td data-label="تسجيل الحضور">فى الموقع</td>
-                                    <td data-label="حالة المشروع">
-                                        <span class="status active">
-                                            فعال
-                                        </span>
-                                    </td>
-                                    <td data-label="الاجراءات">
-                                        <div class="dropdown">
-                                            <a class="btn dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="single_project.html">عرض التفاصيل</a>
-                                                </li>
-                                                <li>
-                                                    <!-- Button trigger modal -->
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#rejectModal">تعطيل</a>
-                                                </li>
-                                            </ul>
-                                            <!--  Start Reject Modal -->
-                                            <div class="modal reject_modal fade" id="rejectModal" tabindex="-1"
-                                                aria-labelledby="rejectModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-body">
-                                                            <img src="./media/image/reject.png" alt="reject">
-                                                            <h5>هل أنت متأكد من تعطيل مشروع " 100 مصمم "</h5>
-                                                            <p>عند قيامك بالضغط على زر تأكيد التعطيل يعني انك ستقوم
-                                                                بخسارة كل الداتا المحفوظة الخاصة بالمشروع </p>
-                                                            <div class="d-flex justify-content-center mt-3">
-                                                                <button class="btn submit">تأكيد التعطيل</button>
-                                                                <button class="btn cancel"
-                                                                    data-bs-dismiss="modal">الغاء</button>
+                                        <!-- for loop this details project -->
+                                        <tr>
+                                            <td class="title">مشروع ال 100 مصمم لانشاء المواقع والتطبيقات</td>
+                                            <td data-label="موقع المشروع">الدمام , منطقة النيل , شارع السيدة عائشة </td>
+                                            <td data-label="تاريخ البدأ">مايو22 , 2022</td>
+                                            <td data-label="فريق العمل">+ 50</td>
+                                            <td data-label="تسجيل الحضور">فى الموقع</td>
+                                            <td data-label="حالة المشروع">
+                                                <span class="status active">
+                                                    فعال
+                                                </span>
+                                            </td>
+                                            <td data-label="الاجراءات">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="single_project.html">عرض
+                                                                التفاصيل</a>
+                                                        </li>
+                                                        <li>
+                                                            <!-- Button trigger modal -->
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#rejectModal">تعطيل</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--  Start Reject Modal -->
+                                                    <div class="modal reject_modal fade" id="rejectModal" tabindex="-1"
+                                                        aria-labelledby="rejectModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-body">
+                                                                    <img src="./media/image/reject.png" alt="reject">
+                                                                    <h5>هل أنت متأكد من تعطيل مشروع " 100 مصمم "</h5>
+                                                                    <p>عند قيامك بالضغط على زر تأكيد التعطيل يعني انك
+                                                                        ستقوم
+                                                                        بخسارة كل الداتا المحفوظة الخاصة بالمشروع </p>
+                                                                    <div class="d-flex justify-content-center mt-3">
+                                                                        <button class="btn submit">تأكيد
+                                                                            التعطيل</button>
+                                                                        <button class="btn cancel"
+                                                                            data-bs-dismiss="modal">الغاء</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!--  End Reject Modal -->
                                                 </div>
-                                            </div>
-                                            <!--  End Reject Modal -->
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- for loop this details project -->
-                            </tbody>
-                        </table>
-                        <script>
-                            $(document).ready(function () {
-                                $('#allProjects').DataTable({
-                                    language: {
-                                        search: "البحث",
-                                        lengthMenu: "عرض" + " _MENU_ " + "المشاريع",
-                                        paginate: {
-                                            first: "الأول",
-                                            last: "الأخير",
-                                            next: "التالي",
-                                            previous: "السابق",
-                                        },
-                                        info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "المشاريع",
-                                    },
-                                });
-                            });
-                        </script>
+                                            </td>
+                                        </tr>
+                                        <!-- for loop this details project -->
+                                    </tbody>
+                                </table>
+                                <script>
+                                    $(document).ready(function () {
+                                        $('#allProjects').DataTable({
+                                            language: {
+                                                search: "البحث",
+                                                lengthMenu: "عرض" + " _MENU_ " + "المشاريع",
+                                                paginate: {
+                                                    first: "الأول",
+                                                    last: "الأخير",
+                                                    next: "التالي",
+                                                    previous: "السابق",
+                                                },
+                                                info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "المشاريع",
+                                            },
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <!-- End All Projects -->
                     </div>
-                    <!-- End All Projects -->
+                    <!-- End Accounts for projects -->
 
                     <!-- ======= End When there is content ======= -->
                 </div>

@@ -909,6 +909,11 @@ table tbody tr td {
 
     .tableAllProjects {
       font-family: "regular";
+      border: 1px solid #ebeaed;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      position: relative;
 
       table {
         thead {
@@ -1429,7 +1434,7 @@ table tbody tr td {
           margin-top: 2rem;
 
           .dataTables_wrapper {
-            margin-top: 2rem;
+            margin-top: 1rem;
           }
 
           table {
@@ -1558,7 +1563,7 @@ table tbody tr td {
           margin-top: 2rem;
 
           .dataTables_wrapper {
-            margin-top: 2rem;
+            margin-top: 1rem;
           }
 
           table {
@@ -1710,7 +1715,7 @@ table tbody tr td {
           margin-top: 2rem;
 
           .dataTables_wrapper {
-            margin-top: 2rem;
+            margin-top: 1rem;
           }
 
           table {
@@ -2126,7 +2131,7 @@ table tbody tr td {
         margin-top: 2rem;
 
         .dataTables_wrapper {
-          margin-top: 2rem;
+          margin-top: 1rem;
         }
 
         table {
@@ -2247,7 +2252,7 @@ table tbody tr td {
       font-family: "regular";
 
       .dataTables_wrapper {
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
 
       h5 {
@@ -4464,6 +4469,16 @@ table tbody tr td {
 }
 
 @media only screen and (max-width: 600px) {
+  .tableAllProjects {
+    padding: 1rem 1rem 5rem !important;
+    .dataTables_length {
+      position: absolute;
+      bottom: 0;
+      right: 10%;
+      left: 10%;
+      width: 80%;  
+    }
+  }
   .index_cards .content .single_project .tab-content .supervisors_project .filter, .index_cards .content .single_project .tab-content .team_work .filter{
     width: 50%;
   }

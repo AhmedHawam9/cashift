@@ -9,6 +9,16 @@ for (let i = 0; i < menuLengthDashboard; i++) {
     menuItemDashboard[i].className = "nav-link active";
   }
 }
+
+const menuItemDropDashboard = document.querySelectorAll(
+  ".sidebar .nav-item .collapse"
+);
+const menuLengthDropDashboard = menuItemDashboard.length;
+for (let i = 0; i < menuLengthDropDashboard; i++) {
+  if (menuItemDashboard[i].href === currentLocationDashboard) {
+    menuItemDropDashboard[i].className = "nav-item active";
+  }
+}
 //=========== Active sidebar dashboard =============
 
 //=========== sidebar toggle =============

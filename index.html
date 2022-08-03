@@ -107,11 +107,18 @@
             <span>الرئيسية</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link align-middle">
+        <li class="nav-item disable_mobile">
+          <a href="#submenulibrary" data-bs-toggle="collapse" class="nav-link accordion-button align-middle collapsed">
             <img src="./media/image/icon/projects.svg" alt="icon" />
             <span>المشاريع</span>
+            <i class="fa-solid fa-angle-up"></i>
           </a>
+          <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
+            <li>
+              <a href="projects.html" class="nav-link">
+                <span>المشاريع</span></a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a href="employment_applications.html" class="nav-link align-middle">
@@ -142,33 +149,6 @@
             <img src="./media/image/icon/setting.svg" alt="icon" />
             <span>الاعدادات العامة</span>
           </a>
-        </li>
-        <li class="nav-item disable_mobile">
-          <a
-            href="#submenulibrary"
-            data-bs-toggle="collapse"
-            class="nav-link accordion-button align-middle collapsed"
-          >
-            <img src="./media/image/icon/team.svg" alt="icon" />
-            <span>test</span>
-            <i class="fa-solid fa-angle-up"></i>
-          </a>
-          <ul
-            class="collapse flex-column"
-            id="submenulibrary"
-            data-bs-parent="#menu"
-          >
-            <li>
-              <a href="add_work.html" class="nav-link">
-                <span>test</span></a
-              >
-            </li>
-            <li>
-              <a href="/category_promo" class="nav-link">
-                <span>test</span></a
-              >
-            </li>
-          </ul>
         </li>
       </ul>
       <div class="contact_us">

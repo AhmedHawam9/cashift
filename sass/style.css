@@ -205,7 +205,7 @@
           border-inline-end: 0;
 }
 .sidebar .nav-pills .nav-item .nav-link {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.2rem;
   font-size: 0.85rem;
   background-color: transparent;
   margin-bottom: 0;
@@ -236,6 +236,7 @@
   margin: 0 5%;
   color: #fff;
   display: none;
+  font-size: 0.8rem;
 }
 .sidebar .contact_us {
   width: 80%;
@@ -1062,6 +1063,11 @@ table tbody tr td {
 }
 .index_cards .content .tableAllProjects {
   font-family: "regular";
+  border: 1px solid #ebeaed;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  position: relative;
 }
 .index_cards .content .tableAllProjects table thead {
   background-color: #fafafb;
@@ -1485,7 +1491,7 @@ table tbody tr td {
   margin-top: 2rem;
 }
 .index_cards .content .single_project .tab-content .chances_work .dataTables_wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .index_cards .content .single_project .tab-content .chances_work table thead tr th {
   text-align: start;
@@ -1580,7 +1586,7 @@ table tbody tr td {
   margin-top: 2rem;
 }
 .index_cards .content .single_project .tab-content .team_work .dataTables_wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .index_cards .content .single_project .tab-content .team_work table thead tr th {
   text-align: start;
@@ -1696,7 +1702,7 @@ table tbody tr td {
   margin-top: 2rem;
 }
 .index_cards .content .single_project .tab-content .supervisors_project .dataTables_wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .index_cards .content .single_project .tab-content .supervisors_project table thead tr th {
   text-align: start;
@@ -2018,7 +2024,7 @@ table tbody tr td {
   margin-top: 2rem;
 }
 .index_cards .content .employee_activities .employee_table .dataTables_wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .index_cards .content .employee_activities .employee_table table thead tr th {
   text-align: center;
@@ -2105,7 +2111,7 @@ table tbody tr td {
   font-family: "regular";
 }
 .index_cards .content .employment_officials .dataTables_wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .index_cards .content .employment_officials h5 {
   font-family: "semibold";
@@ -3900,6 +3906,16 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 600px) {
+  .tableAllProjects {
+    padding: 1rem 1rem 5rem !important;
+  }
+  .tableAllProjects .dataTables_length {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    width: 80%;
+  }
   .index_cards .content .single_project .tab-content .supervisors_project .filter, .index_cards .content .single_project .tab-content .team_work .filter {
     width: 50%;
   }

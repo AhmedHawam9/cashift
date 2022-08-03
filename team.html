@@ -113,11 +113,19 @@
                         <span>الرئيسية</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link align-middle">
+                <li class="nav-item disable_mobile">
+                    <a href="#submenulibrary" data-bs-toggle="collapse"
+                        class="nav-link accordion-button align-middle collapsed">
                         <img src="./media/image/icon/projects.svg" alt="icon" />
                         <span>المشاريع</span>
+                        <i class="fa-solid fa-angle-up"></i>
                     </a>
+                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
+                        <li>
+                            <a href="projects.html" class="nav-link">
+                                <span>المشاريع</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="employment_applications.html" class="nav-link align-middle">
@@ -149,24 +157,7 @@
                         <span>الاعدادات العامة</span>
                     </a>
                 </li>
-                <li class="nav-item disable_mobile">
-                    <a href="#submenulibrary" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="./media/image/icon/team.svg" alt="icon" />
-                        <span>test</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
-                        <li>
-                            <a href="add_work.html" class="nav-link">
-                                <span>test</span></a>
-                        </li>
-                        <li>
-                            <a href="/category_promo" class="nav-link">
-                                <span>test</span></a>
-                        </li>
-                    </ul>
-                </li>
+
             </ul>
             <div class="contact_us">
                 <i class="fa-solid fa-circle-question"></i>
@@ -269,7 +260,7 @@
                                     <option value="">junior</option>
                                     <option value="">senior</option>
                                 </select>
-                                <div class="table-responsive">
+                                <div class="table-responsive tableAllProjects">
                                     <table class="table" id="chancesWork">
                                         <thead>
                                             <tr>
@@ -288,7 +279,7 @@
                                             <tr>
                                                 <td data-label="id"></td>
                                                 <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td data-label="الاسم">
+                                                <td>
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -328,7 +319,7 @@
                                             <tr>
                                                 <td data-label="id"></td>
                                                 <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td data-label="الاسم">
+                                                <td>
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -368,7 +359,7 @@
                                             <tr>
                                                 <td data-label="id"></td>
                                                 <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td data-label="الاسم">
+                                                <td>
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -408,7 +399,7 @@
                                             <tr>
                                                 <td data-label="id"></td>
                                                 <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td data-label="الاسم">
+                                                <td>
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -448,7 +439,7 @@
                                             <tr>
                                                 <td data-label="id"></td>
                                                 <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td data-label="الاسم">
+                                                <td>
                                                     <div class="d-flex">
                                                         <img src="./media/image/7w7w.jpg" class="img_employee"
                                                             alt="employee">
@@ -526,7 +517,7 @@
                                     <option value="">senior</option>
                                 </select>
                                 <form action="">
-                                    <div class="table-responsive">
+                                    <div class="table-responsive tableAllProjects">
                                         <table class="table" id="teamWork">
                                             <thead>
                                                 <tr>
@@ -550,7 +541,7 @@
                                                         </div>
                                                     </td>
                                                     <td data-label="رقم الموظف">ADM221-10</td>
-                                                    <td data-label="الاسم">
+                                                    <td>
                                                         <div class="d-flex">
                                                             <img src="./media/image/7w7w.jpg" class="img_employee"
                                                                 alt="employee">
@@ -593,7 +584,7 @@
                                                         </div>
                                                     </td>
                                                     <td data-label="رقم الموظف">ADM221-10</td>
-                                                    <td data-label="الاسم">
+                                                    <td>
                                                         <div class="d-flex">
                                                             <img src="./media/image/7w7w.jpg" class="img_employee"
                                                                 alt="employee">
@@ -636,7 +627,7 @@
                                                         </div>
                                                     </td>
                                                     <td data-label="رقم الموظف">ADM221-10</td>
-                                                    <td data-label="الاسم">
+                                                    <td>
                                                         <div class="d-flex">
                                                             <img src="./media/image/7w7w.jpg" class="img_employee"
                                                                 alt="employee">
