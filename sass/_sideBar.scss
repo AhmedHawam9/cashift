@@ -1,5 +1,7 @@
 .sidebar {
-    &.open {
+
+    &.open,
+    &.opened {
         transition: 0.7s;
         width: 15%;
         margin-right: 0%;
@@ -15,8 +17,25 @@
             .nav-link {
                 text-align: start;
 
+                svg.dot {
+                    color: #fff;
+                    font-size: .5rem;
+                    margin-inline-start: 1.5rem;
+                }
+
                 span {
                     display: inline-block;
+                }
+
+                img {
+                    display: inline !important;
+                    margin: 0 !important;
+                }
+            }
+
+            .accordion-button {
+                svg {
+                    display: block;
                 }
             }
         }
@@ -86,20 +105,23 @@
 
         .accordion-button {
             display: block;
+
             &.collapsed {
                 background-color: transparent !important;
                 box-shadow: none;
+
                 svg {
                     transform: rotate(180deg);
                 }
             }
-            
+
             svg {
                 float: left;
                 font-size: 1.1rem;
                 margin-top: .2rem;
                 color: #fff;
                 transform: rotate(0deg);
+                display: none;
             }
 
             // span {
@@ -141,6 +163,9 @@
                 font-size: 0.9rem;
                 margin: 0;
                 padding: 0;
+                .close {
+                    display: none;
+                }
 
                 li .nav-link span {
                     color: #fff;
@@ -163,6 +188,8 @@
                     width: 25px;
                     height: 25px;
                     filter: brightness(0) invert(1);
+                    display: block;
+                    margin: 0 auto;
                 }
             }
 
@@ -170,16 +197,6 @@
                 background-color: rgba(255, 255, 255, .12);
                 border-inline-end: 3px solid #fff;
                 border-radius: 0;
-            }
-
-            .nav-link.router-link-exact-active {
-                font-family: "semibold";
-                font-weight: 900;
-
-                img {
-                    filter: invert(35%) sepia(85%) saturate(875%) hue-rotate(180deg) brightness(40%) contrast(95%);
-                    opacity: 1;
-                }
             }
         }
 
@@ -190,8 +207,7 @@
                 margin: 0 5%;
                 color: #fff;
                 display: none;
-                font-size: .8rem
-                ;
+                font-size: .8rem;
             }
         }
     }
@@ -309,13 +325,61 @@
                 width: 14.28%;
                 margin: 0;
 
+                .collapse.show, .collapsing {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 999;
+                    right: 0;
+                    left: 0;
+                    background-color: #0000008a;
+                    li {
+                        margin-bottom: 1rem;
+                        padding: .5rem 0;
+                        display: flex;
+                        width: 100%;
+                        .nav-link {
+                            width: 100%;
+                            background-color: #21765ec0;
+                            svg {
+                                font-size: 1rem;
+                            }
+                            span {
+                                display: inline;
+                                margin: 0 1rem;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .close {
+                        position: absolute;
+                        top: 5%;
+                        right: 5%;
+                        background-color: #000;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        svg {
+                            color: #fff;
+                        }
+                    }
+                }
+
                 .nav-link {
                     padding: .5rem 0;
                     margin-bottom: 0;
 
                     img {
-                        display: block;
-                        margin: 0 auto;
+                        display: block !important;
+                        margin: 0 auto !important;
                     }
 
                     span {
@@ -336,6 +400,11 @@
             .image_logo {
                 width: 100%;
                 display: none;
+            }
+            .accordion-button {
+                svg {
+                    display: none;
+                }
             }
         }
     }

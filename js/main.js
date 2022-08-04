@@ -7,16 +7,8 @@ const menuLengthDashboard = menuItemDashboard.length;
 for (let i = 0; i < menuLengthDashboard; i++) {
   if (menuItemDashboard[i].href === currentLocationDashboard) {
     menuItemDashboard[i].className = "nav-link active";
-  }
-}
-
-const menuItemDropDashboard = document.querySelectorAll(
-  ".sidebar .nav-item .collapse"
-);
-const menuLengthDropDashboard = menuItemDashboard.length;
-for (let i = 0; i < menuLengthDropDashboard; i++) {
-  if (menuItemDashboard[i].href === currentLocationDashboard) {
-    menuItemDropDashboard[i].className = "nav-item active";
+    menuItemDashboard[i].parentElement.parentElement.className =
+      "flex-column collapse show";
   }
 }
 //=========== Active sidebar dashboard =============
@@ -46,3 +38,20 @@ toggler.addEventListener("click", function () {
 //   }
 // };
 //=========== Close inspect =============
+
+$(document).ready(function () {
+  $(".sidebar").hover(
+    function () {
+      $(".sidebar").addClass("opened");
+    },
+    function () {
+      $(".sidebar").removeClass("opened");
+    }
+  );
+});
+
+$(document).ready(function () {
+  $(".close").on("click", function () {
+    $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
+  });
+});
