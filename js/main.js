@@ -3,12 +3,15 @@ const currentLocationDashboard = location.href;
 const menuItemDashboard = document.querySelectorAll(
   ".sidebar .nav-item .nav-link"
 );
+const menuChildDashboard = document.querySelectorAll(
+  ".sidebar .nav-pills .nav-item ul li .nav-link"
+);
 const menuLengthDashboard = menuItemDashboard.length;
 for (let i = 0; i < menuLengthDashboard; i++) {
   if (menuItemDashboard[i].href === currentLocationDashboard) {
     menuItemDashboard[i].className = "nav-link active";
-    menuItemDashboard[i].parentElement.parentElement.className =
-      "flex-column collapse show";
+    // menuChildDashboard[i].parentElement.parentElement.className =
+    //   "flex-column collapse show";
   }
 }
 //=========== Active sidebar dashboard =============
