@@ -4742,11 +4742,12 @@ table tbody tr td {
   }
   table tbody tr td .d-flex, table tbody tr td .details_team {
     display: inline-flex !important;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    width: 100%;
   }
-  table tbody tr td .d-flex img {
-    margin: 0 auto;
+  table tbody tr td .d-flex img, table tbody tr td .details_team img {
+    margin: 0;
   }
   .dataTables_length {
     margin-bottom: 1rem;
