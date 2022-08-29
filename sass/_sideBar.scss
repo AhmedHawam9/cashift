@@ -478,6 +478,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 50%;
+    }
     .sidebar.open {
         .nav-pills {
             .nav-item {
