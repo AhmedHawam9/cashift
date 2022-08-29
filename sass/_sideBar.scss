@@ -1,4 +1,7 @@
 .sidebar {
+    .toggler {
+        display: none;
+    }
 
     &.open,
     &.opened {
@@ -442,6 +445,15 @@
     .sidebar {
         margin-right: 0;
         width: 30%;
+        .toggler {
+            display: inline-block;
+            top: 1%;
+            position: absolute;
+            left: 5%;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
         .nav-pills {
             .nav-link {
                 text-align: start;

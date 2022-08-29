@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar" id="langHtml">
-
-<head>
+  <head>
     <!-- ? Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- ? Required meta tags -->
 
     <!-- ? Main CSS -->
@@ -12,45 +14,43 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <!-- <link rel="stylesheet" href="sass/style.css" /> -->
     <script>
-        if (localStorage.getItem("lang") == "ar") {
-            var cssId = 'myCss';  // you could encode the css path itself to generate id..
-            if (!document.getElementById(cssId)) {
-                var head = document.getElementsByTagName('head')[0];
-                var link = document.createElement('link');
-                link.id = cssId;
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'sass/style.css';
-                link.media = 'all';
-                head.appendChild(link);
-            }
+      if (localStorage.getItem("lang") == "ar") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.css";
+          link.media = "all";
+          head.appendChild(link);
         }
-        else if (localStorage.getItem("lang") == "en") {
-            var cssId = 'myCss';  // you could encode the css path itself to generate id..
-            if (!document.getElementById(cssId)) {
-                var head = document.getElementsByTagName('head')[0];
-                var link = document.createElement('link');
-                link.id = cssId;
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'sass/style_ltr.css';
-                link.media = 'all';
-                head.appendChild(link);
-            }
+      } else if (localStorage.getItem("lang") == "en") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style_ltr.css";
+          link.media = "all";
+          head.appendChild(link);
         }
-        else {
-            var cssId = 'myCss';  // you could encode the css path itself to generate id..
-            if (!document.getElementById(cssId)) {
-                var head = document.getElementsByTagName('head')[0];
-                var link = document.createElement('link');
-                link.id = cssId;
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'sass/style.css';
-                link.media = 'all';
-                head.appendChild(link);
-            }
+      } else {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.css";
+          link.media = "all";
+          head.appendChild(link);
         }
+      }
     </script>
     <!-- ? Main CSS -->
 
@@ -73,9 +73,19 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Datapicker cdn -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
     <!-- ? Datapicker cdn -->
 
     <!-- ? Title -->
@@ -87,642 +97,935 @@
     <!-- ? Favicon -->
 
     <script>
-        console.log(
-            "%c <== 7w7w++ ==>  ",
-            "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
-        );
+      console.log(
+        "%c <== 7w7w++ ==>  ",
+        "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+      );
     </script>
-</head>
+  </head>
 
-<body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar">
     <div class="d-flex sidemobile p-0">
-        <!-- ======= Start Sidebar ======= -->
-        <section class="sidebar open" id="sidebar">
-            <ul class="
-              nav nav-pills
-              flex-column
-              mb-sm-auto mb-0
-              align-items-center align-items-sm-start
-            " id="menu">
-                <div class="image_logo">
-                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-                </div>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/home.svg" alt="icon" />
-                        <span>الرئيسية</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#submenulibrary" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="./media/image/icon/projects.svg" alt="icon" />
-                        <span>المشاريع</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <li>
-                            <a href="projects.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="employment_applications.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/jobs.svg" alt="icon" />
-                        <span>طلبات التوظيف</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="team.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/team.svg" alt="icon" />
-                        <span>فريق العمل</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="employment_officials.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/officials.svg" alt="icon" />
-                        <span>مسئولي التوظيف</span>
-                    </a>
-                </li>
-                <li class="nav-item disable_mobile">
-                    <a href="reports.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/report.svg" alt="icon" />
-                        <span>التقارير</span>
-                    </a>
-                </li>
-                <li class="nav-item disable_mobile">
-                    <a href="setting.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/setting.svg" alt="icon" />
-                        <span>الاعدادات العامة</span>
-                    </a>
-                </li>
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open" id="sidebar">
+        <div class="toggler" id="toggler">
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="./media/image/icon/home.svg" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenulibrary"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="./media/image/icon/projects.svg" alt="icon" />
+              <span>المشاريع</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulibrary"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="projects.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
             </ul>
-            <div class="contact_us">
-                <i class="fa-solid fa-circle-question"></i>
-                <p>هل قابلتك بعض المشاكل او بعض الاستفسارات ؟ هل تريد المساعدة ؟</p>
-                <a href="#" class="btn">تواصل معنا</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="employment_applications.html"
+              class="nav-link align-middle"
+            >
+              <img src="./media/image/icon/jobs.svg" alt="icon" />
+              <span>طلبات التوظيف</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link align-middle">
+              <img src="./media/image/icon/team.svg" alt="icon" />
+              <span>فريق العمل</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="employment_officials.html" class="nav-link align-middle">
+              <img src="./media/image/icon/officials.svg" alt="icon" />
+              <span>مسئولي التوظيف</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/report.svg" alt="icon" />
+              <span>التقارير</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="./media/image/icon/setting.svg" alt="icon" />
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+        </ul>
+        <div class="contact_us">
+          <i class="fa-solid fa-circle-question"></i>
+          <p>هل قابلتك بعض المشاكل او بعض الاستفسارات ؟ هل تريد المساعدة ؟</p>
+          <a href="#" class="btn">تواصل معنا</a>
+        </div>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="d-flex w-25">
+            <div class="menu" id="menu">
+              <i class="fa-solid fa-bars"></i>
             </div>
-        </section>
-        <!-- ======= end Sidebar ======= -->
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="بحث ..."
+              />
+            </div>
+          </div>
+          <div>
+            <div class="changelocal d-inline-block">
+              <div class="dropdown lang">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- lang -->
+                  <i class="fa-solid fa-earth-americas px-2"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" onclick="changeLocaleAr()">
+                      <img
+                        src="./media/image/saudi-arabia.png"
+                        alt="saudi-arabia"
+                      />
+                      عربي
+                    </a>
+                    <a class="dropdown-item" onclick="changeLocaleEn()">
+                      <img
+                        src="./media/image/united-kingdom.png"
+                        alt="united-kingdom"
+                      />
+                      إنجليزي
+                    </a>
+                  </li>
+                  <script>
+                    function changeLocaleAr() {
+                      localStorage.setItem("lang", "ar");
+                      location.reload();
+                    }
+                    function changeLocaleEn() {
+                      localStorage.setItem("lang", "en");
+                      location.reload();
+                    }
+                    function readLang() {
+                      var lang = localStorage.getItem("lang");
+                      document.getElementById("langHtml").innerHTML = lang;
+                    }
+                  </script>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./media/image/7w7w.jpg"
+                  class="admin_img"
+                  alt="person"
+                />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="reports.html">التقارير</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="setting.html">الاعدادات</a>
+                </li>
+                <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
 
-        <!-- ======= Main ======= -->
-        <section class="index_cards">
-            <!-- ======= Start navbar ======= -->
-            <nav class="navbar">
-                <div class="d-flex w-25">
-                    <div class="menu" id="menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" name="" id="" class="form-control" placeholder="بحث ...">
-                    </div>
-                </div>
-                <div>
-                    <div class="changelocal d-inline-block">
-                        <div class="dropdown lang">
-                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <!-- lang -->
-                                <i class="fa-solid fa-earth-americas px-2"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <!-- ======= Start Content ======= -->
+        <section class="content">
+          <div class="single_project">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5>فريق العمل</h5>
+              <a href="add_work.html" class="btn work_btn">+ اضافة فرصة عمل</a>
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="chances-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#chances-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="chances-tab-pane"
+                  aria-selected="false"
+                >
+                  الموظفين الحاليين
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="team-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#team-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="team-tab-pane"
+                  aria-selected="false"
+                >
+                  الموظفين الجدد
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <!-- Start chances work details -->
+              <div
+                class="tab-pane fade show active"
+                id="chances-tab-pane"
+                role="tabpanel"
+                aria-labelledby="chances-tab"
+                tabindex="0"
+              >
+                <div class="supervisors_project">
+                  <select
+                    name=""
+                    class="selectpicker form-control filter"
+                    title="مستوي مبتدىء"
+                  >
+                    <option value="">junior</option>
+                    <option value="">senior</option>
+                  </select>
+                  <div class="table-responsive tableAllProjects">
+                    <table class="table" id="chancesWork">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">رقم التخصص</th>
+                          <th scope="col">الاسم</th>
+                          <th scope="col">المستوي الوظيفي</th>
+                          <th scope="col">رقم الجوال</th>
+                          <th scope="col">التخصص</th>
+                          <th scope="col">نوع العمل</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- For loop this details table -->
+                        <tr>
+                          <td data-label="id"></td>
+                          <td data-label="رقم التخصص">ADM221-10</td>
+                          <td>
+                            <div class="d-flex">
+                              <img
+                                src="./media/image/7w7w.jpg"
+                                class="img_employee"
+                                alt="employee"
+                              />
+                              <div class="details_employee">
+                                <p>مروان ادهم</p>
+                                <p>rasha@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="المستوي الوظيفي">
+                            جونيور مصمم وجهات مستخدم
+                          </td>
+                          <td data-label="رقم الجوال">
+                            <i class="fa-solid fa-phone-flip"></i> 258 1548 251
+                          </td>
+                          <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                          <td data-label="نوع العمل">
+                            <span class="status full-time">دوام كامل</span>
+                          </td>
+                          <td data-label="الاجراءات">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+                              <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" onclick="changeLocaleAr()">
-                                        <img src="./media/image/saudi-arabia.png" alt="saudi-arabia">
-                                        عربي
-                                    </a>
-                                    <a class="dropdown-item" onclick="changeLocaleEn()">
-                                        <img src="./media/image/united-kingdom.png" alt="united-kingdom">
-                                        إنجليزي
-                                    </a>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_details.html"
+                                    >عرض تفاصيل الموظف</a
+                                  >
                                 </li>
-                                <script>
-                                    function changeLocaleAr() {
-                                        localStorage.setItem("lang", "ar");
-                                        location.reload();
-                                    }
-                                    function changeLocaleEn() {
-                                        localStorage.setItem("lang", "en");
-                                        location.reload();
-                                    }
-                                    function readLang() {
-                                        var lang = localStorage.getItem("lang");
-                                        document.getElementById("langHtml").innerHTML = lang;
-                                    }
-                                </script>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dropdown d-inline-block">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./media/image/7w7w.jpg" class="admin_img" alt="person" />
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="reports.html">التقارير</a></li>
-                            <li><a class="dropdown-item" href="setting.html">الاعدادات</a></li>
-                            <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
-                        </ul>
-                    </div>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_activities.html"
+                                    >سجل نشاطات الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >ارسال رسالة</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this details table -->
+
+                        <!-- For loop this details table -->
+                        <tr>
+                          <td data-label="id"></td>
+                          <td data-label="رقم التخصص">ADM221-10</td>
+                          <td>
+                            <div class="d-flex">
+                              <img
+                                src="./media/image/7w7w.jpg"
+                                class="img_employee"
+                                alt="employee"
+                              />
+                              <div class="details_employee">
+                                <p>مروان ادهم</p>
+                                <p>rasha@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="المستوي الوظيفي">
+                            جونيور مصمم وجهات مستخدم
+                          </td>
+                          <td data-label="رقم الجوال">
+                            <i class="fa-solid fa-phone-flip"></i> 258 1548 251
+                          </td>
+                          <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                          <td data-label="نوع العمل">
+                            <span class="status part-time">دوام جزئي</span>
+                          </td>
+                          <td data-label="الاجراءات">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_details.html"
+                                    >عرض تفاصيل الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_activities.html"
+                                    >سجل نشاطات الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >ارسال رسالة</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this details table -->
+
+                        <!-- For loop this details table -->
+                        <tr>
+                          <td data-label="id"></td>
+                          <td data-label="رقم التخصص">ADM221-10</td>
+                          <td>
+                            <div class="d-flex">
+                              <img
+                                src="./media/image/7w7w.jpg"
+                                class="img_employee"
+                                alt="employee"
+                              />
+                              <div class="details_employee">
+                                <p>مروان ادهم</p>
+                                <p>rasha@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="المستوي الوظيفي">
+                            جونيور مصمم وجهات مستخدم
+                          </td>
+                          <td data-label="رقم الجوال">
+                            <i class="fa-solid fa-phone-flip"></i> 258 1548 251
+                          </td>
+                          <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                          <td data-label="نوع العمل">
+                            <span class="status hour-system">نظام الساعات</span>
+                          </td>
+                          <td data-label="الاجراءات">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_details.html"
+                                    >عرض تفاصيل الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_activities.html"
+                                    >سجل نشاطات الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >ارسال رسالة</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this details table -->
+
+                        <!-- For loop this details table -->
+                        <tr>
+                          <td data-label="id"></td>
+                          <td data-label="رقم التخصص">ADM221-10</td>
+                          <td>
+                            <div class="d-flex">
+                              <img
+                                src="./media/image/7w7w.jpg"
+                                class="img_employee"
+                                alt="employee"
+                              />
+                              <div class="details_employee">
+                                <p>مروان ادهم</p>
+                                <p>rasha@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="المستوي الوظيفي">
+                            جونيور مصمم وجهات مستخدم
+                          </td>
+                          <td data-label="رقم الجوال">
+                            <i class="fa-solid fa-phone-flip"></i> 258 1548 251
+                          </td>
+                          <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                          <td data-label="نوع العمل">
+                            <span class="status hour-system">نظام الساعات</span>
+                          </td>
+                          <td data-label="الاجراءات">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_details.html"
+                                    >عرض تفاصيل الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_activities.html"
+                                    >سجل نشاطات الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >ارسال رسالة</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this details table -->
+
+                        <!-- For loop this details table -->
+                        <tr>
+                          <td data-label="id"></td>
+                          <td data-label="رقم التخصص">ADM221-10</td>
+                          <td>
+                            <div class="d-flex">
+                              <img
+                                src="./media/image/7w7w.jpg"
+                                class="img_employee"
+                                alt="employee"
+                              />
+                              <div class="details_employee">
+                                <p>مروان ادهم</p>
+                                <p>rasha@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="المستوي الوظيفي">
+                            جونيور مصمم وجهات مستخدم
+                          </td>
+                          <td data-label="رقم الجوال">
+                            <i class="fa-solid fa-phone-flip"></i> 258 1548 251
+                          </td>
+                          <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                          <td data-label="نوع العمل">
+                            <span class="status part-time">دوام جزئي</span>
+                          </td>
+                          <td data-label="الاجراءات">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_details.html"
+                                    >عرض تفاصيل الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="employee_activities.html"
+                                    >سجل نشاطات الموظف</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >ارسال رسالة</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this details table -->
+                      </tbody>
+                    </table>
+                    <script>
+                      $(document).ready(function () {
+                        $("#chancesWork").DataTable({
+                          language: {
+                            search: "البحث",
+                            lengthMenu: "عرض" + " _MENU_ " + "الفريق",
+                            paginate: {
+                              first: "الأول",
+                              last: "الأخير",
+                              next: "التالي",
+                              previous: "السابق",
+                            },
+                            info:
+                              "عرض" +
+                              " _START_ " +
+                              "من" +
+                              " _END_ " +
+                              "الى" +
+                              " _TOTAL_ " +
+                              "الفريق",
+                          },
+                          columnDefs: [
+                            {
+                              orderable: false,
+                              className: "select-checkbox",
+                              targets: 0,
+                            },
+                          ],
+                          select: {
+                            style: "os",
+                            selector: "td:first-child",
+                          },
+                          order: [[1, "asc"]],
+                        });
+                      });
+                    </script>
+                  </div>
                 </div>
-            </nav>
-            <!-- ======= End navbar ======= -->
+              </div>
+              <!-- End chances work details -->
 
-            <!-- ======= Start Content ======= -->
-            <section class="content">
-                <div class="single_project">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5>فريق العمل</h5>
-                        <a href="add_work.html" class="btn work_btn">+ اضافة فرصة عمل</a>
-                    </div>
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="chances-tab" data-bs-toggle="tab"
-                                data-bs-target="#chances-tab-pane" type="button" role="tab"
-                                aria-controls="chances-tab-pane" aria-selected="false">الموظفين الحاليين</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team-tab-pane"
-                                type="button" role="tab" aria-controls="team-tab-pane" aria-selected="false">
-                                الموظفين الجدد</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-
-                        <!-- Start chances work details -->
-                        <div class="tab-pane fade show active" id="chances-tab-pane" role="tabpanel"
-                            aria-labelledby="chances-tab" tabindex="0">
-                            <div class="supervisors_project">
-                                <select name="" class="selectpicker form-control filter" title="مستوي مبتدىء">
-                                    <option value="">junior</option>
-                                    <option value="">senior</option>
-                                </select>
-                                <div class="table-responsive tableAllProjects">
-                                    <table class="table" id="chancesWork">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"></th>
-                                                <th scope="col">رقم التخصص</th>
-                                                <th scope="col">الاسم</th>
-                                                <th scope="col">المستوي الوظيفي</th>
-                                                <th scope="col">رقم الجوال</th>
-                                                <th scope="col">التخصص</th>
-                                                <th scope="col">نوع العمل</th>
-                                                <th scope="col"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- For loop this details table -->
-                                            <tr>
-                                                <td data-label="id"></td>
-                                                <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                            alt="employee">
-                                                        <div class="details_employee">
-                                                            <p>مروان ادهم</p>
-                                                            <p>rasha@gmail.com</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
-                                                    1548 251</td>
-                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                <td data-label="نوع العمل"><span class="status full-time">دوام
-                                                        كامل</span></td>
-                                                <td data-label="الاجراءات">
-                                                    <div class="dropdown">
-                                                        <a class="btn dropdown-toggle" href="#" role="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_details.html">عرض تفاصيل الموظف</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_activities.html">سجل نشاطات
-                                                                    الموظف</a></li>
-                                                            <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- For loop this details table -->
-
-                                            <!-- For loop this details table -->
-                                            <tr>
-                                                <td data-label="id"></td>
-                                                <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                            alt="employee">
-                                                        <div class="details_employee">
-                                                            <p>مروان ادهم</p>
-                                                            <p>rasha@gmail.com</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
-                                                    1548 251</td>
-                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                <td data-label="نوع العمل"><span class="status part-time">دوام
-                                                        جزئي</span></td>
-                                                <td data-label="الاجراءات">
-                                                    <div class="dropdown">
-                                                        <a class="btn dropdown-toggle" href="#" role="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_details.html">عرض تفاصيل الموظف</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_activities.html">سجل نشاطات
-                                                                    الموظف</a></li>
-                                                            <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- For loop this details table -->
-
-                                            <!-- For loop this details table -->
-                                            <tr>
-                                                <td data-label="id"></td>
-                                                <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                            alt="employee">
-                                                        <div class="details_employee">
-                                                            <p>مروان ادهم</p>
-                                                            <p>rasha@gmail.com</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
-                                                    1548 251</td>
-                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                <td data-label="نوع العمل"><span class="status hour-system">نظام
-                                                        الساعات</span></td>
-                                                <td data-label="الاجراءات">
-                                                    <div class="dropdown">
-                                                        <a class="btn dropdown-toggle" href="#" role="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_details.html">عرض تفاصيل الموظف</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_activities.html">سجل نشاطات
-                                                                    الموظف</a></li>
-                                                            <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- For loop this details table -->
-
-                                            <!-- For loop this details table -->
-                                            <tr>
-                                                <td data-label="id"></td>
-                                                <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                            alt="employee">
-                                                        <div class="details_employee">
-                                                            <p>مروان ادهم</p>
-                                                            <p>rasha@gmail.com</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
-                                                    1548 251</td>
-                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                <td data-label="نوع العمل"><span class="status hour-system">نظام
-                                                        الساعات</span></td>
-                                                <td data-label="الاجراءات">
-                                                    <div class="dropdown">
-                                                        <a class="btn dropdown-toggle" href="#" role="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_details.html">عرض تفاصيل الموظف</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_activities.html">سجل نشاطات
-                                                                    الموظف</a></li>
-                                                            <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- For loop this details table -->
-
-                                            <!-- For loop this details table -->
-                                            <tr>
-                                                <td data-label="id"></td>
-                                                <td data-label="رقم التخصص">ADM221-10</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                            alt="employee">
-                                                        <div class="details_employee">
-                                                            <p>مروان ادهم</p>
-                                                            <p>rasha@gmail.com</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i> 258
-                                                    1548 251</td>
-                                                <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                <td data-label="نوع العمل"><span class="status part-time">دوام
-                                                        جزئي</span></td>
-                                                <td data-label="الاجراءات">
-                                                    <div class="dropdown">
-                                                        <a class="btn dropdown-toggle" href="#" role="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_details.html">عرض تفاصيل الموظف</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item"
-                                                                    href="employee_activities.html">سجل نشاطات
-                                                                    الموظف</a></li>
-                                                            <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- For loop this details table -->
-                                        </tbody>
-                                    </table>
-                                    <script>
-                                        $(document).ready(function () {
-                                            $('#chancesWork').DataTable({
-                                                language: {
-                                                    search: "البحث",
-                                                    lengthMenu: "عرض" + " _MENU_ " + "الفريق",
-                                                    paginate: {
-                                                        first: "الأول",
-                                                        last: "الأخير",
-                                                        next: "التالي",
-                                                        previous: "السابق",
-                                                    },
-                                                    info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الفريق",
-                                                },
-                                                columnDefs: [{
-                                                    orderable: false,
-                                                    className: 'select-checkbox',
-                                                    targets: 0
-                                                }],
-                                                select: {
-                                                    style: 'os',
-                                                    selector: 'td:first-child'
-                                                },
-                                                order: [[1, 'asc']]
-                                            });
-                                        });
-                                    </script>
+              <!-- Start team work details -->
+              <div
+                class="tab-pane fade"
+                id="team-tab-pane"
+                role="tabpanel"
+                aria-labelledby="team-tab"
+                tabindex="0"
+              >
+                <div class="team_work">
+                  <select
+                    name=""
+                    class="selectpicker form-control filter"
+                    title="مستوي مبتدىء"
+                  >
+                    <option value="">junior</option>
+                    <option value="">senior</option>
+                  </select>
+                  <form action="">
+                    <div class="table-responsive tableAllProjects">
+                      <table class="table" id="teamWork">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">رقم الموظف</th>
+                            <th scope="col">الاسم</th>
+                            <th scope="col">المستوي الوظيفي</th>
+                            <th scope="col">رقم الجوال</th>
+                            <th scope="col">التخصص</th>
+                            <th scope="col">نوع العمل</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- For loop this details table -->
+                          <tr>
+                            <td data-label="اختر" class="custom_checkbox">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  name="new_empolyee"
+                                  type="checkbox"
+                                  value=""
+                                />
+                              </div>
+                            </td>
+                            <td data-label="رقم الموظف">ADM221-10</td>
+                            <td>
+                              <div class="d-flex">
+                                <img
+                                  src="./media/image/7w7w.jpg"
+                                  class="img_employee"
+                                  alt="employee"
+                                />
+                                <div class="details_employee">
+                                  <p>مروان ادهم</p>
+                                  <p>rasha@gmail.com</p>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- End chances work details -->
+                              </div>
+                            </td>
+                            <td data-label="المستوي الوظيفي">
+                              جونيور مصمم وجهات مستخدم
+                            </td>
+                            <td data-label="رقم الجوال">
+                              <i class="fa-solid fa-phone-flip"></i> 258 1548
+                              251
+                            </td>
+                            <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                            <td data-label="نوع العمل">
+                              <span class="status new">جديد</span>
+                            </td>
+                            <td data-label="الاجراءات">
+                              <div class="dropdown">
+                                <a
+                                  class="btn dropdown-toggle"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="employee_activities.html"
+                                      >عرض تفاصيل الموظف</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">قبول</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">رفض</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- For loop this details table -->
 
-                        <!-- Start team work details -->
-                        <div class="tab-pane fade" id="team-tab-pane" role="tabpanel" aria-labelledby="team-tab"
-                            tabindex="0">
-                            <div class="team_work">
-                                <select name="" class="selectpicker form-control filter" title="مستوي مبتدىء">
-                                    <option value="">junior</option>
-                                    <option value="">senior</option>
-                                </select>
-                                <form action="">
-                                    <div class="table-responsive tableAllProjects">
-                                        <table class="table" id="teamWork">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">رقم الموظف</th>
-                                                    <th scope="col">الاسم</th>
-                                                    <th scope="col">المستوي الوظيفي</th>
-                                                    <th scope="col">رقم الجوال</th>
-                                                    <th scope="col">التخصص</th>
-                                                    <th scope="col">نوع العمل</th>
-                                                    <th scope="col"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!-- For loop this details table -->
-                                                <tr>
-                                                    <td data-label="اختر" class="custom_checkbox">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" name="new_empolyee"
-                                                                type="checkbox" value="">
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="رقم الموظف">ADM221-10</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                                alt="employee">
-                                                            <div class="details_employee">
-                                                                <p>مروان ادهم</p>
-                                                                <p>rasha@gmail.com</p>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                    <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i>
-                                                        258 1548 251</td>
-                                                    <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                    <td data-label="نوع العمل"><span class="status new">جديد</span></td>
-                                                    <td data-label="الاجراءات">
-                                                        <div class="dropdown">
-                                                            <a class="btn dropdown-toggle" href="#" role="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item"
-                                                                        href="employee_activities.html">عرض تفاصيل
-                                                                        الموظف</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">قبول</a></li>
-                                                                <li><a class="dropdown-item" href="#">رفض</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <!-- For loop this details table -->
+                          <!-- For loop this details table -->
+                          <tr>
+                            <td data-label="اختر" class="custom_checkbox">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  name="new_empolyee"
+                                  type="checkbox"
+                                  value=""
+                                />
+                              </div>
+                            </td>
+                            <td data-label="رقم الموظف">ADM221-10</td>
+                            <td>
+                              <div class="d-flex">
+                                <img
+                                  src="./media/image/7w7w.jpg"
+                                  class="img_employee"
+                                  alt="employee"
+                                />
+                                <div class="details_employee">
+                                  <p>مروان ادهم</p>
+                                  <p>rasha@gmail.com</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td data-label="المستوي الوظيفي">
+                              جونيور مصمم وجهات مستخدم
+                            </td>
+                            <td data-label="رقم الجوال">
+                              <i class="fa-solid fa-phone-flip"></i> 258 1548
+                              251
+                            </td>
+                            <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                            <td data-label="نوع العمل">
+                              <span class="status new">جديد</span>
+                            </td>
+                            <td data-label="الاجراءات">
+                              <div class="dropdown">
+                                <a
+                                  class="btn dropdown-toggle"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="employee_activities.html"
+                                      >عرض تفاصيل الموظف</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">قبول</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">رفض</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- For loop this details table -->
 
-                                                <!-- For loop this details table -->
-                                                <tr>
-                                                    <td data-label="اختر" class="custom_checkbox">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" name="new_empolyee"
-                                                                type="checkbox" value="">
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="رقم الموظف">ADM221-10</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                                alt="employee">
-                                                            <div class="details_employee">
-                                                                <p>مروان ادهم</p>
-                                                                <p>rasha@gmail.com</p>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                    <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i>
-                                                        258 1548 251</td>
-                                                    <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                    <td data-label="نوع العمل"><span class="status new">جديد</span></td>
-                                                    <td data-label="الاجراءات">
-                                                        <div class="dropdown">
-                                                            <a class="btn dropdown-toggle" href="#" role="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item"
-                                                                        href="employee_activities.html">عرض تفاصيل
-                                                                        الموظف</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">قبول</a></li>
-                                                                <li><a class="dropdown-item" href="#">رفض</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <!-- For loop this details table -->
-
-                                                <!-- For loop this details table -->
-                                                <tr>
-                                                    <td data-label="اختر" class="custom_checkbox">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" name="new_empolyee"
-                                                                type="checkbox" value="">
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="رقم الموظف">ADM221-10</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <img src="./media/image/7w7w.jpg" class="img_employee"
-                                                                alt="employee">
-                                                            <div class="details_employee">
-                                                                <p>مروان ادهم</p>
-                                                                <p>rasha@gmail.com</p>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="المستوي الوظيفي">جونيور مصمم وجهات مستخدم</td>
-                                                    <td data-label="رقم الجوال"><i class="fa-solid fa-phone-flip"></i>
-                                                        258 1548 251</td>
-                                                    <td data-label="التخصص">تصميم وجهات مستخدم</td>
-                                                    <td data-label="نوع العمل"><span class="status new">جديد</span></td>
-                                                    <td data-label="الاجراءات">
-                                                        <div class="dropdown">
-                                                            <a class="btn dropdown-toggle" href="#" role="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item"
-                                                                        href="employee_activities.html">عرض تفاصيل
-                                                                        الموظف</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">قبول</a></li>
-                                                                <li><a class="dropdown-item" href="#">رفض</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <!-- For loop this details table -->
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <button type="button" class="btn reject">رفض</button>
-                                        <button type="submit" class="btn accept">قبول</button>
-                                    </div>
-                                </form>
-                                <script>
-                                    $(document).ready(function () {
-                                        $('#teamWork').DataTable({
-                                            language: {
-                                                search: "البحث",
-                                                lengthMenu: "عرض" + " _MENU_ " + "الفريق",
-                                                paginate: {
-                                                    first: "الأول",
-                                                    last: "الأخير",
-                                                    next: "التالي",
-                                                    previous: "السابق",
-                                                },
-                                                info: "عرض" + " _START_ " + "من" + " _END_ " + "الى" + " _TOTAL_ " + "الفريق",
-                                            },
-                                            columnDefs: [{
-                                                orderable: false,
-                                                className: 'select-checkbox',
-                                                targets: 0
-                                            }],
-                                            select: {
-                                                style: 'os',
-                                                selector: 'td:first-child'
-                                            },
-                                            order: [[1, 'asc']]
-                                        });
-                                    });
-                                </script>
-                            </div>
-                        </div>
-                        <!-- End team work details -->
+                          <!-- For loop this details table -->
+                          <tr>
+                            <td data-label="اختر" class="custom_checkbox">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  name="new_empolyee"
+                                  type="checkbox"
+                                  value=""
+                                />
+                              </div>
+                            </td>
+                            <td data-label="رقم الموظف">ADM221-10</td>
+                            <td>
+                              <div class="d-flex">
+                                <img
+                                  src="./media/image/7w7w.jpg"
+                                  class="img_employee"
+                                  alt="employee"
+                                />
+                                <div class="details_employee">
+                                  <p>مروان ادهم</p>
+                                  <p>rasha@gmail.com</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td data-label="المستوي الوظيفي">
+                              جونيور مصمم وجهات مستخدم
+                            </td>
+                            <td data-label="رقم الجوال">
+                              <i class="fa-solid fa-phone-flip"></i> 258 1548
+                              251
+                            </td>
+                            <td data-label="التخصص">تصميم وجهات مستخدم</td>
+                            <td data-label="نوع العمل">
+                              <span class="status new">جديد</span>
+                            </td>
+                            <td data-label="الاجراءات">
+                              <div class="dropdown">
+                                <a
+                                  class="btn dropdown-toggle"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="employee_activities.html"
+                                      >عرض تفاصيل الموظف</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">قبول</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">رفض</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- For loop this details table -->
+                        </tbody>
+                      </table>
                     </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="btn reject">رفض</button>
+                      <button type="submit" class="btn accept">قبول</button>
+                    </div>
+                  </form>
+                  <script>
+                    $(document).ready(function () {
+                      $("#teamWork").DataTable({
+                        language: {
+                          search: "البحث",
+                          lengthMenu: "عرض" + " _MENU_ " + "الفريق",
+                          paginate: {
+                            first: "الأول",
+                            last: "الأخير",
+                            next: "التالي",
+                            previous: "السابق",
+                          },
+                          info:
+                            "عرض" +
+                            " _START_ " +
+                            "من" +
+                            " _END_ " +
+                            "الى" +
+                            " _TOTAL_ " +
+                            "الفريق",
+                        },
+                        columnDefs: [
+                          {
+                            orderable: false,
+                            className: "select-checkbox",
+                            targets: 0,
+                          },
+                        ],
+                        select: {
+                          style: "os",
+                          selector: "td:first-child",
+                        },
+                        order: [[1, "asc"]],
+                      });
+                    });
+                  </script>
                 </div>
-            </section>
-            <!-- ======= End Content ======= -->
+              </div>
+              <!-- End team work details -->
+            </div>
+          </div>
         </section>
-        <!-- ======= Main ======= -->
+        <!-- ======= End Content ======= -->
+      </section>
+      <!-- ======= Main ======= -->
     </div>
     <!-- <script>
     AOS.init({ disable: "mobile" });
@@ -733,11 +1036,10 @@
     <script src="js/counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script>
-        $('.counter').counterUp({
-            delay: 20,
-            time: 2000
-        });
+      $(".counter").counterUp({
+        delay: 20,
+        time: 2000,
+      });
     </script>
-</body>
-
+  </body>
 </html>

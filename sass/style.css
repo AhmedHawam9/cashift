@@ -81,6 +81,9 @@
           margin-inline-end: 0.5rem;
 }
 
+.sidebar .toggler {
+  display: none;
+}
 .sidebar.open, .sidebar.opened {
   transition: 0.7s;
   width: 15%;
@@ -457,6 +460,15 @@
   .sidebar {
     margin-right: 0;
     width: 30%;
+  }
+  .sidebar .toggler {
+    display: inline-block;
+    top: 1%;
+    position: absolute;
+    left: 5%;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
   .sidebar .nav-pills .nav-link {
     text-align: start;

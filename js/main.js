@@ -19,6 +19,10 @@ for (let i = 0; i < menuLengthDashboard; i++) {
 //=========== sidebar toggle =============
 const sideBar = document.querySelector(".sidebar");
 const toggler = document.querySelector(".menu");
+const togglermobile = document.querySelector("#toggler");
+togglermobile.addEventListener("click", function () {
+  sideBar.classList.toggle("open");
+});
 toggler.addEventListener("click", function () {
   sideBar.classList.toggle("open");
 });
@@ -42,33 +46,6 @@ toggler.addEventListener("click", function () {
 // };
 //=========== Close inspect =============
 
-// document.getElementById("menu").onclick = function() {myFunction()};
-
-// function myFunction() {
-//   document.getElementById('sidebar').style.display = "block";
-// }
-
-// window.addEventListener('click', function(e){   
-//   if (document.getElementById('sidebar').contains(e.target)){
-//     console.log("ah")
-//   }
-//   else if (document.getElementById("menu").onclick) {
-//     document.getElementById('sidebar').style.display = "block";
-//   }
-//   else{
-//     document.getElementById('sidebar').style.display = "none";
-//   }
-// });
-
-$(document).click((event) => {
-  if ($("#menu").click()) {
-    $("#sidebar").css("display", "block");
-  }
-  else if (!$(event.target).closest('#sidebar').length) {
-    $("#sidebar").css("display", "none");
-    console.log("test")
-  }        
-});
 
 $(document).ready(function () {
   $(".sidebar").hover(
@@ -78,12 +55,48 @@ $(document).ready(function () {
     function () {
       $(".sidebar").removeClass("opened");
     }
-  );
-});
-
-
-$(document).ready(function () {
-  $(".close").on("click", function () {
-    $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
+    );
   });
-});
+  
+  $(document).ready(function () {
+    $(".close").on("click", function () {
+      $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
+    });
+  });
+  
+  
+  // document.getElementById("menu").onclick = function() {myFunction()};
+  
+  // function myFunction() {
+  //   document.getElementById('sidebar').style.display = "block";
+  // }
+  
+  // window.addEventListener('click', function(e){
+  //   if (document.getElementById('sidebar').contains(e.target)){
+  //     console.log("ah")
+  //   }
+  //   else if (document.getElementById("menu").onclick) {
+  //     document.getElementById('sidebar').style.display = "block";
+  //   }
+  //   else{
+  //     document.getElementById('sidebar').style.display = "none";
+  //   }
+  // });
+  
+  // $(document).ready(function () {
+  //   if ($("#menu").click()) {
+  //     $("#sidebar").css("display", "block");
+  //   }
+  //   else if ($(".sidemobile").click()) {
+  //     $("#sidebar").css("display", "none");
+  //     console.log("test")
+  //   }
+  // });
+  
+  // if ($(".sidemobile").click()) {
+  //   $("#sidebar").css("display", "none");
+  //   console.log("test");
+  // }
+  // else if ($("#menu").click()) {
+  //       $("#sidebar").css("display", "block");
+  //     }

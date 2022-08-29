@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar" id="langHtml">
-
-<head>
+  <head>
     <!-- ? Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- ? Required meta tags -->
 
     <!-- ? Main CSS -->
@@ -12,45 +14,43 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <!-- <link rel="stylesheet" href="sass/style.css" /> -->
     <script>
-        if (localStorage.getItem("lang") == "ar") {
-            var cssId = 'myCss';  // you could encode the css path itself to generate id..
-            if (!document.getElementById(cssId)) {
-                var head = document.getElementsByTagName('head')[0];
-                var link = document.createElement('link');
-                link.id = cssId;
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'sass/style.css';
-                link.media = 'all';
-                head.appendChild(link);
-            }
+      if (localStorage.getItem("lang") == "ar") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.css";
+          link.media = "all";
+          head.appendChild(link);
         }
-        else if (localStorage.getItem("lang") == "en") {
-            var cssId = 'myCss';  // you could encode the css path itself to generate id..
-            if (!document.getElementById(cssId)) {
-                var head = document.getElementsByTagName('head')[0];
-                var link = document.createElement('link');
-                link.id = cssId;
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'sass/style_ltr.css';
-                link.media = 'all';
-                head.appendChild(link);
-            }
+      } else if (localStorage.getItem("lang") == "en") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style_ltr.css";
+          link.media = "all";
+          head.appendChild(link);
         }
-        else {
-            var cssId = 'myCss';  // you could encode the css path itself to generate id..
-            if (!document.getElementById(cssId)) {
-                var head = document.getElementsByTagName('head')[0];
-                var link = document.createElement('link');
-                link.id = cssId;
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'sass/style.css';
-                link.media = 'all';
-                head.appendChild(link);
-            }
+      } else {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.css";
+          link.media = "all";
+          head.appendChild(link);
         }
+      }
     </script>
     <!-- ? Main CSS -->
 
@@ -76,9 +76,19 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Datapicker cdn -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
     <!-- ? Datapicker cdn -->
 
     <!-- ? Title -->
@@ -90,663 +100,792 @@
     <!-- ? Favicon -->
 
     <script>
-        console.log(
-            "%c <== 7w7w++ ==>  ",
-            "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
-        );
+      console.log(
+        "%c <== 7w7w++ ==>  ",
+        "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+      );
     </script>
-</head>
+  </head>
 
-<body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar">
     <div class="d-flex sidemobile p-0">
-        <!-- ======= Start Sidebar ======= -->
-        <section class="sidebar open" id="sidebar">
-            <ul class="
-              nav nav-pills
-              flex-column
-              mb-sm-auto mb-0
-              align-items-center align-items-sm-start
-            " id="menu">
-                <div class="image_logo">
-                    <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
-                </div>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/home.svg" alt="icon" />
-                        <span>الرئيسية</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#submenulibrary" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="./media/image/icon/projects.svg" alt="icon" />
-                        <span>المشاريع</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <li>
-                            <a href="projects.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span>المشاريع</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="employment_applications.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/jobs.svg" alt="icon" />
-                        <span>طلبات التوظيف</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="team.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/team.svg" alt="icon" />
-                        <span>فريق العمل</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="employment_officials.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/officials.svg" alt="icon" />
-                        <span>مسئولي التوظيف</span>
-                    </a>
-                </li>
-                <li class="nav-item disable_mobile">
-                    <a href="reports.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/report.svg" alt="icon" />
-                        <span>التقارير</span>
-                    </a>
-                </li>
-                <li class="nav-item disable_mobile">
-                    <a href="setting.html" class="nav-link align-middle">
-                        <img src="./media/image/icon/setting.svg" alt="icon" />
-                        <span>الاعدادات العامة</span>
-                    </a>
-                </li>
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open" id="sidebar">
+        <div class="toggler" id="toggler">
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="./media/image/icon/home.svg" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenulibrary"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="./media/image/icon/projects.svg" alt="icon" />
+              <span>المشاريع</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulibrary"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="projects.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>المشاريع</span></a
+                >
+              </li>
             </ul>
-            <div class="contact_us">
-                <i class="fa-solid fa-circle-question"></i>
-                <p>هل قابلتك بعض المشاكل او بعض الاستفسارات ؟ هل تريد المساعدة ؟</p>
-                <a href="#" class="btn">تواصل معنا</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="employment_applications.html"
+              class="nav-link align-middle"
+            >
+              <img src="./media/image/icon/jobs.svg" alt="icon" />
+              <span>طلبات التوظيف</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link align-middle">
+              <img src="./media/image/icon/team.svg" alt="icon" />
+              <span>فريق العمل</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="employment_officials.html" class="nav-link align-middle">
+              <img src="./media/image/icon/officials.svg" alt="icon" />
+              <span>مسئولي التوظيف</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/report.svg" alt="icon" />
+              <span>التقارير</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="./media/image/icon/setting.svg" alt="icon" />
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+        </ul>
+        <div class="contact_us">
+          <i class="fa-solid fa-circle-question"></i>
+          <p>هل قابلتك بعض المشاكل او بعض الاستفسارات ؟ هل تريد المساعدة ؟</p>
+          <a href="#" class="btn">تواصل معنا</a>
+        </div>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="d-flex w-25">
+            <div class="menu" id="menu">
+              <i class="fa-solid fa-bars"></i>
             </div>
-        </section>
-        <!-- ======= end Sidebar ======= -->
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="بحث ..."
+              />
+            </div>
+          </div>
+          <div>
+            <div class="changelocal d-inline-block">
+              <div class="dropdown lang">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- lang -->
+                  <i class="fa-solid fa-earth-americas px-2"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" onclick="changeLocaleAr()">
+                      <img
+                        src="./media/image/saudi-arabia.png"
+                        alt="saudi-arabia"
+                      />
+                      عربي
+                    </a>
+                    <a class="dropdown-item" onclick="changeLocaleEn()">
+                      <img
+                        src="./media/image/united-kingdom.png"
+                        alt="united-kingdom"
+                      />
+                      إنجليزي
+                    </a>
+                  </li>
+                  <script>
+                    function changeLocaleAr() {
+                      localStorage.setItem("lang", "ar");
+                      location.reload();
+                    }
+                    function changeLocaleEn() {
+                      localStorage.setItem("lang", "en");
+                      location.reload();
+                    }
+                    function readLang() {
+                      var lang = localStorage.getItem("lang");
+                      document.getElementById("langHtml").innerHTML = lang;
+                    }
+                  </script>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./media/image/7w7w.jpg"
+                  class="admin_img"
+                  alt="person"
+                />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="reports.html">التقارير</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="setting.html">الاعدادات</a>
+                </li>
+                <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
 
-        <!-- ======= Main ======= -->
-        <section class="index_cards">
-            <!-- ======= Start navbar ======= -->
-            <nav class="navbar">
-                <div class="d-flex w-25">
-                    <div class="menu" id="menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" name="" id="" class="form-control" placeholder="بحث ...">
-                    </div>
-                </div>
-                <div>
-                    <div class="changelocal d-inline-block">
-                        <div class="dropdown lang">
-                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <!-- lang -->
-                                <i class="fa-solid fa-earth-americas px-2"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" onclick="changeLocaleAr()">
-                                        <img src="./media/image/saudi-arabia.png" alt="saudi-arabia">
-                                        عربي
-                                    </a>
-                                    <a class="dropdown-item" onclick="changeLocaleEn()">
-                                        <img src="./media/image/united-kingdom.png" alt="united-kingdom">
-                                        إنجليزي
-                                    </a>
-                                </li>
-                                <script>
-                                    function changeLocaleAr() {
-                                        localStorage.setItem("lang", "ar");
-                                        location.reload();
-                                    }
-                                    function changeLocaleEn() {
-                                        localStorage.setItem("lang", "en");
-                                        location.reload();
-                                    }
-                                    function readLang() {
-                                        var lang = localStorage.getItem("lang");
-                                        document.getElementById("langHtml").innerHTML = lang;
-                                    }
-                                </script>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dropdown d-inline-block">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./media/image/7w7w.jpg" class="admin_img" alt="person" />
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="reports.html">التقارير</a></li>
-                            <li><a class="dropdown-item" href="setting.html">الاعدادات</a></li>
-                            <li><a class="dropdown-item" href="#">تسجيل خروج</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- ======= End navbar ======= -->
-
-            <!-- ======= Start Content ======= -->
-            <div class="employee_details">
-                <div class="d-flex align-items-center justify-content-between employee_details_mobile">
-                    <h5>تفاصيل الموظف</h5>
-                    <div class="buttons">
-                        <button class="btn reject">رفض</button>
-                        <button class="btn accept">قبول</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-12">
-                        <div class="side_data">
-                            <div class="status new_employee btn">مرشح جديد</div>
-                            <!-- <div class="status end_employee btn">تم انتهاء العمل</div>
+        <!-- ======= Start Content ======= -->
+        <div class="employee_details">
+          <div
+            class="d-flex align-items-center justify-content-between employee_details_mobile"
+          >
+            <h5>تفاصيل الموظف</h5>
+            <div class="buttons">
+              <button class="btn reject">رفض</button>
+              <button class="btn accept">قبول</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-12">
+              <div class="side_data">
+                <div class="status new_employee btn">مرشح جديد</div>
+                <!-- <div class="status end_employee btn">تم انتهاء العمل</div>
                             <div class="status active_employee btn">موظف حالى</div> -->
-                            <img src="./media/image/7w7w.jpg" alt="empolyee">
-                            <h4 class="name">أحمد حمدي حوام</h4>
-                            <p class="title">مطور مواقع</p>
-                            <a href="" class="btn download" download>تحميل السيرة الذاتية <i
-                                    class="fa-solid fa-download"></i></a>
-                            <div class="employee_skills">
-                                <h5>مهارات الموظف</h5>
-                                <div class="skill">Mobile App Application</div>
-                                <div class="skill">Css</div>
-                                <div class="skill">Html</div>
-                                <div class="skill">Creativity</div>
-                                <div class="skill">Prototype</div>
-                            </div>
-                            <div class="completion_rate">
-                                <h6>نسبة انجاز الموظف للمشاريع حسب التقييمات العامة</h6>
-                                <div class="card_accuracy_projects">
-                                    <div class="c100 p70">
-                                        <span>70%</span>
-                                        <div class="slice">
-                                            <div class="bar"></div>
-                                            <div class="fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-12">
-                        <div class="basic_information">
-                            <h5>البيانات الاساسية</h5>
-                            <div class="data">
-                                <span class="title">البريد الالكتروني</span>
-                                <p class="text">Rasha Elsayed@gmail.com</p>
-                            </div>
-                            <div class="data">
-                                <span class="title">رقم لجوال</span>
-                                <p class="text">+966 2536 255 22</p>
-                            </div>
-                            <div class="data">
-                                <span class="title">الجنسية</span>
-                                <p class="text">مصري</p>
-                            </div>
-                            <div class="data">
-                                <span class="title">النوع</span>
-                                <p class="text">أنثي</p>
-                            </div>
-                            <div class="data">
-                                <span class="title">الموقع</span>
-                                <p class="text">السعودية , الدمام , شارع السيدة عائشة , الدو11 , شقة2</p>
-                            </div>
-                            <div class="data">
-                                <span class="title">العمر</span>
-                                <p class="text">40</p>
-                            </div>
-                            <div class="work_data">
-                                <h5>بيانات العمل</h5>
-                                <div class="data">
-                                    <span class="title">المسمي الوظيفي</span>
-                                    <p class="text">مصمم وجهات مستخدم</p>
-                                </div>
-                                <div class="data">
-                                    <span class="title">الدرجة الوظيفية</span>
-                                    <p class="text">جونيو</p>
-                                </div>
-                                <div class="data">
-                                    <span class="title">الخبرة</span>
-                                    <p class="text">2 سنة</p>
-                                </div>
-                                <div class="data">
-                                    <span class="title">المؤهل التعليمي</span>
-                                    <p class="text">ماجستير</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about_employee">
-                            <h5>عن الموظف</h5>
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص هو مثال
-                                لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
-                                أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل
-                                في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
-                                النص أو العديد من النصوص الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
-                                لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
-                                النصوص الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
-                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
-                                ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص هو
-                                مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
-                                يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...</p>
-                        </div>
-                        <div class="history_transactions">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5>تاريخ المعاملات</h5>
-                                <div class="dropdown">
-                                    <a class="btn dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        المدة
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">آخر أسبوع</a></li>
-                                        <li><a class="dropdown-item" href="#">آخر شهر</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- For loop card history transactions -->
-                            <div class="card_history_transactions profit">
-                                <i class="fa-solid fa-arrow-trend-up"></i>
-                                <div class="details">
-                                    <p class="title">تم قبض مبلغ 8000 ريال من وظيفة 258521</p>
-                                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
-                                </div>
-                            </div>
-                            <!-- For loop card history transactions -->
-
-                            <!-- For loop card history transactions -->
-                            <div class="card_history_transactions discount">
-                                <i class="fa-solid fa-arrow-trend-down"></i>
-                                <div class="details">
-                                    <p class="title">تم خصم مبلغ بقيمة 122,200 ريال سعودي لوظيفة رقم 258521</p>
-                                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
-                                </div>
-                            </div>
-                            <!-- For loop card history transactions -->
-
-                            <!-- For loop card history transactions -->
-                            <div class="card_history_transactions profit">
-                                <i class="fa-solid fa-arrow-trend-up"></i>
-                                <div class="details">
-                                    <p class="title">تم ايداع مبلغ بقيمة 122,200 ريال سعودي لوظيفة رقم 258521</p>
-                                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
-                                </div>
-                            </div>
-                            <!-- For loop card history transactions -->
-
-                            <!-- For loop card history transactions -->
-                            <div class="card_history_transactions discount">
-                                <i class="fa-solid fa-arrow-trend-down"></i>
-                                <div class="details">
-                                    <p class="title">تم خصم مبلغ بقيمة 122,200 ريال سعودي لوظيفة رقم 258521</p>
-                                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
-                                </div>
-                            </div>
-                            <!-- For loop card history transactions -->
-
-                        </div>
-                        <div class="employee_Exhibition">
-                            <h5>معرض اعمال الموظف</h5>
-                            <!-- Swiper -->
-                            <div class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./media/image/exhibition1.jpg" alt="exhibition">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./media/image/exhibition2.jpg" alt="exhibition">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./media/image/exhibition3.jpg" alt="exhibition">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./media/image/exhibition1.jpg" alt="exhibition">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./media/image/exhibition2.jpg" alt="exhibition">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./media/image/exhibition3.jpg" alt="exhibition">
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                            <!-- Initialize Swiper -->
-                            <script>
-                                var swiper = new Swiper(".mySwiper", {
-                                    slidesPerView: 3,
-                                    spaceBetween: 30,
-                                    slidesPerGroup: 1,
-                                    breakpoints: {
-                                        300: {
-                                            slidesPerView: 1,
-                                        },
-
-                                        768: {
-                                            slidesPerView: 2,
-                                        },
-
-                                        1024: {
-                                            slidesPerView: 3,
-                                            centeredSlides: true,
-                                        },
-                                    },
-                                    loop: true,
-                                    loopFillGroupWithBlank: true,
-                                    navigation: {
-                                        nextEl: ".swiper-button-next",
-                                        prevEl: ".swiper-button-prev",
-                                    },
-                                });
-                            </script>
-                        </div>
-                        <div class="employee_financial">
-                            <h5>التعاملات المالية للموظف</h5>
-                            <!-- Card financial -->
-                            <div class="card_financial">
-                                <img src="./media/image/day_work.jpg" alt="day_work">
-                                <div class="data_financial">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span>أيام العمل</span>
-                                        <i class="fa-solid fa-calendar-days"></i>
-                                    </div>
-                                    <h4>88</h4>
-                                    <p>اجمالى عدد الشيفتات</p>
-                                </div>
-                            </div>
-                            <!-- Card financial -->
-
-                            <!-- Card financial -->
-                            <div class="card_financial">
-                                <img src="./media/image/cost_work.jpg" alt="cost_work">
-                                <div class="data_financial">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span>تكلفة العمل</span>
-                                        <i class="fa-solid fa-wallet"></i>
-                                    </div>
-                                    <h4>20,000</h4>
-                                    <p>اجمالى التكلفة</p>
-                                </div>
-                            </div>
-                            <!-- Card financial -->
-
-                            <!-- Card financial -->
-                            <div class="card_financial">
-                                <img src="./media/image/value_arrest.jpg" alt="value_arrest">
-                                <div class="data_financial">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span>قيمة القبض</span>
-                                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                                    </div>
-                                    <h4>10,000</h4>
-                                    <p>المبلغ الواصل له</p>
-                                </div>
-                            </div>
-                            <!-- Card financial -->
-
-                            <!-- Card financial -->
-                            <div class="card_financial">
-                                <img src="./media/image/rest_arrest.jpg" alt="rest_arrest">
-                                <div class="data_financial">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span>باقي القبض</span>
-                                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                                    </div>
-                                    <h4>10,000</h4>
-                                    <p>المبلغ المتبقي</p>
-                                </div>
-                            </div>
-                            <!-- Card financial -->
-
-                        </div>
-                        <div class="reating_employee">
-                            <h5>التقييمات العامة للموظف</h5>
-                            <!-- For reating card -->
-                            <div class="reating_card">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <img src="./media/image/7w7w.jpg" alt="reating_img">
-                                        <div class="d-inline-block">
-                                            <span class="title">شركة كريزي ايديا للبرمجيات</span>
-                                            <div class="reating">
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="date">منذ شهرين</div>
-                                </div>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص
-                                    هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...ه</p>
-                            </div>
-                            <!-- For reating card -->
-
-                            <!-- For reating card -->
-                            <div class="reating_card">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <img src="./media/image/7w7w.jpg" alt="reating_img">
-                                        <div class="d-inline-block">
-                                            <span class="title">شركة كريزي ايديا للبرمجيات</span>
-                                            <div class="reating">
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="date">منذ شهرين</div>
-                                </div>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص
-                                    هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...ه</p>
-                            </div>
-                            <!-- For reating card -->
-
-                            <!-- For reating card -->
-                            <div class="reating_card">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <img src="./media/image/7w7w.jpg" alt="reating_img">
-                                        <div class="d-inline-block">
-                                            <span class="title">شركة كريزي ايديا للبرمجيات</span>
-                                            <div class="reating">
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star active"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="date">منذ شهرين</div>
-                                </div>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص
-                                    هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...ه</p>
-                            </div>
-                            <!-- For reating card -->
-
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="other_candidates">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5>مرشحين أخرين</h5>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa-solid fa-ellipsis"></i>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">عرض كل المرشحين</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- For loop card other candidates -->
-                            <div class="card_other_candidates">
-                                <img src="./media/image/7w7w.jpg" alt="img">
-                                <h5 class="name">أحمد حوام</h5>
-                                <span class="title">مصمم وجهات مستخدم</span>
-                                <div class="reating">
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="tags">
-                                    <div class="tag">Mobile App Application</div>
-                                    <div class="tag">Creativity</div>
-                                    <div class="tag">Wireframes</div>
-                                    <div class="tag">Prototype</div>
-                                    <div class="tag">HTML</div>
-                                    <div class="tag">CSS</div>
-                                </div>
-                                <a href="employee_details.html" class="btn show_more">عرض المزيد</a>
-                            </div>
-                            <!-- For loop card other candidates -->
-
-                            <!-- For loop card other candidates -->
-                            <div class="card_other_candidates">
-                                <img src="./media/image/7w7w.jpg" alt="img">
-                                <h5 class="name">أحمد حوام</h5>
-                                <span class="title">مصمم وجهات مستخدم</span>
-                                <div class="reating">
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="tags">
-                                    <div class="tag">Mobile App Application</div>
-                                    <div class="tag">Creativity</div>
-                                    <div class="tag">Wireframes</div>
-                                    <div class="tag">Prototype</div>
-                                    <div class="tag">HTML</div>
-                                    <div class="tag">CSS</div>
-                                </div>
-                                <a href="employee_details.html" class="btn show_more">عرض المزيد</a>
-                            </div>
-                            <!-- For loop card other candidates -->
-
-                            <!-- For loop card other candidates -->
-                            <div class="card_other_candidates">
-                                <img src="./media/image/7w7w.jpg" alt="img">
-                                <h5 class="name">أحمد حوام</h5>
-                                <span class="title">مصمم وجهات مستخدم</span>
-                                <div class="reating">
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="tags">
-                                    <div class="tag">Mobile App Application</div>
-                                    <div class="tag">Creativity</div>
-                                    <div class="tag">Wireframes</div>
-                                    <div class="tag">Prototype</div>
-                                    <div class="tag">HTML</div>
-                                    <div class="tag">CSS</div>
-                                </div>
-                                <a href="employee_details.html" class="btn show_more">عرض المزيد</a>
-                            </div>
-                            <!-- For loop card other candidates -->
-
-                            <!-- For loop card other candidates -->
-                            <div class="card_other_candidates">
-                                <img src="./media/image/7w7w.jpg" alt="img">
-                                <h5 class="name">أحمد حوام</h5>
-                                <span class="title">مصمم وجهات مستخدم</span>
-                                <div class="reating">
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="tags">
-                                    <div class="tag">Mobile App Application</div>
-                                    <div class="tag">Creativity</div>
-                                    <div class="tag">Wireframes</div>
-                                    <div class="tag">Prototype</div>
-                                    <div class="tag">HTML</div>
-                                    <div class="tag">CSS</div>
-                                </div>
-                                <a href="employee_details.html" class="btn show_more">عرض المزيد</a>
-                            </div>
-                            <!-- For loop card other candidates -->
-
-                            <!-- For loop card other candidates -->
-                            <div class="card_other_candidates">
-                                <img src="./media/image/7w7w.jpg" alt="img">
-                                <h5 class="name">أحمد حوام</h5>
-                                <span class="title">مصمم وجهات مستخدم</span>
-                                <div class="reating">
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star active"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="tags">
-                                    <div class="tag">Mobile App Application</div>
-                                    <div class="tag">Creativity</div>
-                                    <div class="tag">Wireframes</div>
-                                    <div class="tag">Prototype</div>
-                                    <div class="tag">HTML</div>
-                                    <div class="tag">CSS</div>
-                                </div>
-                                <a href="employee_details.html" class="btn show_more">عرض المزيد</a>
-                            </div>
-                            <!-- For loop card other candidates -->
-                        </div>
-                    </div>
+                <img src="./media/image/7w7w.jpg" alt="empolyee" />
+                <h4 class="name">أحمد حمدي حوام</h4>
+                <p class="title">مطور مواقع</p>
+                <a href="" class="btn download" download
+                  >تحميل السيرة الذاتية <i class="fa-solid fa-download"></i
+                ></a>
+                <div class="employee_skills">
+                  <h5>مهارات الموظف</h5>
+                  <div class="skill">Mobile App Application</div>
+                  <div class="skill">Css</div>
+                  <div class="skill">Html</div>
+                  <div class="skill">Creativity</div>
+                  <div class="skill">Prototype</div>
                 </div>
+                <div class="completion_rate">
+                  <h6>نسبة انجاز الموظف للمشاريع حسب التقييمات العامة</h6>
+                  <div class="card_accuracy_projects">
+                    <div class="c100 p70">
+                      <span>70%</span>
+                      <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- ======= End Content ======= -->
-        </section>
-        <!-- ======= Main ======= -->
+            <div class="col-lg-9 col-12">
+              <div class="basic_information">
+                <h5>البيانات الاساسية</h5>
+                <div class="data">
+                  <span class="title">البريد الالكتروني</span>
+                  <p class="text">Rasha Elsayed@gmail.com</p>
+                </div>
+                <div class="data">
+                  <span class="title">رقم لجوال</span>
+                  <p class="text">+966 2536 255 22</p>
+                </div>
+                <div class="data">
+                  <span class="title">الجنسية</span>
+                  <p class="text">مصري</p>
+                </div>
+                <div class="data">
+                  <span class="title">النوع</span>
+                  <p class="text">أنثي</p>
+                </div>
+                <div class="data">
+                  <span class="title">الموقع</span>
+                  <p class="text">
+                    السعودية , الدمام , شارع السيدة عائشة , الدو11 , شقة2
+                  </p>
+                </div>
+                <div class="data">
+                  <span class="title">العمر</span>
+                  <p class="text">40</p>
+                </div>
+                <div class="work_data">
+                  <h5>بيانات العمل</h5>
+                  <div class="data">
+                    <span class="title">المسمي الوظيفي</span>
+                    <p class="text">مصمم وجهات مستخدم</p>
+                  </div>
+                  <div class="data">
+                    <span class="title">الدرجة الوظيفية</span>
+                    <p class="text">جونيو</p>
+                  </div>
+                  <div class="data">
+                    <span class="title">الخبرة</span>
+                    <p class="text">2 سنة</p>
+                  </div>
+                  <div class="data">
+                    <span class="title">المؤهل التعليمي</span>
+                    <p class="text">ماجستير</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about_employee">
+                <h5>عن الموظف</h5>
+                <p>
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى ...هذا النص هو مثال لنص يمكن
+                  أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                  العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                  الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                  لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                  مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص هو مثال
+                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                  مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...هذا النص هو
+                  مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                  من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+                  من النصوص الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...
+                </p>
+              </div>
+              <div class="history_transactions">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5>تاريخ المعاملات</h5>
+                  <div class="dropdown">
+                    <a
+                      class="btn dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المدة
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">آخر أسبوع</a></li>
+                      <li><a class="dropdown-item" href="#">آخر شهر</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- For loop card history transactions -->
+                <div class="card_history_transactions profit">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                  <div class="details">
+                    <p class="title">تم قبض مبلغ 8000 ريال من وظيفة 258521</p>
+                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
+                  </div>
+                </div>
+                <!-- For loop card history transactions -->
+
+                <!-- For loop card history transactions -->
+                <div class="card_history_transactions discount">
+                  <i class="fa-solid fa-arrow-trend-down"></i>
+                  <div class="details">
+                    <p class="title">
+                      تم خصم مبلغ بقيمة 122,200 ريال سعودي لوظيفة رقم 258521
+                    </p>
+                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
+                  </div>
+                </div>
+                <!-- For loop card history transactions -->
+
+                <!-- For loop card history transactions -->
+                <div class="card_history_transactions profit">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                  <div class="details">
+                    <p class="title">
+                      تم ايداع مبلغ بقيمة 122,200 ريال سعودي لوظيفة رقم 258521
+                    </p>
+                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
+                  </div>
+                </div>
+                <!-- For loop card history transactions -->
+
+                <!-- For loop card history transactions -->
+                <div class="card_history_transactions discount">
+                  <i class="fa-solid fa-arrow-trend-down"></i>
+                  <div class="details">
+                    <p class="title">
+                      تم خصم مبلغ بقيمة 122,200 ريال سعودي لوظيفة رقم 258521
+                    </p>
+                    <span class="date">مايو 22, 2022 - 8:30 مساءا</span>
+                  </div>
+                </div>
+                <!-- For loop card history transactions -->
+              </div>
+              <div class="employee_Exhibition">
+                <h5>معرض اعمال الموظف</h5>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="./media/image/exhibition1.jpg"
+                        alt="exhibition"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./media/image/exhibition2.jpg"
+                        alt="exhibition"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./media/image/exhibition3.jpg"
+                        alt="exhibition"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./media/image/exhibition1.jpg"
+                        alt="exhibition"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./media/image/exhibition2.jpg"
+                        alt="exhibition"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./media/image/exhibition3.jpg"
+                        alt="exhibition"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Initialize Swiper -->
+                <script>
+                  var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    slidesPerGroup: 1,
+                    breakpoints: {
+                      300: {
+                        slidesPerView: 1,
+                      },
+
+                      768: {
+                        slidesPerView: 2,
+                      },
+
+                      1024: {
+                        slidesPerView: 3,
+                        centeredSlides: true,
+                      },
+                    },
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    navigation: {
+                      nextEl: ".swiper-button-next",
+                      prevEl: ".swiper-button-prev",
+                    },
+                  });
+                </script>
+              </div>
+              <div class="employee_financial">
+                <h5>التعاملات المالية للموظف</h5>
+                <!-- Card financial -->
+                <div class="card_financial">
+                  <img src="./media/image/day_work.jpg" alt="day_work" />
+                  <div class="data_financial">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>أيام العمل</span>
+                      <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h4>88</h4>
+                    <p>اجمالى عدد الشيفتات</p>
+                  </div>
+                </div>
+                <!-- Card financial -->
+
+                <!-- Card financial -->
+                <div class="card_financial">
+                  <img src="./media/image/cost_work.jpg" alt="cost_work" />
+                  <div class="data_financial">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>تكلفة العمل</span>
+                      <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <h4>20,000</h4>
+                    <p>اجمالى التكلفة</p>
+                  </div>
+                </div>
+                <!-- Card financial -->
+
+                <!-- Card financial -->
+                <div class="card_financial">
+                  <img
+                    src="./media/image/value_arrest.jpg"
+                    alt="value_arrest"
+                  />
+                  <div class="data_financial">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>قيمة القبض</span>
+                      <i class="fa-solid fa-money-bill-1-wave"></i>
+                    </div>
+                    <h4>10,000</h4>
+                    <p>المبلغ الواصل له</p>
+                  </div>
+                </div>
+                <!-- Card financial -->
+
+                <!-- Card financial -->
+                <div class="card_financial">
+                  <img src="./media/image/rest_arrest.jpg" alt="rest_arrest" />
+                  <div class="data_financial">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>باقي القبض</span>
+                      <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h4>10,000</h4>
+                    <p>المبلغ المتبقي</p>
+                  </div>
+                </div>
+                <!-- Card financial -->
+              </div>
+              <div class="reating_employee">
+                <h5>التقييمات العامة للموظف</h5>
+                <!-- For reating card -->
+                <div class="reating_card">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img src="./media/image/7w7w.jpg" alt="reating_img" />
+                      <div class="d-inline-block">
+                        <span class="title">شركة كريزي ايديا للبرمجيات</span>
+                        <div class="reating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="date">منذ شهرين</div>
+                  </div>
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى ...هذا النص هو مثال لنص
+                    يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                    النصوص الأخرى ...ه
+                  </p>
+                </div>
+                <!-- For reating card -->
+
+                <!-- For reating card -->
+                <div class="reating_card">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img src="./media/image/7w7w.jpg" alt="reating_img" />
+                      <div class="d-inline-block">
+                        <span class="title">شركة كريزي ايديا للبرمجيات</span>
+                        <div class="reating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="date">منذ شهرين</div>
+                  </div>
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى ...هذا النص هو مثال لنص
+                    يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                    النصوص الأخرى ...ه
+                  </p>
+                </div>
+                <!-- For reating card -->
+
+                <!-- For reating card -->
+                <div class="reating_card">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img src="./media/image/7w7w.jpg" alt="reating_img" />
+                      <div class="d-inline-block">
+                        <span class="title">شركة كريزي ايديا للبرمجيات</span>
+                        <div class="reating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="date">منذ شهرين</div>
+                  </div>
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى ...هذا النص هو مثال لنص
+                    يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                    النصوص الأخرى ...ه
+                  </p>
+                </div>
+                <!-- For reating card -->
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="other_candidates">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5>مرشحين أخرين</h5>
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">عرض كل المرشحين</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- For loop card other candidates -->
+                <div class="card_other_candidates">
+                  <img src="./media/image/7w7w.jpg" alt="img" />
+                  <h5 class="name">أحمد حوام</h5>
+                  <span class="title">مصمم وجهات مستخدم</span>
+                  <div class="reating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="tags">
+                    <div class="tag">Mobile App Application</div>
+                    <div class="tag">Creativity</div>
+                    <div class="tag">Wireframes</div>
+                    <div class="tag">Prototype</div>
+                    <div class="tag">HTML</div>
+                    <div class="tag">CSS</div>
+                  </div>
+                  <a href="employee_details.html" class="btn show_more"
+                    >عرض المزيد</a
+                  >
+                </div>
+                <!-- For loop card other candidates -->
+
+                <!-- For loop card other candidates -->
+                <div class="card_other_candidates">
+                  <img src="./media/image/7w7w.jpg" alt="img" />
+                  <h5 class="name">أحمد حوام</h5>
+                  <span class="title">مصمم وجهات مستخدم</span>
+                  <div class="reating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="tags">
+                    <div class="tag">Mobile App Application</div>
+                    <div class="tag">Creativity</div>
+                    <div class="tag">Wireframes</div>
+                    <div class="tag">Prototype</div>
+                    <div class="tag">HTML</div>
+                    <div class="tag">CSS</div>
+                  </div>
+                  <a href="employee_details.html" class="btn show_more"
+                    >عرض المزيد</a
+                  >
+                </div>
+                <!-- For loop card other candidates -->
+
+                <!-- For loop card other candidates -->
+                <div class="card_other_candidates">
+                  <img src="./media/image/7w7w.jpg" alt="img" />
+                  <h5 class="name">أحمد حوام</h5>
+                  <span class="title">مصمم وجهات مستخدم</span>
+                  <div class="reating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="tags">
+                    <div class="tag">Mobile App Application</div>
+                    <div class="tag">Creativity</div>
+                    <div class="tag">Wireframes</div>
+                    <div class="tag">Prototype</div>
+                    <div class="tag">HTML</div>
+                    <div class="tag">CSS</div>
+                  </div>
+                  <a href="employee_details.html" class="btn show_more"
+                    >عرض المزيد</a
+                  >
+                </div>
+                <!-- For loop card other candidates -->
+
+                <!-- For loop card other candidates -->
+                <div class="card_other_candidates">
+                  <img src="./media/image/7w7w.jpg" alt="img" />
+                  <h5 class="name">أحمد حوام</h5>
+                  <span class="title">مصمم وجهات مستخدم</span>
+                  <div class="reating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="tags">
+                    <div class="tag">Mobile App Application</div>
+                    <div class="tag">Creativity</div>
+                    <div class="tag">Wireframes</div>
+                    <div class="tag">Prototype</div>
+                    <div class="tag">HTML</div>
+                    <div class="tag">CSS</div>
+                  </div>
+                  <a href="employee_details.html" class="btn show_more"
+                    >عرض المزيد</a
+                  >
+                </div>
+                <!-- For loop card other candidates -->
+
+                <!-- For loop card other candidates -->
+                <div class="card_other_candidates">
+                  <img src="./media/image/7w7w.jpg" alt="img" />
+                  <h5 class="name">أحمد حوام</h5>
+                  <span class="title">مصمم وجهات مستخدم</span>
+                  <div class="reating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="tags">
+                    <div class="tag">Mobile App Application</div>
+                    <div class="tag">Creativity</div>
+                    <div class="tag">Wireframes</div>
+                    <div class="tag">Prototype</div>
+                    <div class="tag">HTML</div>
+                    <div class="tag">CSS</div>
+                  </div>
+                  <a href="employee_details.html" class="btn show_more"
+                    >عرض المزيد</a
+                  >
+                </div>
+                <!-- For loop card other candidates -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ======= End Content ======= -->
+      </section>
+      <!-- ======= Main ======= -->
     </div>
     <!-- ? ======= footer =========== -->
 
@@ -754,11 +893,10 @@
     <script src="js/counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script>
-        $('.counter').counterUp({
-            delay: 20,
-            time: 2000
-        });
+      $(".counter").counterUp({
+        delay: 20,
+        time: 2000,
+      });
     </script>
-</body>
-
+  </body>
 </html>
