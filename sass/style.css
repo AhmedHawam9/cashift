@@ -425,6 +425,9 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+  .sidebar .image_logo .logo {
+    width: 60%;
+  }
   .sidebar .nav-pills .nav-link {
     text-align: start;
   }
