@@ -169,7 +169,7 @@
                 margin-top: .2rem;
                 color: #fff;
                 transform: rotate(0deg);
-                display: none;
+                // display: none;
             }
 
             // span {
@@ -358,53 +358,53 @@
                 width: 14.28%;
                 margin: 0;
 
-                .collapse.show, .collapsing {
-                    position: fixed;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    top: 0;
-                    bottom: 0;
-                    z-index: 999;
-                    right: 0;
-                    left: 0;
-                    background-color: #0000008a;
-                    li {
-                        margin-bottom: 1rem;
-                        padding: .5rem 0;
-                        display: flex;
-                        width: 100%;
-                        .nav-link {
-                            width: 100%;
-                            background-color: #21765ec0;
-                            svg {
-                                font-size: 1rem;
-                            }
-                            span {
-                                display: inline;
-                                margin: 0 1rem;
-                                font-size: 1rem;
-                            }
-                        }
-                    }
-                    .close {
-                        position: absolute;
-                        top: 5%;
-                        right: 5%;
-                        background-color: #000;
-                        width: 35px;
-                        height: 35px;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        svg {
-                            color: #fff;
-                        }
-                    }
-                }
+                // .collapse.show, .collapsing {
+                //     position: fixed;
+                //     width: 100%;
+                //     height: 100%;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     top: 0;
+                //     bottom: 0;
+                //     z-index: 999;
+                //     right: 0;
+                //     left: 0;
+                //     background-color: #0000008a;
+                //     li {
+                //         margin-bottom: 1rem;
+                //         padding: .5rem 0;
+                //         display: flex;
+                //         width: 100%;
+                //         .nav-link {
+                //             width: 100%;
+                //             background-color: #21765ec0;
+                //             svg {
+                //                 font-size: 1rem;
+                //             }
+                //             span {
+                //                 display: inline;
+                //                 margin: 0 1rem;
+                //                 font-size: 1rem;
+                //             }
+                //         }
+                //     }
+                //     .close {
+                //         position: absolute;
+                //         top: 5%;
+                //         right: 5%;
+                //         background-color: #000;
+                //         width: 35px;
+                //         height: 35px;
+                //         border-radius: 50%;
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+                //         svg {
+                //             color: #fff;
+                //         }
+                //     }
+                // }
 
                 .nav-link {
                     padding: .5rem 0;

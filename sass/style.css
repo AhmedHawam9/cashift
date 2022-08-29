@@ -234,7 +234,6 @@
   margin-top: 0.2rem;
   color: #fff;
   transform: rotate(0deg);
-  display: none;
 }
 .sidebar .nav-pills .accordion-button:focus {
   border-color: unset;
@@ -383,53 +382,6 @@
   .sidebar.open .nav-pills .nav-item {
     width: 14.28%;
     margin: 0;
-  }
-  .sidebar.open .nav-pills .nav-item .collapse.show, .sidebar.open .nav-pills .nav-item .collapsing {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    z-index: 999;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5411764706);
-  }
-  .sidebar.open .nav-pills .nav-item .collapse.show li, .sidebar.open .nav-pills .nav-item .collapsing li {
-    margin-bottom: 1rem;
-    padding: 0.5rem 0;
-    display: flex;
-    width: 100%;
-  }
-  .sidebar.open .nav-pills .nav-item .collapse.show li .nav-link, .sidebar.open .nav-pills .nav-item .collapsing li .nav-link {
-    width: 100%;
-    background-color: rgba(33, 118, 94, 0.7529411765);
-  }
-  .sidebar.open .nav-pills .nav-item .collapse.show li .nav-link svg, .sidebar.open .nav-pills .nav-item .collapsing li .nav-link svg {
-    font-size: 1rem;
-  }
-  .sidebar.open .nav-pills .nav-item .collapse.show li .nav-link span, .sidebar.open .nav-pills .nav-item .collapsing li .nav-link span {
-    display: inline;
-    margin: 0 1rem;
-    font-size: 1rem;
-  }
-  .sidebar.open .nav-pills .nav-item .collapse.show .close, .sidebar.open .nav-pills .nav-item .collapsing .close {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    background-color: #000;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .sidebar.open .nav-pills .nav-item .collapse.show .close svg, .sidebar.open .nav-pills .nav-item .collapsing .close svg {
-    color: #fff;
   }
   .sidebar.open .nav-pills .nav-item .nav-link {
     padding: 0.5rem 0;
