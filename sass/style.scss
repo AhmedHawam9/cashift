@@ -2993,6 +2993,9 @@ table tbody tr td {
   .employee_details {
     background-color: #FAFAFA;
     padding: 2rem;
+    .employee_details_mobile {
+      margin-bottom: 2rem;
+    }
 
     h5 {
       font-family: "semibold";
@@ -3184,6 +3187,72 @@ table tbody tr td {
         color: #828C8D;
         font-size: .9rem;
         width: 85%;
+      }
+    }
+
+    .history_transactions {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+
+      h5 {
+        margin-bottom: 1rem;
+      }
+
+      .dropdown {
+        .dropdown-toggle {
+          font-family: "regular";
+          font-size: .8rem;
+          background-color: rgb(230, 230, 230);
+          padding: .5rem 1.5rem;
+        }
+        .dropdown-menu {
+          .dropdown-item {
+            font-family: "regular";
+            font-size: .8rem;
+            text-align: start;
+          }
+        }
+      }
+
+      .card_history_transactions {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+        svg {
+          width: 25px;
+          height: 25px;
+          padding: .5rem;
+          border-radius: 50%;
+          margin-inline-end: 1rem;
+          background-color: rgb(218, 218, 218);
+        }
+        .details {
+          .title {
+            margin-bottom: 0;
+            font-family: "semibold";
+          }
+          .date {
+            font-family: "regular";
+            font-size: .8rem;
+            color: rgb(168, 168, 168);
+          }
+        }
+        &.profit {
+          svg {
+            color: $PrimaryColor;
+          }
+        }
+        &.discount {
+          svg {
+            color: #dc3545;
+          }
+        }
       }
     }
 
@@ -3634,6 +3703,11 @@ table tbody tr td {
 
           .basic_info_data {
             width: 80%;
+            .modal {
+              .modal-dialog {
+                max-width: 50%;
+              }
+            }
 
             .form-group {
               position: relative;
@@ -3729,7 +3803,7 @@ table tbody tr td {
                   .avatar-edit {
                     position: absolute;
                     top: 0%;
-                    left: 5%;
+                    left: 45%;
 
                     input {
                       display: none;

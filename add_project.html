@@ -257,9 +257,45 @@
                             </div>
                             <div class="form-group">
                                 <label for="">العنوان *</label>
-                                <button class="btn location" type="button" onclick="getLocation()"><i
-                                        class="fa-solid fa-location-dot"></i></button>
-                                <p id="lat" class="lat"></p>
+                                <button class="btn location" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#addressModal"><i class="fa-solid fa-location-dot"></i></button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="addressModal" tabindex="-1"
+                                    aria-labelledby="addressModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div id="map"></div>
+                                                <script>
+                                                    function initMap() {
+                                                        const cairo = { lat: 30.064742, lng: 31.249509 };
+                                                        const map = new google.maps.Map(document.getElementById("map"), {
+                                                            scaleControl: true,
+                                                            center: cairo,
+                                                            zoom: 10,
+                                                        });
+                                                        const infowindow = new google.maps.InfoWindow();
+
+                                                        infowindow.setContent("<b>القاهرة</b>");
+
+                                                        const marker = new google.maps.Marker({ map, position: cairo });
+
+                                                        marker.addListener("click", () => {
+                                                            infowindow.open(map, marker);
+                                                        });
+                                                    }
+
+                                                    window.initMap = initMap;
+
+                                                </script>
+                                                <script
+                                                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&language=ar&region=EG"
+                                                    defer></script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p id="lat" class="lat"></p>
                                 <script>
                                     var lat = document.getElementById("lat");
 
@@ -275,7 +311,7 @@
                                         lat.innerHTML = "Latitude: " + position.coords.latitude +
                                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Longitude: " + position.coords.longitude;
                                     }
-                                </script>
+                                </script> -->
                             </div>
                             <div class="form-group">
                                 <label for="">طريقة تسجيل الحضور *</label>
@@ -431,8 +467,8 @@
                                 <input type="text" name="" id="" class="form-control" placeholder="** *** *** **">
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="check" type="checkbox" value="" id="one">
-                                <label class="form-check-label" for="one">
+                                <input class="form-check-input" name="check" type="checkbox" value="" id="contract">
+                                <label class="form-check-label" for="contract">
                                     أوافق على الشروط والاحكام المدرجة <a href="#" class="contract">بالعقد</a>
                                 </label>
                             </div>
