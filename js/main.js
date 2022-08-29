@@ -42,6 +42,34 @@ toggler.addEventListener("click", function () {
 // };
 //=========== Close inspect =============
 
+// document.getElementById("menu").onclick = function() {myFunction()};
+
+// function myFunction() {
+//   document.getElementById('sidebar').style.display = "block";
+// }
+
+// window.addEventListener('click', function(e){   
+//   if (document.getElementById('sidebar').contains(e.target)){
+//     console.log("ah")
+//   }
+//   else if (document.getElementById("menu").onclick) {
+//     document.getElementById('sidebar').style.display = "block";
+//   }
+//   else{
+//     document.getElementById('sidebar').style.display = "none";
+//   }
+// });
+
+$(document).click((event) => {
+  if ($("#menu").click()) {
+    $("#sidebar").css("display", "block");
+  }
+  else if (!$(event.target).closest('#sidebar').length) {
+    $("#sidebar").css("display", "none");
+    console.log("test")
+  }        
+});
+
 $(document).ready(function () {
   $(".sidebar").hover(
     function () {
@@ -52,6 +80,7 @@ $(document).ready(function () {
     }
   );
 });
+
 
 $(document).ready(function () {
   $(".close").on("click", function () {
