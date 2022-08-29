@@ -442,6 +442,10 @@
         }
     }
 
+    .sidebar.opened {
+        width: 30%;
+    }
+
     .sidebar {
         margin-right: 0;
         width: 30%;
@@ -478,7 +482,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .sidebar {
+    .sidebar, .sidebar.opened {
         width: 50%;
     }
     .sidebar.open {
