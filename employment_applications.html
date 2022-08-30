@@ -306,39 +306,53 @@
               <a href="add_work.html" class="btn work_btn">+ اضافة فرصة عمل</a>
             </div>
             <div class="tab-content" id="myTabContent">
+              <div class="advanced_filter">
+                <button class="btn btn_filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <i class="fa-solid fa-filter"></i> تصفية
+                </button>
+                
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-body">
+                    <div class="chances_work mt-0">
+                      <h6>تصفية متقدمة</h6>
+                      <input
+                        type="text"
+                        class="form-control filter"
+                        name="dates"
+                        id="hijri-date-input"
+                      />
+                      <select
+                        name=""
+                        class="selectpicker form-control filter"
+                        title="المدينة"
+                      >
+                        <option value="">الدمام</option>
+                        <option value="">الرياض</option>
+                      </select>
+                      <select
+                        name=""
+                        class="selectpicker form-control filter"
+                        title="كل الطلبات"
+                      >
+                        <option value="">كل الطلبات</option>
+                        <option value="">الطلبات الجديدة</option>
+                        <option value="">الطلبات الحالية</option>
+                        <option value="">الطلبات الملغاة</option>
+                        <option value="">الطلبات المنتهية</option>
+                        <option value="">الطلبات الغير مكتملة</option>
+                      </select>
+                      <script type="text/javascript">
+                        $(function () {
+                          $("#hijri-date-input").hijriDatePicker();
+                        });
+                      </script>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
               <!-- Start chances work details -->
               <div class="chances_work">
-                <input
-                  type="text"
-                  class="form-control filter"
-                  name="dates"
-                  id="hijri-date-input"
-                />
-                <select
-                  name=""
-                  class="selectpicker form-control filter"
-                  title="المدينة"
-                >
-                  <option value="">الدمام</option>
-                  <option value="">الرياض</option>
-                </select>
-                <select
-                  name=""
-                  class="selectpicker form-control filter"
-                  title="كل الطلبات"
-                >
-                  <option value="">كل الطلبات</option>
-                  <option value="">الطلبات الجديدة</option>
-                  <option value="">الطلبات الحالية</option>
-                  <option value="">الطلبات الملغاة</option>
-                  <option value="">الطلبات المنتهية</option>
-                  <option value="">الطلبات الغير مكتملة</option>
-                </select>
-                <script type="text/javascript">
-                  $(function () {
-                    $("#hijri-date-input").hijriDatePicker();
-                  });
-                </script>
                 <div class="table-responsive tableAllProjects">
                   <table class="table" id="chancesWork">
                     <thead>

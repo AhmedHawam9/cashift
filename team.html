@@ -352,14 +352,38 @@
                 tabindex="0"
               >
                 <div class="supervisors_project">
-                  <select
-                    name=""
-                    class="selectpicker form-control filter"
-                    title="مستوي مبتدىء"
-                  >
-                    <option value="">junior</option>
-                    <option value="">senior</option>
-                  </select>
+                  <div class="advanced_filter">
+                    <button
+                      class="btn btn_filter"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasExample"
+                      aria-controls="offcanvasExample"
+                    >
+                      <i class="fa-solid fa-filter"></i> تصفية
+                    </button>
+
+                    <div
+                      class="offcanvas offcanvas-start"
+                      tabindex="-1"
+                      id="offcanvasExample"
+                      aria-labelledby="offcanvasExampleLabel"
+                    >
+                      <div class="offcanvas-body">
+                        <div class="chances_work mt-0">
+                          <h6>تصفية متقدمة</h6>
+                          <select
+                            name=""
+                            class="selectpicker form-control filter"
+                            title="مستوي مبتدىء"
+                          >
+                            <option value="">junior</option>
+                            <option value="">senior</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="table-responsive tableAllProjects">
                     <table class="table" id="chancesWork">
                       <thead>
@@ -746,14 +770,38 @@
                 tabindex="0"
               >
                 <div class="team_work">
-                  <select
-                    name=""
-                    class="selectpicker form-control filter"
-                    title="مستوي مبتدىء"
-                  >
-                    <option value="">junior</option>
-                    <option value="">senior</option>
-                  </select>
+                  <div class="advanced_filter">
+                    <button
+                      class="btn btn_filter"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasTeam"
+                      aria-controls="offcanvasTeam"
+                    >
+                      <i class="fa-solid fa-filter"></i> تصفية
+                    </button>
+
+                    <div
+                      class="offcanvas offcanvas-start"
+                      tabindex="-1"
+                      id="offcanvasTeam"
+                      aria-labelledby="offcanvasTeamLabel"
+                    >
+                      <div class="offcanvas-body">
+                        <div class="chances_work mt-0">
+                          <h6>تصفية متقدمة</h6>
+                          <select
+                            name=""
+                            class="selectpicker form-control filter"
+                            title="مستوي مبتدىء"
+                          >
+                            <option value="">junior</option>
+                            <option value="">senior</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <form action="">
                     <div class="table-responsive tableAllProjects">
                       <table class="table" id="teamWork">
