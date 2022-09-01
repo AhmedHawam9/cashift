@@ -1292,6 +1292,9 @@ table tbody tr td {
   font-family: "regular";
   color: #011c1e;
 }
+.index_cards .content .add_project .add, .index_cards .content .add_project .remove {
+  font-family: "regular";
+}
 .index_cards .content .add_project .text_step {
   display: block;
   font-family: "regular";

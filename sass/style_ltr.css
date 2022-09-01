@@ -1291,6 +1291,9 @@ table tbody tr td {
   font-size: 0.8rem;
   width: 60%;
 }
+.index_cards .content .add_project .add, .index_cards .content .add_project .remove {
+  font-family: "regular";
+}
 .index_cards .content .add_project .form-check {
   width: 85%;
   font-family: "regular";

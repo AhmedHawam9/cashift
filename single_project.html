@@ -375,7 +375,7 @@
                   aria-controls="edit-tab-pane"
                   aria-selected="false"
                 >
-                  تعديل على المشروع
+                  المواقع
                 </button>
               </li>
             </ul>
@@ -1836,86 +1836,83 @@
                 aria-labelledby="edit-tab"
                 tabindex="0"
               >
-              <form class="add_project mt-5">
-                <div class="row">
-                  <div class="col-lg-4 col-md-3 col-12">
-                <h5 class="title_step">تعديل العنوان</h5>
-                  </div>
-                  <div class="col-lg-8 col-md-9 col-12">
-                    <div class="form-group mt-0 mb-4">
-                      <label for="">العنوان *</label>
-                      <button
-                        class="btn location"
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#addressModal"
-                      >
-                        <i class="fa-solid fa-location-dot"></i>
-                      </button>
-                      <span>الدمام , شارع السيدة عائشة , عمارة الملك الدور 11 اتجاة الشمال</span>
-                      <!-- Modal -->
-                      <div
-                        class="modal fade"
-                        id="addressModal"
-                        tabindex="-1"
-                        aria-labelledby="addressModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <div id="map"></div>
-                              <script>
-                                function initMap() {
-                                  const cairo = { lat: 30.064742, lng: 31.249509 };
-                                  const map = new google.maps.Map(
-                                    document.getElementById("map"),
-                                    {
-                                      scaleControl: true,
-                                      center: cairo,
-                                      zoom: 10,
-                                    }
-                                  );
-                                  const infowindow = new google.maps.InfoWindow();
-    
-                                  infowindow.setContent("<b>القاهرة</b>");
-    
-                                  const marker = new google.maps.Marker({
-                                    map,
-                                    position: cairo,
-                                  });
-    
-                                  marker.addListener("click", () => {
-                                    infowindow.open(map, marker);
-                                  });
-                                }
-    
-                                window.initMap = initMap;
-                              </script>
-                              <script
-                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&language=ar&region=EG"
-                                defer
-                              ></script>
-                            </div>
-                          </div>
+                <form class="add_project mt-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-3 col-12">
+                      <h5 class="title_step">تعديل العنوان</h5>
+                    </div>
+                    <div class="col-lg-8 col-md-9 col-12">
+                      <div id="attributes">
+                        <div class="form-group attr mt-0 mb-4">
+                          <label for="">العنوان *</label>
+                          <input
+                            type="text"
+                            name=""
+                            value="الدمام , شارع السيدة عائشة , عمارة الملك الدور 11 اتجاة الشمال"
+                            id=""
+                            class="form-control mb-4"
+                          />
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.960405149614!2d31.371055515097687!3d31.027352778424618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d1062afff57%3A0x40e6c610456cf723!2sCrazy%20Idea!5e0!3m2!1sen!2seg!4v1662038751573!5m2!1sen!2seg"
+                            width="100%"
+                            height="300"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                          <button class="btn btn-danger remove mb-4" type="button">
+                            حذف
+                          </button>
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group mt-0 mb-4">
-                      <label for="">العنوان *</label>
                       <button
-                        class="btn location"
+                        class="btn btn-large btn-success add"
                         type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#addressModal"
                       >
-                        <i class="fa-solid fa-location-dot"></i>
+                        أضافة
                       </button>
-                      <span>الدمام , شارع السيدة عائشة , عمارة الملك الدور 11 اتجاة الشمال</span>
+
+                      <script>
+                        /* Variables */
+                        var row = $(".attr");
+
+                        function addRow() {
+                          row.clone(true, true).appendTo("#attributes");
+                        }
+
+                        function removeRow(button) {
+                          button.closest("div.attr").remove();
+                        }
+
+                        $("#attributes .attr:first-child")
+                          .find(".remove")
+                          .hide();
+
+                        /* Doc ready */
+                        $(".add").on("click", function () {
+                          addRow();
+                          if ($("#attributes .attr").length > 1) {
+                            //alert("Can't remove row.");
+                            $(".remove").show();
+                          }
+                        });
+                        $(".remove").on("click", function () {
+                          if ($("#attributes .attr").size() == 1) {
+                            //alert("Can't remove row.");
+                            $(".remove").hide();
+                          } else {
+                            removeRow($(this));
+
+                            if ($("#attributes .attr").size() == 1) {
+                              $(".remove").hide();
+                            }
+                          }
+                        });
+                      </script>
                     </div>
                   </div>
-                </div>
-              </form>
+                </form>
               </div>
               <!-- End supervisors to project details -->
             </div>
