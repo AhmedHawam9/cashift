@@ -81,6 +81,19 @@
           margin-inline-end: 0.5rem;
 }
 
+@media only screen and (max-width: 991.98px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.08);
+  }
+  .index_cards .content {
+    margin-top: 4.5rem;
+  }
+}
 .sidebar .toggler {
   display: none;
 }
@@ -475,6 +488,9 @@ body {
 .advanced_filter .btn_filter:hover {
   color: #0d6efd;
   transition: 0.7s ease-in-out;
+}
+.advanced_filter .offcanvas.offcanvas-start {
+  left: 0;
 }
 .advanced_filter .offcanvas.offcanvas-start .offcanvas-body .form-control {
   margin-bottom: 1rem;
@@ -1434,6 +1450,11 @@ table tbody tr td {
   justify-content: center;
   position: unset;
   font-size: 1rem;
+}
+.index_cards .content .add_project .form-group span {
+  font-family: "regular";
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
 }
 .index_cards .content .add_project .form-group .lat {
   display: inline-block;
@@ -3906,6 +3927,26 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 991.98px) {
+  .advanced_filter .offcanvas.offcanvas-start {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    left: 0;
+    box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+    border-radius: 0.475rem;
+    width: 300px;
+    transform: unset;
+    border: transparent;
+  }
+  .advanced_filter .offcanvas.offcanvas-start .offcanvas-body {
+    overflow-x: hidden;
+  }
+  .advanced_filter .offcanvas.offcanvas-start .offcanvas-body .form-control {
+    width: 100% !important;
+  }
   .index_cards .content .single_project .tab-content .supervisors_project .filter,
 .index_cards .content .single_project .tab-content .team_work .filter {
     width: 33%;

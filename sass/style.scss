@@ -55,7 +55,7 @@ body {
     //   position: absolute;
     //   top: 3rem;
     //   right: 1rem;
-    //   left: unset;
+          left: 0;
     //   box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
     //   border-radius: 0.475rem;
     //   width: 300px;
@@ -1267,6 +1267,11 @@ table tbody tr td {
             position: unset;
             font-size: 1rem;
           }
+        }
+
+        span {
+          font-family: "regular";
+          margin-inline-start: 1rem;
         }
 
         .lat {
@@ -4346,6 +4351,28 @@ table tbody tr td {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .advanced_filter {
+    .offcanvas {
+      &.offcanvas-start {
+          height: fit-content;
+          position: absolute;
+          top: 3rem;
+          right: 1rem;
+          left: 0;
+          box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+          border-radius: 0.475rem;
+          width: 300px;
+          transform: unset;
+          border: transparent;
+        .offcanvas-body {
+          overflow-x: hidden;
+          .form-control {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
   .index_cards
     .content
     .single_project
