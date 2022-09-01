@@ -1295,6 +1295,35 @@ table tbody tr td {
 .index_cards .content .add_project .add, .index_cards .content .add_project .remove {
   font-family: "regular";
 }
+.index_cards .content .add_project .remove {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+.index_cards .content .add_project .attr {
+  display: flex;
+  align-items: center;
+}
+.index_cards .content .add_project .input_group {
+  width: 100%;
+  -webkit-margin-start: 2rem;
+          margin-inline-start: 2rem;
+}
+.index_cards .content .add_project .submit_btn {
+  display: block;
+  margin-top: 3rem;
+  font-family: "semibold";
+  font-size: 0.8rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #21765e;
+  color: white;
+  transition: 0.7s ease-in-out;
+}
+.index_cards .content .add_project .submit_btn:hover {
+  background-color: #fff;
+  color: #21765e;
+  transition: 0.7s ease-in-out;
+  border: 1px solid #21765e;
+}
 .index_cards .content .add_project .text_step {
   display: block;
   font-family: "regular";
@@ -4127,6 +4156,17 @@ table tbody tr td {
   }
 }
 @media only screen and (max-width: 600px) {
+  .index_cards .content .add_project .attr {
+    flex-wrap: wrap;
+  }
+  .index_cards .content .add_project .attr iframe {
+    width: 100%;
+  }
+  .index_cards .content .add_project .input_group {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    margin-top: 1rem;
+  }
   .tableAllProjects {
     padding: 1rem 1rem 5rem !important;
   }
